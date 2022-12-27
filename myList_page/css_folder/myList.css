@@ -284,7 +284,7 @@ td button{
 #buy_button a{
     display: inline-block;
     width: 20vw;
-    line-height:8vh;
+    line-height:6vh;
     text-align: center;
     text-decoration: none;
     margin-top: 3vh;
@@ -309,40 +309,42 @@ td button{
 }
 
 
-aside{
-    /* background-color: cornflowerblue; */
+article {
     width: 70%;
-    text-align: center;
+    height: 80%;
     display: inline-block;
-    vertical-align: bottom;
-
-}
-aside div{
-    width:25%;
-    height: 15vh;
-    float: left;
-    margin-left: 6%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-#aside_img1{
-    background: url(../../image_folder/logo_crown.png) 0/100% no-repeat;
-}
-
-#aside_img2{
-    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;
-}
-
-#aside_img3{
-    background: url(../../image_folder/logo_circle.png) 0/100% no-repeat;
 }
 
 
+#aside_img{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    margin: 5vh 0;
+    justify-content: space-around;
+}
 
 
+#aside_img div:nth-child(1) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+}
+
+#aside_img div:nth-child(2) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+}
+
+#aside_img div:nth-child(3) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+}
 
 
 footer>nav {

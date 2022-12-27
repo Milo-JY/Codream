@@ -62,7 +62,6 @@ header li>a:hover {
 /* main */
 
 main {
-    /* background-color: aqua; */
     width: 100%;
     height: 80%;
     text-align: center;
@@ -75,140 +74,84 @@ main {
 main>div {
     line-height: 100px;
     height: 10%;
-    background-image: url(../../image_folder/main_back.jpeg);
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-size: cover;
+    background: url(../../image_folder/main_back.jpeg) 0/100% no-repeat;
+    
     text-align: center;
     font-size: 1.5em;
     display: inline-block;
     width: 70%;
     color: white;
 }
-#section_top{
-    position: relative;
-    left: calc(100% * .3/2);
-    /* background-color: palegoldenrod; */
+
+article {
     width: 70%;
-    height: 30%;
-    line-height: 10vh;  
+    height: 80%;
+    display: inline-block;
 }
 
+#section_top,
+aside,
+#section_bottom {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-top: 10vh;
+    justify-content: space-around;
+}
+/* ==================================== */
+/* section_top, aside, section_bottom */
 
-#section_top div:nth-of-type(1) {
-    background: url(../../image_folder/watch01.png) 0/100% no-repeat;
-    background-size: contain;
+#section_top div:nth-child(1) {
     width: 40%;
-    height: 50vh;
-    text-align: center;
-    display: inline-block;
-    margin-top: 5vh;
-    /* float: left; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* left: 5vw; */
-    
-}
-
-#section_top div:nth-of-type(2) {
-    width: 50%;
-    height: 50vh;
-    line-height: 3vh;
-    /* border: 1px solid; */
-    margin-top: 5vh;
-    float: right;
+    height: 100%;
     display: flex;
-    text-align: center;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
 }
 
-#section_top div:nth-of-type(2) p {
-    align-items: center;
-    display: flex;
-}
-
-aside{
-    display: inline-block;
-    /* background-color: olivedrab; */
-    width: 70%;
-    height: 30%;
-    line-height: 10vh;
-}
-
-
-aside div:nth-of-type(1) {
-    width: 50%;
-    height: 50vh;
-    line-height: 3vh;
-    /* border: 1px solid; */
-    margin-top: 5vh;
-    float: left;
-    display: flex;
-    text-align: center;
-}
-
-aside div:nth-of-type(1) p {
-    align-items: center;
-    display: flex;
-}
-aside div:nth-of-type(2) {
-    background: url(../../image_folder/watch01.png) 0/100% no-repeat;
+#section_top div:nth-child(2) {
     width: 40%;
-    height: 50vh;
-    /* line-height: 50%; */
-    /* border: 1px solid; */
-    display: inline-block;
-    margin-top: 5vh;
-    float: right;
-}
-
-
-
-
-
-
-
-
-#section_bottom{
-    display: inline-block;
-    /* background-color: palegoldenrod; */
-    width: 70%;
-    height: 30%;
-    line-height: 10vh;
-    margin-bottom: 20vh;
-}
-
-
-#section_bottom div:nth-of-type(1) {
-    background: url(../../image_folder/watch01.png) 0/100% no-repeat;
-    width: 40%;
-    height: 50vh;
-    /* line-height: 50%; */
-    /* border: 1px solid; */
-    display: inline-block;
-    margin-top: 5vh;
-    /* float: left; */
-    /* position: relative; */
-    /* left: 5vw; */
-}
-
-#section_bottom div:nth-of-type(2) {
-    width: 50%;
-    height: 50vh;
-    line-height: 3vh;
-    /* border: 1px solid; */
-    margin-top: 5vh;
-    float: right;
+    height: 100%;
     display: flex;
-    text-align: center;
-    
-}
-
-#section_bottom div:nth-of-type(2) {
+    justify-content: center;
     align-items: center;
-    display: flex;
 }
 
+aside div:nth-child(2) {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+}
 
+aside div:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_bottom {
+    margin-bottom: 10vh;
+}
+
+#section_bottom div:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+}
+
+#section_bottom div:nth-child(2) {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================================= */
+/* footer */
 
 footer>nav {
     height: 35vh;
