@@ -62,9 +62,19 @@ header li>a:hover {
 }
 
 .topicon{
+    width: 4vh;
+    line-height: 2vh;
+    background-color: black;
+    border-radius: 50%;
     position: fixed;
     right: 5vh;
     bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topicon>a{ 
+    color: white;
 }
 
 /*===================================================== header =================================================*/
@@ -83,7 +93,8 @@ main a{
 }
 #singup_main_div{
     /* background-color: #333; */
-    width: 80%;
+    /* width: 80%; */
+    max-width: 650px;
     height: 150vh;
     margin: calc((170vh - 150vh)/2) auto;
 }
@@ -208,17 +219,15 @@ h1{
     bottom: 0;
 }
 .show_psw{
-    font-size: .5rem;
+    font-size: 1.2rem;
     background: none;
     position: absolute;
-    top: 40%;
-    /* transform: translateY(-40%); */
+    bottom: 50%;
+    transform: translateY(-50%);
     right: 3%;
     border: none;
-    font-weight: bold;
     cursor: pointer;
 }
-
 
 /*====================================== footer ============================================*/
 
