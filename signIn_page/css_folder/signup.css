@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    z-index: 6;
+    position: relative;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+.topicon{
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+}
+
+/*===================================================== header =================================================*/
+main{
+    height: 170vh;
+    width: 70%;
+    margin: auto;
+}
+h2{
+    font-size: 1.4rem;
+}
+main a{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#singup_main_div{
+    /* background-color: #333; */
+    width: 80%;
+    height: 150vh;
+    margin: calc((170vh - 150vh)/2) auto;
+}
+form{
+    text-align: center;
+}
+
+form>div:not(.create_account){
+    text-align: left;
+}
+
+.creat_logo,
+h1{
+    font-size: 2rem ;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 3vw;
+}
+
+.go_signin{
+    background-color: antiquewhite;
+    width: 100%;
+    line-height: 5vh;
+    padding: 0 3vw;
+    box-sizing: border-box;
+    margin-bottom: 3vh;
+}
+
+.singup_userinfo_label{
+    text-transform: capitalize;
+}
+
+.singup_userinfo_label::after {
+    content: "*";
+    color: red;
+}
+
+.user_info_box{
+    width: 100%;
+    height: 100vh;
+    margin-top:5%;
+    position: relative;
+}
+
+.signup_info,
+.signup_info_full,
+.signup_h2{
+    position: absolute;
+    height: 15%;
+}
+.signup_info{
+    width: 50%;
+    display: inline-block;
+}
+.signup_info_full,
+.signup_h2{
+    width: 100%;
+}
+
+.signup_input,
+.signup_select{
+    display: block;
+    font-size: 1.5rem;
+    width: 98%;
+    height: 30%;
+    border: none;
+    border-bottom: 1px solid;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+.signup_input:focus,
+.signup_select:focus{
+    outline: none;
+}
+
+.signup_h2{
+    height: 5%;
+    /* line-height: 10vh; */
+    /* background-color: antiquewhite; */
+}
+.create_account{
+    text-transform: uppercase;
+    height: 7vh;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    padding: 0 1vh;
+    box-sizing: border-box;
+}
+.create_account>span{
+    color: white;
+    font-weight: bold;
+}
+
+.first_nmae{
+    left: 0;
+    top: 15%;
+}
+.last_name{
+    right: 0;
+    top: 15%;
+}
+.country{
+    bottom: 0;
+    top: calc(15% * 2);
+}
+.mobile_phone_number{
+    right: 0;
+    top: calc(15% * 2);
+}
+.signup_h2{
+    bottom: calc(15%*3);
+}
+.email{
+    bottom: calc(15% * 2);
+}
+.password{
+    bottom: 15%;
+}
+.confirm_password{
+    bottom: 0;
+}
+.show_psw{
+    font-size: .5rem;
+    background: none;
+    position: absolute;
+    top: 40%;
+    /* transform: translateY(-40%); */
+    right: 3%;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*====================================== footer ============================================*/
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}

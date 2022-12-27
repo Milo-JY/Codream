@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+main {
+    background: url(../image_folder/main_back.jpeg) center/cover;
+    background-attachment: fixed;
+}
+
+#main_banner {
+    height: 55vh;
+    background: url(../image_folder/main_banner.jpeg) no-repeat center/100%;
+}
+
+#main_items {
+    text-align: center;
+    margin-top: 15vh;
+    height: 55vh;
+}
+
+#main_advertise {
+    margin-top: 15vh;
+    height: 40vh;
+    background-color: whitesmoke
+}
+
+.main_items_goods {
+    display: inline-block;
+    width: 20vw;
+    height: 40vh;
+    margin: 7.5vh 1vw;
+    background: url(../image_folder/watch_test01.webp) center/100%;
+    border: 2px solid black;
+}
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}

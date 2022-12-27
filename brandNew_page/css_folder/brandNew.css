@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+/* ==============main=============== */
+/* 구성 : section1(신상품 홍보) / section2(제품리스트) / section3(이전시즌품추천) */
+
+main {
+    background-color: #444;
+}
+
+main #subMain {
+    width: 70%;
+    height: 260vh;
+    background-color: rgb(60, 54, 58);
+    text-align: center;
+    margin-left: calc((100% - 70vw)/2);
+    color: white;
+}
+
+/* ------------main>section1>intro(신제품배너)------------- */
+
+main .sec1_intro  {
+    width: 100%;
+    height: 80vh;
+    background: url(../image_folder/brandnew_intro1.png) center/100%;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.intro_title,
+.intro_title p {
+    display: inline-block;
+}
+
+.intro {
+    width: 65%;
+    height: 10vh;
+    text-align: left;
+    margin-left: calc((100% - 95%)/2);
+    position: absolute;
+    top: 13%;
+}
+
+
+.intro_title {
+    font-size: 3em;
+    
+}
+
+.intro_title p {
+    font-size: .7em;
+    font-weight: 400;
+}
+
+.intro h2 {
+    position: absolute;
+    text-align: right;
+    font-size: 3em;
+    top: 400%;
+}
+
+/* --------main>section2>newItems(신제품리스트)-------- */
+
+main .section2_newItems  {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.new_title {
+    width: 90%;
+    height: 5vh;
+    background-color: seagreen;
+    text-align: left;
+    margin-left: calc((100% - 95%)/2);
+    position: relative;
+    top: 5%;
+    z-index: 1;
+}
+
+.new_container {
+    width: 90%;
+    height: 600px;
+    display: inline-block;
+    background-color: salmon;
+    margin-top: calc((80vh - 600px)/2);
+    z-index: auto;
+}
+
+.new_bg {
+    width: 320px;
+    height: 500px;
+    background-color: red;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.new_container {
+    margin: 0;
+    position: relative;
+}
+
+.new_container a {
+    padding: 0 10px;
+    line-height: 30px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.new_leftBtn {
+    left: 0;
+}
+
+.new_rightBtn {
+    right: 0;
+}
+
+
+/* ----------main>section3>oldItems(이전시즌제품들추천)------------ */
+
+main .section3_oldItems  {
+    width: 100%;
+    height: 80vh;
+    background: url(../image_folder/intro_image.jpg) center/100%;
+    background-color: burlywood;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.old_title {
+    width: 90%;
+    height: 5vh;
+    background-color: seagreen;
+    text-align: left;
+    margin-left: calc((100% - 95%)/2);
+    position: relative;
+    top: 5%;
+    z-index: 1;
+}
+
+.old_container {
+    width: 90%;
+    height: 600px;
+    display: inline-block;
+    background-color: salmon;
+    margin-top: calc((80vh - 600px)/2);
+    z-index: auto;
+}
+
+.old_bg {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    box-sizing: border-box;
+    border: 1px solid;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.old_container {
+    margin: 0;
+    position: relative;
+}
+
+.old_container a {
+    padding: 0 10px;
+    line-height: 30px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.old_leftBtn {
+    left: 0;
+}
+
+.old_rightBtn {
+    right: 0;
+}
+
+
+/* ==============footer=============== */
+footer>nav {
+    height: 20vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 10vh;
+    background-color: #444;
+}
+/* =================================== */
+

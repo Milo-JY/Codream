@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="./css_folder/signIn.css" />
+    <title>Chouette Départ</title>
+  </head>
+  <body>
+    <header>
+      <nav id="headerLeft_nav">
+        <ul>
+          <li class="header_menu_Left_li"><a href="../brand_page/brand.html">Brand</a></li>
+          <li class="header_menu_Left_li"><a href="../masterpiece_page/masterpiece.html">Masterpiece</a></li>
+          <li class="header_menu_Left_li"><a href="../brandNew_page/brandNew.html">Brand new</a></li>
+          <li class="header_menu_Left_li"><a href="../notice_page/notice.html">Notice</a></li>
+        </ul>
+      </nav>
+      <div id="header_logo">
+        <h1>
+          <a href="../index.html"></a>
+        </h1>
+      </div>
+      <nav id="headerRight_nav">
+        <ul>
+          <li class="header_menu_Right_li"><a href="../signIn_page/signIn.html">Sign in</a></li>
+          <li class="header_menu_Right_li"><a href="../myList_page/myList.html">My list</a></li>
+          <li class="header_menu_Right_li"><a href="../language_page/language.html">Language</a></li>
+          <li class="header_menu_Right_li"><a href="../search_page/search.html">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="topicon">
+      <a href="#header_logo">TOP</a>
+    </div>
+
+    <hr>
+    <main>
+      
+      <div class="sign_in">
+
+        <div class="welcome">
+          <div><h1>LOGIN TO</h1></div>
+          <div><h1>Chouette Départ</h1></div>
+        </div>
+
+        <div class="login_logo">
+          <span>Login using your credentials below.</span>
+        </div>
+
+        <form name="login_form" action="../index.html" method="get">
+          <div class="login_user_info">
+
+            <div class="login_user_info_label">
+              <label for="user_address">EMAIL ADDRESS</label>
+            </div>
+
+            <div>
+              <input class="login_user_info_text" type="email" id="user_address"
+                placeholder="Eneter your Email address" name="user_address" required >
+            </div>
+
+            <div class="login_user_info_label">
+              <label for="user_psw">PASSWORD</label>
+            </div>
+
+            <div class="show_psw_container">
+              <input class="login_user_info_text psw_text" type="password" name="user_psw"
+              placeholder="Eneter your password" id="user_psw" minlength="6" required >
+              <button type="button" class="show_psw"><span>SHOW</span></button>
+            </div>
+
+            <div class="find_psw">
+              <a href="./findPw.html">Forgot your password?</a>
+            </div>
+
+          </div>
+          <button class="login_button"><span>Log in</span></button>
+
+        </form>
+
+        <div class="sign_up">
+          <div>
+            Don't have an account yet?
+            <span><a href="./signUp.html">CREATE ACCOUNT</a></span>
+          </div>
+      </div>
+
+    </main>
+    <footer>
+      <nav>푸터 내비게이션</nav>
+      <div>푸터 약관 등 세부사항</div>
+    </footer>
+  </body>
+</html>

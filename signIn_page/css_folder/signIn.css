@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    z-index: 6;
+    position: relative;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+.topicon{
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+}
+
+/*===================================================== header =================================================*/
+main{
+    height: 100vh;
+    width: 70%;
+    color: black;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+main a{
+    color: black;
+}
+
+.login_logo{
+    background-color: antiquewhite;
+    line-height: 5vh;
+    margin: 5% 0;
+}
+
+
+.find_psw a,
+.sign_up>div>span a{
+    font-size: 1vw;
+    text-decoration: underline;
+}
+
+main a,
+.login_button>span{
+    font-weight: bold;
+}
+
+.sign_in{
+    color:black;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* background-color: #333 */
+}
+.sign_up{
+    font-size: 1vw;
+    line-height: 3vh;
+    margin: 4% 0 4% ;
+}
+
+.welcome{
+    font-size: 1.8vw ;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5% 0;
+}
+
+.login_user_info{
+    text-align: left;
+}
+
+.login_user_info_text{
+    font-size: 1vw;
+    width: 100%;
+    line-height: 5vh;
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 5%;
+}
+.login_user_info_text:focus{
+    outline: none;
+}
+
+.find_psw{
+    text-align: right;
+    margin: 1% 0;
+}
+
+.login_button{ 
+    font-size: 1.5vw;
+    color: white;
+    background-color:black ;
+    width: 50%;
+    line-height: 3vw;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.login_button>span{
+    font-weight: bold;
+}
+.show_psw_container{
+    position: relative;
+}
+.show_psw{
+    font-size: .5vw;
+    background: none;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-25%);
+    right: 2%;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*==================================================================================*/
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}
