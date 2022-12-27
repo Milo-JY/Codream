@@ -66,23 +66,48 @@ header li>a:hover {
 
 main {
     width: 70%;
-    margin: 10vh auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+    line-height: 15vh;
+    flex-basis: 100%;
+    font-size: 40px;
+}
+
 .item_pic {
+    box-sizing: border-box;
     height: 50vh;
     flex-basis: 50%;
 
-    background-color: aquamarine;
+    background:url(../../image_folder/itemOne_01.jpeg) center / 80% no-repeat;
+    border: 1px solid;
 }
 
 .item_discription {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     height: 50vh;
     flex-basis: 50%;
 
-    background-color: bisque;
+    border: 1px solid;
+}
+
+.item_discription_inner.first {
+    flex-basis: 70%;
+
+    background-color: chartreuse;
+}
+
+.item_discription_inner.second {
+    flex-basis: 30%;
+
+    background-color: violet;
 }
 
 .item_detail {
