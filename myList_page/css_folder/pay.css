@@ -197,9 +197,12 @@ section {
     width: 25vw;
 }
 
+
+
+
 #table_middle_delivery a {
     display: inline-block;
-    width: 7vw;
+    width: 10vw;
     line-height:4vh;
     text-align: center;
     text-decoration: none;

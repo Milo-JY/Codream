@@ -35,7 +35,7 @@
     <!-- main,section -->
     <main>
         <div class="main_title">
-            결제하기
+            Shipping a Payment
         </div>
 
     <!-- ==================
@@ -43,73 +43,76 @@
         <section>
         
             <div id="section_top">
-                <p id="aside_table_border_bottom">1. 주문하시는 상품</p>
+                <p id="aside_table_border_bottom">1. The product you're ordering
+                </p>
                 <table class="buy_table">
                     
                     <tr>
-                        <th id="table_th_img">이미지</th>
-                        <th id="table_th_name">상품명</th>
-                        <th id="table_th_num">수량</th>
-                        <th id="table_th_total">합계금액</th>
-                        <th id="table_th_info">배송정보</th>
+                        <th id="table_th_img">Image</th>
+                        <th id="table_th_name">Model Name</th>
+                        <th id="table_th_num">Volume</th>
+                        <th id="table_th_total">Total</th>
+                        <th id="table_th_info">Shipping Information</th>
                     </tr>
 
                     <tr>
                         <td id="img_item_buy1"></td>
-                        <td id="table_td_name">시계12344444</td>
+                        <td id="table_td_name">xcvx344444</td>
                         <td>
                             <input id="table_td_num" type="text" value="1" >
                         </td>
                         <td>&#8361; 13,000,000</td>
-                        <td>3일 내 발송</td>
+                        <td>within 3 days</td>
                     </tr>
                     <tr>
                         <td id="img_item_buy1"></td>
-                        <td id="table_td_name">시계12344444</td>
+                        <td id="table_td_name">rym344444</td>
                         <td>
                             <input id="table_td_num" type="text" value="1" >
                         </td>
                         <td>&#8361; 13,000,000</td>
-                        <td>3일 내 발송</td>
+                        <td>within 3 days</td>
                     </tr>
                 </table>
             </div>
 
             <div id="section_middle">
-                <p id="aside_table_border_bottom">2. 주문고객 &#47; 배송지 정보</p>
+                <p id="aside_table_border_bottom">2. Customer &#47; Destination information</p>
                     <table id="table_middle">
                         <tr>
-                            <th colspan="1">주문자 성명</th>
+                            <th colspan="1">Order Name</th>
                             <td colspan="3">
-                                <input type="text" placeholder="이름을 입력하세요." >
+                                <input type="text" placeholder="Please enter a name." >
                             </td>
                             
                         </tr>
                         <tr>
-                            <th>배송지 선택</th>
+                            <th>Select delivery Infomation</th>
                             <td>
                                 <input type="radio" name="choose_delivery" id="home" value="home" >
-                                <label for="home">집</label>
+                                <label for="home">Home</label>
                                 <input type="radio" name="choose_delivery" id="company" value="company">
-                                <label for="company">회사</label>
+                                <label for="company">Company</label>
                             </td>
-                            <td id="table_middle_delivery">
-                                <a href="#">새 배송지 입력</a>
-                                <a href="#">내 배송지 관리</a>
+                            
+                            <td colspan=""2 id="table_middle_delivery">
+                                <a href="#">New Delivery Destination</a>
+                                <a href="#">Manage My Shipping Destination</a>
                             </td>
+                            <!-- <td></td> -->
                             
                         </tr>
                         <tr>
-                            <th colspan="1">받으시는 분</th>
-                            <td colspan="3">
-                                <input type="text" placeholder="이름을 입력하세요." required>
+                            <th colspan="1">The Recipient</th>
+                            <td colspan="2">
+                                <input type="text" placeholder="Please enter a name." required>
                             </td>
                             
                             
                             
                         </tr>
                         <tr>
-                            <th colspan="1">연락처</th>
+                            <th colspan="1">Contact Us</th>
                             <td colspan="3">
                                 <input type="text" name="first_phone_num" value="010" minlength="3" maxlength="3" size="1" readonly
                                 required>
@@ -120,19 +123,19 @@
                         </tr>
 
                         <tr>
-                            <th>주소</th>
+                            <th>Address</th>
                             <td colspan="2">
-                                <input id="table_input_length" type="text" placeholder="주소 검색하여 입력해주세요." readonly>
+                                <input id="table_input_length" type="text" placeholder="Please search the address and enter it." readonly>
                             </td>
                             <td id="table_middle_delivery">
-                                <a href="#">주소 검색</a>
+                                <a href="#">Address Search</a>
                             </td>
                             
                         </tr>
                         <tr>
-                            <th>배송메시지</th>
+                            <th>Delivery Message</th>
                             <td colspan="3">
-                                <input class="table_middle_delivery_memo" type="text" placeholder="배송시 전달할 말을 적어주세요.">
+                                <input class="table_middle_delivery_memo" type="text" placeholder="Please write down what you want to deliver.">
                             </td>
                             
                         </tr>
@@ -140,12 +143,12 @@
             </div>
 
             <div id="section_bottom">
-                <p id="aside_table_border_bottom">3. 결제 방법</p>
+                <p id="aside_table_border_bottom">3. Select a Payment Method</p>
                 <nav>
                     <ul>
-                        <li><a href="#">신용카드</a></li>
-                        <li><a href="#">계좌이체</a></li>
-                        <li><a href="#">휴대폰결제</a></li>
+                        <li><a href="#">Credit Card</a></li>
+                        <li><a href="#">Account Transfer</a></li>
+                        <li><a href="#">Mobile Banking</a></li>
                     </ul>
                 </nav>
 
@@ -159,25 +162,26 @@
             <!-- aside -->
             <aside>
                 <div class="aside_etc">
-                    <p>결제금액계산기</p>
+                    <p>Payment Calculator
+                    </p>
                     <table>
                         <tr>
-                            <td class="aside_table_bold" colspan="2">주문금액</td>
+                            <td class="aside_table_bold" colspan="2">Order Amount</td>
                             <td class="aside_table_bold aside_right"  colspan="2">&#8361; 1,000,000</td>
                             
                         </tr>
                         <tr>
-                            <td colspan="2">상품가격</td>
+                            <td colspan="2">Price</td>
                             <td colspan="2" class="aside_right">&#8361; 1,000,000</td>
                             
                         </tr>
                         <tr>
-                            <td id="aside_table_border_bottom" colspan="2">배송비</td>
+                            <td id="aside_table_border_bottom" colspan="2">Delivery Charge</td>
                             <td id="aside_table_border_bottom" class="aside_right" colspan="2">&#8361; 0</td>
                             
                         </tr>
                         <tr>
-                            <td colspan="4" class="aside_right aside_table_bold">총 결제예정금액</td>
+                            <td colspan="4" class="aside_right aside_table_bold">Total Price</td>
                             
                         </tr>
                         <tr>
@@ -185,11 +189,12 @@
                         
                         </tr>
                     </table>
-                    <p>선택하신 결제방법을 확인해주세요.</p>
+                    <p>Please check the payment method you selected
+                        .</p>
                 </div>
 
                 <div class="aside_buy">
-                    <a href="#">결제하기 &gt; </a>
+                    <a href="#">Paying &gt; </a>
                 </div>
             </aside>
             
