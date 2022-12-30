@@ -137,14 +137,14 @@ section {
     width: 20%;
 }
 
-#table_td_name {
+/* #table_td_name {
     overflow: hidden;
 }
 
 #table_td_name:hover{
     overflow: visible;
     width: 25%;
-}
+} */
 
 #table_td_num {
     width: 50%;
@@ -241,7 +241,7 @@ section {
 }
 
 #section_bottom nav>ul>li{
-    background-color: cadetblue;
+    background-color: #333;
     float: left;
     margin-top: 2vh;
     margin-left: 1vw;
@@ -250,6 +250,10 @@ section {
     color: white;
     box-sizing: border-box;
     padding: 0 20px;
+}
+
+#section_bottom nav>ul>li a {
+    color: white;
 }
 /* =============================== */
 /* aside */
