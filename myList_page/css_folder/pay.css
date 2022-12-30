@@ -60,6 +60,7 @@ header li>a:hover {
 
 /* ===================== */
 /* main */
+
 main{
     height: 80%;
     text-align: center;
@@ -82,19 +83,15 @@ section {
     display: inline-block;
     height: 90%;
     position: relative;
-    
 }
-
 
 #section_top{
     width: 70%;
     height: 80%;
     line-height: calc(75vh * .3);
     display: inline-block;
-    /* background-color: gray; */
     float: left;
     margin-top: 2vh;
-    /* border-bottom: 1px solid; */
 }
 
 #section_top p {
@@ -103,28 +100,21 @@ section {
     font-size: 1.5em;
 }
 
-
 .buy_table {
-    /* border: 1px solid; */
     width: 100%;
-    /* line-height: 5vh; */
     border-collapse: collapse;
-    /* table-layout: fixed; */
 }
-
 
 .buy_table th {
     border-bottom: 1px solid;
     height: 30%;
     line-height: 3vh;
-    
 }
 
 .buy_table td {
     line-height: 3vh;
     height: 10vh;
     text-align: center;
-    /* vertical-align: middle; */
 }
 
 #table_th_img{
@@ -133,7 +123,6 @@ section {
 
 #table_th_name{
     width: 15%;
-    
 }
 
 #table_th_num{
@@ -148,16 +137,14 @@ section {
     width: 20%;
 }
 
-#table_td_name {
+/* #table_td_name {
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 #table_td_name:hover{
     overflow: visible;
-    white-space: pre-wrap;
-}
+    width: 25%;
+} */
 
 #table_td_num {
     width: 50%;
@@ -165,28 +152,19 @@ section {
 }
 
 #img_item_buy1 {
-    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;
-    
+    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;   
 }
 
-
 /* ===================================== */
-/* section_middle */
-
-
+/* section_middle 2.주문고객*/
 
 #section_middle {
-    /* text-align: center; */
     width: 70%;
-    /* line-height: calc(75vh * .3); */
-    /* background-color: bisque; */
     float: left;
     margin-top: 2vh;
     height: 60vh;
     border-collapse: collapse;
-    /* border-bottom: 1px solid; */
 }
-
 
 #section_middle p {
     text-align: left; 
@@ -205,11 +183,9 @@ section {
 }
 
 #table_middle td {
-    /* border: 1px solid; */
     height: 1vh;
     font-size: .5em;
     text-align: justify;
-    
 }
 
 #table_middle td input {
@@ -221,13 +197,12 @@ section {
     width: 25vw;
 }
 
-/* #table_middle_delivery{
-    height:10vh
-} */
+
+
 
 #table_middle_delivery a {
     display: inline-block;
-    width: 7vw;
+    width: 10vw;
     line-height:4vh;
     text-align: center;
     text-decoration: none;
@@ -235,23 +210,12 @@ section {
     color: white;
 }
 
-
-
-
 .table_middle_delivery_memo {
     width: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ==================================== */
+/* section_bottom 3.결제방법 */
 #section_bottom {
     text-align: center;
     width: 70%;
@@ -267,54 +231,43 @@ section {
     line-height: 5vh;
 }
 
-
-
-
 #section_bottom nav {
     margin-bottom: 20px;
-    /* text-align: center; */
-    /* color: white; */
 }
 
-
 #section_bottom nav>ul {
-    /* color: white; */
-    /* text-align: ; */
     display: inline-block;
     width: 100%;
 }
 
 #section_bottom nav>ul>li{
-    background-color: cadetblue;
+    background-color: #333;
     float: left;
     margin-top: 2vh;
     margin-left: 1vw;
     width: 30%;
     line-height: 40px;
-    /* position: relative; */
     color: white;
     box-sizing: border-box;
     padding: 0 20px;
-    /* width: 30%; */
 }
 
-
-
-
-
-
-
-
-
-
+#section_bottom nav>ul>li a {
+    color: white;
+}
+/* =============================== */
+/* aside */
 
 
 .aside_etc{
-    width: 30%;
-    height: 70%;
+    width: 25%;
+    height: 45%;
     position: absolute;
+    /* background-color: aqua; */
     right: 0;
     top: 5vh;
+    display: inline-block;
+    border: 1px sodlid;
 }
 
 .aside_etc table {
@@ -323,7 +276,6 @@ section {
     text-align: right;
     margin-top: 3vh;
     border-collapse: collapse;
-    
 }
 
 .aside_table_bold{
@@ -332,9 +284,14 @@ section {
 
 .aside_etc table td{
     height: 1vh;
-    text-align: right;
+    text-align: center;
     font-size: .9em;
 }
+
+.aside_etc .aside_right {
+    text-align: right;
+}
+
 
 #aside_table_border_bottom {
     border-bottom: 1px solid;
@@ -356,15 +313,10 @@ section {
 }
 
 .aside_buy {
-    width: 30%;
-    height: 50%;
-    /* line-height: 22.5vh; */
+    width: 25%;
     position: absolute;
-    /* background-color: blue; */
-    /* float: right; */
-    /* margin-top: -40vh; */
     right: 0;
-    top: 40%;
+    top: 30%;
 }
 
 .aside_buy a {
@@ -379,11 +331,8 @@ section {
     display: inline-block;
 }
 
-
 /* =============================== */
 /* footer */
-
-
 
 footer>nav {
     height: 35vh;
