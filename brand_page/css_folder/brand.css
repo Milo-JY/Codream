@@ -62,31 +62,38 @@ header li>a:hover {
 /* main */
 
 main {
+    box-sizing: border-box;
+
     width: 100%;
     height: 80%;
     text-align: center;
+
     margin-top: 30px;
-    box-sizing: border-box;
     margin: 0 auto;
-    /* background-color: gray; */
-    
 }
 
 #first_div {
-    line-height: 100px;
-    height: 10%;
     background: url(../../image_folder/main_back.jpeg) 0/100% no-repeat;
-    margin-top: 30px;
+    
+    width: 70%;
+    height: 10%;
+    line-height: 100px;
+
+    display: inline-block;
     text-align: center;
     font-size: 1.5em;
-    display: inline-block;
-    width: 70%;
     color: white;
+    
+    margin-top: 30px;
 }
+
+/* ==================================== */
+/* section_top, aside, section_bottom */
 
 article {
     width: 70%;
     height: 80%;
+
     display: inline-block;
 }
 
@@ -95,21 +102,17 @@ aside,
 #section_bottom {
     width: 100%;
     height: 50vh;
-    display: flex;
-    /* margin-top: 10vh; */
-    
-    /* border: 1px solid; */
-}
-/* ==================================== */
-/* section_top, aside, section_bottom */
 
+    display: flex;
+}
 
 #section_top {
-    /* align-items: center; */
-    background-color: gray;
-    margin-top: 10vh;
     justify-content: flex-start;
     word-break: break-all;
+
+    background-color: gray;
+    
+    margin-top: 10vh;
 }
 
 
@@ -117,19 +120,19 @@ aside,
 #section_top div:nth-child(1) {
     width: 40%;
     height: 80%;
+
     display: flex;
-    /* border-left: 1px; */
-    /* border-right: 1px solid; */
     align-self: center;
+
     background: url(../../image_folder/watch01.png) center/contain no-repeat;
 }
 
 #section_top div:nth-child(2) {
-    justify-content: space-evenly;
     width: 40%;
+
     display: flex;
     flex-direction: column;
-    align-items: censter;
+    justify-content: space-evenly;
 }
 
 #section_top div:nth-child(2) p:nth-child(1) {
@@ -139,7 +142,7 @@ aside,
     font-size: 2.5em;
     font-weight: bold;
     justify-content: flex-start;
-    align-items: center;
+    align-items: end;
 }
 
 
@@ -147,8 +150,13 @@ aside,
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: flex-start;
-    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* justify-self: center; */
+    
+
+    /* align-self: c; */
+    align-items: center;
     /* align-self: flex-start; */
 }
 

@@ -59,9 +59,15 @@ header li>a:hover {
 }
 
 main {
-    background: url(../image_folder/main_back.jpeg) center/cover;
-    background-attachment: fixed;
+    /* background: url(../image_folder/main_back.jpeg) center/cover; */
+    /* background-attachment: fixed; */
+    /* opacity: .3; */
 }
+
+
+
+
+
 
 #main_banner {
     height: 55vh;
@@ -70,14 +76,10 @@ main {
 
 #main_items {
     text-align: center;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     height: 55vh;
-}
-
-#main_advertise {
-    margin-top: 15vh;
-    height: 40vh;
-    background-color: whitesmoke
+    background: url(../image_folder/main_back.jpeg) center/cover;
+    background-attachment: fixed;
 }
 
 .main_items_goods {
@@ -88,6 +90,146 @@ main {
     background: url(../image_folder/watch_test01.webp) center/100%;
     border: 2px solid black;
 }
+/* =================================main_advertise */
+
+#main_advertise {
+    /* display: inline-block; */
+    height: 70vh;
+    /* margin-top: 10vh; */
+    /* background-color: gray; */
+    position: relative;
+}
+
+#main_advertise::after {
+    content: "";
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    background:url(../../image_folder/main_back.jpeg) 0/100% no-repeat;
+    opacity: .2;
+    /* background-color: #333; */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#main_advertise>div {
+    display: grid;
+    width: 100%;
+    height: calc(70vh*.9);
+    color: black;
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    grid-template-columns:  3fr 3fr 2fr;
+    /* border: 1px solid; */
+
+    /* flex-direction: column; */
+    
+
+}
+
+.main_char {
+    width: 30vw;
+    height: 70vh;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: repeat(13,1fr);
+    /* grid-auto-rows: calc(70vh / 13); */
+    /* text-align: center; */
+    /* flex-direction: column;
+    justify-items: center;
+    align-content: space-around; */
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+}
+
+.main_char_name {
+    grid-row: 3/5;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+.main_char_contents {
+    grid-row: 5/8;
+    /* line-height: 3vh; */
+}
+
+.main_char_price_name {
+    grid-row : 9/10;
+    font-weight: bold;
+}
+
+
+.main_char_price {
+    grid-row : 10/11;
+    font-weight: bold;
+    /* font-size: 1em; */
+    /* text-align: left; */
+}
+
+.main_char_btn {
+    grid-row:11/12;
+}
+
+
+.main_char_btn a {
+    display: inline-block;
+    width: 50%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 1.5em;
+    /* vertical-align: b; */
+    
+
+}
+
+
+.main_img1 {
+    /* display: inline-block; */
+    width: 30vw;
+    /* height: auto; */
+    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+    /* margin-bottom: 10%; */
+    margin: 5vh 5vw;
+    /* max-height: max-content; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* object-fit: contain; */
+}
+
+.main_img2 {
+    width: 20vw;
+    /* height: 90%; */
+    /* display: inline-block; */
+    background: url(../../image_folder/pngwing.png) center/contain no-repeat;
+    /* margin-bottom: 10%; */
+    margin: 5vh 5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer>nav {
     height: 35vh;
