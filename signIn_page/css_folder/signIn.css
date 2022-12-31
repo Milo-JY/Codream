@@ -61,9 +61,9 @@ header li>a:hover {
     background-color: rgb(193, 193, 193);
 }
 
-.topicon{
-    width: 4vh;
-    line-height: 2vh;
+/* .topicon{
+    width: 5%;
+    line-height: 5%;
     background-color: black;
     border-radius: 50%;
     position: fixed;
@@ -75,7 +75,8 @@ header li>a:hover {
 }
 .topicon>a{ 
     color: white;
-}
+    
+} */
 
 
 /*===================================================== header =================================================*/
@@ -95,7 +96,7 @@ main a{
 
 .login_logo{
     background-color: antiquewhite;
-    line-height: 5vh;
+    line-height: 3rem;
     margin: 5% 0;
 }
 
@@ -127,8 +128,7 @@ main a,
 }
 
 .welcome{
-    font-size: 1.8rem ;
-    font-weight: bold;
+    font-size: 2rem ;
     text-transform: uppercase;
     margin: 5% 0;
 }
@@ -155,18 +155,21 @@ main a,
 }
 
 .login_button{ 
-    font-size: 1.5rem;
-    color: white;
     background-color:black ;
+    color: white;
+    
+    font-size: 1rem;
+    
     width: 50%;
-    line-height: 3vw;
+    line-height: 2.5rem;
+    
     margin-top: 3%;
+    
     cursor: pointer;
+
+    text-transform: uppercase;
 }
 
-.login_button>span{
-    font-weight: bold;
-}
 .show_psw_container{
     position: relative;
 }
