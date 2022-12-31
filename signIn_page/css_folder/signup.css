@@ -79,19 +79,19 @@ header li>a:hover {
 
 /*===================================================== header =================================================*/
 main{
-    height: 190vh;
+    height: 200vh;
     width: 70%;
     margin: auto;
 }
-main>h2{
+main h2{
     font-size: 1.4rem;
 }
-main>p{
+main p{
     font-size: .8rem;
     margin-top: 1%;
     padding-left: 4%;
 }
-main>a{
+main a{
     color: black;
     text-decoration: underline;
     font-weight: bold;
@@ -100,8 +100,8 @@ main>a{
     /* background-color: #333; */
     /* width: 80%; */
     max-width: 700px;
-    height: 170vh;
-    margin: calc((190vh - 170vh)/2) auto;
+    height: 190vh;
+    margin: calc((200vh - 190vh)/2) auto;
 }
 form{
     text-align: center;
@@ -111,12 +111,10 @@ form>div:not(.create_account){
     text-align: left;
 }
 
-.creat_logo,
-main>h1{
-    font-size: 2rem ;
-    font-weight: lighter;
+.creat_logo{
+    font-size: 1.4rem ;
     text-transform: uppercase;
-    margin-bottom: 3vw;
+    margin-top: 10%;
 }
 
 .go_signin{
@@ -125,7 +123,7 @@ main>h1{
     line-height: 5vh;
     padding: 0 3vw;
     box-sizing: border-box;
-    margin-bottom: 3vh;
+    margin: 5% 0;
 }
 
 .singup_userinfo_label{
@@ -135,7 +133,7 @@ main>h1{
 .singup_userinfo_label::after,
 .userinfo_checkbox>span>a::after,
 .check_main>div>p>span>a::after{
-    content: "*";
+    content: " *";
     color: red;
 }
 
