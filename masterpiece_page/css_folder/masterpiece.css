@@ -40,7 +40,7 @@
     flex: 2;
 }
 
-h1 {
+header h1 {
     height: 100%;
     background: url(../../image_folder/logo_basic.png) center / 100%;
 
