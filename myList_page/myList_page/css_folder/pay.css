@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+/* ===================== */
+/* main */
+
+main{
+    /* height: 80%; */
+
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 30px;
+}
+
+.main_title {
+    display: inline-block;
+    width: 70%;
+    height: 10%;
+    line-height: 10vh;
+    
+    color: white;
+    background-image: url(../../image_folder/main_back.jpeg);
+}
+
+section {
+    display: inline-block;
+    width: 70%;
+    height: 90%;
+    
+    text-align: center;
+    
+    position: relative;
+}
+
+#section_top{
+    display: inline-block;
+    width: 70%;
+    height: 80%;
+    line-height: calc(75vh * .3);
+    
+    float: left;
+    
+    margin-top: 2vh;
+}
+
+#section_top p {
+    line-height: 5vh;
+    text-align: left;
+
+    font-size: 1.5em;
+}
+
+.buy_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.buy_table th {
+    height: 30%;
+    line-height: 3vh;
+
+    border-bottom: 1px solid;
+}
+
+.buy_table td {
+    height: 10vh;
+    line-height: 3vh;
+    
+    text-align: center;
+}
+
+#table_th_img{
+    width: 35%;
+}
+
+#table_th_name{
+    width: 15%;
+}
+
+#table_th_num{
+    width: 10%;
+}
+
+#table_th_total{
+    width: 20%;
+}
+
+#table_th_info{
+    width: 20%;
+}
+
+#table_td_num {
+    width: 50%;
+    text-align: center;
+}
+
+#img_item_buy1 {
+    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;   
+}
+
+/* ===================================== */
+/* section_middle 2.주문고객*/
+
+#section_middle {
+    width: 70%;
+    height: 60vh;
+
+    float: left;
+    
+    border-collapse: collapse;
+    
+    margin-top: 2vh;
+}
+
+#section_middle p {
+    line-height: 5vh;
+
+    text-align: left; 
+    font-size: 1.5em;
+}
+
+#table_middle{
+    width: 100%;
+    height: 50vh;
+}
+
+#table_middle th {
+    width: 30%;
+}
+
+#table_middle td {
+    width: 23.3%;
+}
+
+#table_middle td label {
+    font-size: .8em;
+}
+
+#table_middle td:not(.table_middle_right) {
+    height: .5vh;
+
+    text-align: justify;
+    font-size: 1em;
+}
+
+#table_middle td input {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+#table_input_length {
+    width: 20vw;
+}
+
+#table_middle_delivery a {
+    display: inline-block;
+    width: 10vw;
+    line-height:4vh;
+
+    text-align: center;
+        
+    background-color: #333;
+    color: white;
+}
+
+.table_middle_right {
+    width: 80%;
+
+    text-align: right;
+}
+
+.table_middle_delivery_memo {
+    width: 80%;
+}
+
+/* ==================================== */
+/* section_bottom 3.결제방법 */
+#section_bottom {
+    width: 70%;
+    height: 40vh;
+
+    text-align: center;
+    
+    float: left;
+    
+    margin-top: 2vh;
+}
+
+#section_bottom p {
+    line-height: 5vh;
+    
+    text-align: left; 
+    font-size: 24px;
+}
+
+#section_bottom nav {
+    margin-bottom: 20px;
+}
+
+#section_bottom nav>ul {
+    display: inline-block;
+    width: 100%;
+}
+
+#section_bottom nav>ul>li{
+    width: 30%;
+    line-height: 40px;
+    
+    float: left;
+    
+    background-color: #333;
+    
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+#section_bottom nav>ul>li a {
+    color: white;
+}
+/* =============================== */
+/* aside */
+.aside_etc{
+    display: inline-block;
+    width: 25%;
+    height: 45%;
+
+    position: absolute;
+    
+    right: 0;
+    top: 5vh;
+}
+
+.aside_etc table {
+    width: 100%;
+    height: 40%;
+
+    text-align: right;
+    border-collapse: collapse;
+    
+    margin-top: 3vh;
+}
+
+.aside_table_bold{
+    font-weight: bold;
+}
+
+.aside_etc table td{
+    height: 1vh;
+    
+    text-align: center;
+    font-size: .9em;
+}
+
+.aside_etc .aside_right {
+    text-align: right;
+}
+
+#aside_table_border_bottom {
+    border-bottom: 1px solid;
+}
+
+#aside_table_td_total {
+    font-size: 1.5em;
+}
+
+.aside_etc p:nth-of-type(1) {
+    line-height: 5vh;
+    
+    text-align: center; 
+    font-size: 1.5em;
+}
+
+.aside_etc p:nth-of-type(2) {
+    text-align: center;
+    font-size: .7em;
+}
+
+.aside_buy {
+    width: 25%;
+
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+.aside_buy a {
+    display: inline-block;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1.5em;
+    vertical-align: top;
+    
+    background-color: red;
+    color: white;
+}
+
+/* =============================== */
+/* footer */
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}
