@@ -32,7 +32,11 @@ header>div {
 
 header>div a {
     display: inline-block;
+<<<<<<< HEAD
     background: url(../../image_folder/logo_basic.png) center/cover;
+=======
+    background: url(../image_folder/logo_basic.png) center/cover;
+>>>>>>> 5366fa68651c7768715ae5262e32ea32b60198e3
     width: 18vw;
     height: 7vh;
     margin: calc((10vh - 7vh)/2) auto;
@@ -60,6 +64,7 @@ header li>a:hover {
     background-color: rgb(193, 193, 193);
 }
 
+<<<<<<< HEAD
 /* ===================================================== header^*/
 /* main */
 
@@ -153,6 +158,180 @@ header li>a:hover {
 
 /* 
 =====================================================
+=======
+/* 
+===================================================== header^
+*/
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.masterpiece_topBanner {
+    height: 30vw;
+
+    background-color: blue;
+}
+
+.Banner_img {
+    height: 60%;
+
+    background: url(../image_folder/main_banner.jpeg) 0 / 100%;
+}
+
+h2 {
+    height: 25%;
+
+    background-color: violet;
+}
+
+.sorting_nav {
+    height: 15%;
+
+    background-color: tomato;
+}
+
+/* 
+==========
+*/
+
+.materpeice_titlePlusItemList {
+    height: 150vh;
+    /* margin-top: 10%; */
+}
+
+.itemsAllWrap {
+    box-sizing: border-box;
+    height: 95%;
+}
+
+.item_rowOne{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    height: 50%;
+
+    border: 2px solid;
+}
+
+.itemOne {
+    /* display: inline-block; */
+    position: absolute;
+    width: 40%;
+    height: 80%;
+
+    top: 10%;
+    
+    background-color: aquamarine;
+}
+
+/* .itemOne::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#0008;
+    box-sizing: border-box;
+    border: 1px solid;
+} */
+
+.itemOne.first {
+    left: 5%;
+}
+
+.itemOne.second {
+    right: 5%;
+}
+
+.itemOne_detail {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 30%;
+
+    bottom: 0;
+}
+
+.itemOne_detail>a {
+    display: inline-block;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+
+========*/
+
+.pageNumUl {
+    text-align: center;
+    height: 5%;
+
+    background-color: darkgoldenrod;
+}
+
+.pageNumUl>li {
+    display: inline-block;
+    line-height: calc(150vh * 0.05);
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* 
+===================================================== main_item^
+*/
+
+aside>div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2vw;
+    height: 100vh;
+    border: 2px solid black;
+
+    z-index: 2;
+}
+
+aside>div:hover {
+    display: none;
+    z-index: 0;
+}
+
+aside>div:hover+nav {
+    display: inline-block;
+}
+
+aside>nav:hover {
+    z-index: 5;
+}
+
+aside>nav {
+    display: none;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+
+    width: 30vw;
+    height: 100vh;
+
+    z-index: 1;
+}
+
+aside>nav:hover {
+    display: inline-block;
+}
+
+aside>nav>ul {
+    margin-top: 10vh;
+}
+
+/* 
+===================================================== main_aside^
+>>>>>>> 5366fa68651c7768715ae5262e32ea32b60198e3
 */
 
 footer {

@@ -59,9 +59,11 @@ header li>a:hover {
 }
 
 main {
-    background: url(../image_folder/main_back.jpeg) center/cover;
-    background-attachment: fixed;
+    /* background: url(../image_folder/main_back.jpeg) center/cover; */
+    /* background-attachment: fixed; */
+    /* opacity: .3; */
 }
+
 
 #main_banner {
     height: 55vh;
@@ -70,14 +72,10 @@ main {
 
 #main_items {
     text-align: center;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     height: 55vh;
-}
-
-#main_advertise {
-    margin-top: 15vh;
-    height: 40vh;
-    background-color: whitesmoke
+    background: url(../image_folder/main_back.jpeg) center/cover;
+    background-attachment: fixed;
 }
 
 .main_items_goods {
@@ -88,6 +86,100 @@ main {
     background: url(../image_folder/watch_test01.webp) center/100%;
     border: 2px solid black;
 }
+/* =================================main_advertise */
+
+#main_advertise {
+    height: 70vh; 
+    position: relative;
+}
+
+#main_advertise::after {
+    content: "";
+    height: 70vh;
+    width: 100%;
+
+    background:url(../../image_folder/main_back.jpeg) 0/100% no-repeat;
+    opacity: .2;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#main_advertise>div {
+    display: grid;
+    width: 100%;
+    height: calc(70vh*.9);
+    
+    grid-template-columns:3fr 3fr 2fr;
+    justify-content: center;
+    
+    color: black;
+}
+
+.main_char {
+    display: grid;
+    width: 30vw;
+    height: 70vh;
+
+    grid-template-rows: repeat(13,1fr);
+    justify-content: center;
+    
+    margin-left: 10%;
+}
+
+.main_char_name {
+    grid-row: 3/5;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main_char_contents {
+    grid-row: 5/8;
+}
+
+.main_char_price_name {
+    grid-row: 9/10;
+    font-weight: bold;
+}
+
+.main_char_price {
+    grid-row : 10/11;
+    font-weight: bold;
+}
+
+.main_char_btn {
+    grid-row: 11/12;
+}
+
+.main_char_btn a {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    line-height: 5vh;
+
+    background-color: black;
+    color: white;
+    
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.main_img1 {
+    background: url(../../image_folder/watch01.png) center/contain no-repeat; 
+    margin: 5vh 5vw;
+    
+}
+
+.main_img2 {
+    background: url(../../image_folder/pngwing.png) center/contain no-repeat;
+    margin: 5vh 5vw;
+}
+
+/* ==================================== */
+/* footer */
 
 footer>nav {
     height: 35vh;

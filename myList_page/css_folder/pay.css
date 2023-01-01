@@ -62,41 +62,49 @@ header li>a:hover {
 /* main */
 
 main{
-    height: 80%;
+    /* height: 80%; */
+
     text-align: center;
+    
     margin: auto;
     margin-top: 30px;
-    
 }
+
 .main_title {
-    width: 70%;
-    line-height: 10vh;
-    height: 10%;
     display: inline-block;
+    width: 70%;
+    height: 10%;
+    line-height: 10vh;
+    
     color: white;
     background-image: url(../../image_folder/main_back.jpeg);
 }
 
 section {
-    text-align: center;
-    width: 70%;
     display: inline-block;
+    width: 70%;
     height: 90%;
+    
+    text-align: center;
+    
     position: relative;
 }
 
 #section_top{
+    display: inline-block;
     width: 70%;
     height: 80%;
     line-height: calc(75vh * .3);
-    display: inline-block;
+    
     float: left;
+    
     margin-top: 2vh;
 }
 
 #section_top p {
     line-height: 5vh;
     text-align: left;
+
     font-size: 1.5em;
 }
 
@@ -106,14 +114,16 @@ section {
 }
 
 .buy_table th {
-    border-bottom: 1px solid;
     height: 30%;
     line-height: 3vh;
+
+    border-bottom: 1px solid;
 }
 
 .buy_table td {
-    line-height: 3vh;
     height: 10vh;
+    line-height: 3vh;
+    
     text-align: center;
 }
 
@@ -137,15 +147,6 @@ section {
     width: 20%;
 }
 
-/* #table_td_name {
-    overflow: hidden;
-}
-
-#table_td_name:hover{
-    overflow: visible;
-    width: 25%;
-} */
-
 #table_td_num {
     width: 50%;
     text-align: center;
@@ -160,32 +161,44 @@ section {
 
 #section_middle {
     width: 70%;
-    float: left;
-    margin-top: 2vh;
     height: 60vh;
+
+    float: left;
+    
     border-collapse: collapse;
+    
+    margin-top: 2vh;
 }
 
 #section_middle p {
+    line-height: 5vh;
+
     text-align: left; 
     font-size: 1.5em;
-    line-height: 5vh;
 }
 
 #table_middle{
-    height: 50vh;
     width: 100%;
+    height: 50vh;
 }
 
 #table_middle th {
-    width: 20%;
-    font-size: .8em;
+    width: 30%;
 }
 
 #table_middle td {
-    height: 1vh;
-    font-size: .5em;
+    width: 23.3%;
+}
+
+#table_middle td label {
+    font-size: .8em;
+}
+
+#table_middle td:not(.table_middle_right) {
+    height: .5vh;
+
     text-align: justify;
+    font-size: 1em;
 }
 
 #table_middle td input {
@@ -194,20 +207,24 @@ section {
 }
 
 #table_input_length {
-    width: 25vw;
+    width: 20vw;
 }
-
-
-
 
 #table_middle_delivery a {
     display: inline-block;
     width: 10vw;
     line-height:4vh;
+
     text-align: center;
-    text-decoration: none;
+        
     background-color: #333;
     color: white;
+}
+
+.table_middle_right {
+    width: 80%;
+
+    text-align: right;
 }
 
 .table_middle_delivery_memo {
@@ -217,18 +234,21 @@ section {
 /* ==================================== */
 /* section_bottom 3.결제방법 */
 #section_bottom {
-    text-align: center;
     width: 70%;
     height: 40vh;
+
+    text-align: center;
+    
     float: left;
+    
     margin-top: 2vh;
-    font-size: .8em;
 }
 
 #section_bottom p {
+    line-height: 5vh;
+    
     text-align: left; 
     font-size: 24px;
-    line-height: 5vh;
 }
 
 #section_bottom nav {
@@ -241,15 +261,15 @@ section {
 }
 
 #section_bottom nav>ul>li{
-    background-color: #333;
-    float: left;
-    margin-top: 2vh;
-    margin-left: 1vw;
     width: 30%;
     line-height: 40px;
-    color: white;
-    box-sizing: border-box;
-    padding: 0 20px;
+    
+    float: left;
+    
+    background-color: #333;
+    
+    margin-top: 2vh;
+    margin-left: 1vw;
 }
 
 #section_bottom nav>ul>li a {
@@ -257,25 +277,25 @@ section {
 }
 /* =============================== */
 /* aside */
-
-
 .aside_etc{
+    display: inline-block;
     width: 25%;
     height: 45%;
+
     position: absolute;
-    /* background-color: aqua; */
+    
     right: 0;
     top: 5vh;
-    display: inline-block;
-    border: 1px sodlid;
 }
 
 .aside_etc table {
-    height: 40%;
     width: 100%;
+    height: 40%;
+
     text-align: right;
-    margin-top: 3vh;
     border-collapse: collapse;
+    
+    margin-top: 3vh;
 }
 
 .aside_table_bold{
@@ -284,6 +304,7 @@ section {
 
 .aside_etc table td{
     height: 1vh;
+    
     text-align: center;
     font-size: .9em;
 }
@@ -291,7 +312,6 @@ section {
 .aside_etc .aside_right {
     text-align: right;
 }
-
 
 #aside_table_border_bottom {
     border-bottom: 1px solid;
@@ -302,33 +322,39 @@ section {
 }
 
 .aside_etc p:nth-of-type(1) {
+    line-height: 5vh;
+    
     text-align: center; 
     font-size: 1.5em;
-    line-height: 5vh;
 }
 
 .aside_etc p:nth-of-type(2) {
+    text-align: center;
     font-size: .7em;
-    text-align: right;
 }
 
 .aside_buy {
     width: 25%;
+
     position: absolute;
     right: 0;
     top: 30%;
 }
 
 .aside_buy a {
+    display: inline-block;
     width: 100%;
-    background-color: red;
-    color: white;
     height: 5vh;
     line-height: 5vh;
-    text-decoration: none;
+
     text-align: center;
+    text-decoration: none;
+
+    font-size: 1.5em;
     vertical-align: top;
-    display: inline-block;
+    
+    background-color: red;
+    color: white;
 }
 
 /* =============================== */
