@@ -30,7 +30,7 @@ header>div {
 
 header>div a {
     display: inline-block;
-    background: url(../image_folder/logo_basic.png) center/cover;
+    background: url(../../image_folder/logo_basic.png) center/cover;
     width: 18vw;
     height: 7vh;
     margin: calc((10vh - 7vh)/2) auto;
