@@ -61,20 +61,32 @@ header li>a:hover {
     background-color: rgb(193, 193, 193);
 }
 
-.topicon{
+/* .topicon{
+    width: 5%;
+    line-height: 5%;
+    background-color: black;
+    border-radius: 50%;
     position: fixed;
     right: 5vh;
     bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+.topicon>a{ 
+    color: white;
+    
+} */
+
 
 /*===================================================== header =================================================*/
 main{
-    height: 100vh;
+    min-height: 80vh;
     width: 70%;
-    color: black;
+
     margin: auto;
     text-align: center;
-    position: relative;
+
 }
 
 main a{
@@ -83,14 +95,15 @@ main a{
 
 .login_logo{
     background-color: antiquewhite;
-    line-height: 5vh;
+    width: 100%;
+    line-height: 2rem;
     margin: 5% 0;
 }
 
 
 .find_psw a,
 .sign_up>div>span a{
-    font-size: 1vw;
+    font-size: 1rem;
     text-decoration: underline;
 }
 
@@ -101,22 +114,21 @@ main a,
 
 .sign_in{
     color:black;
-    width: 70%;
-    position: absolute;
-    top: 50%;
+    max-width: 630px;
+    margin-top: 10%;
+
+    position: relative;
     left: 50%;
-    transform: translate(-50% , -50%);
-    /* background-color: #333 */
+    transform: translateX(-50%);
 }
 .sign_up{
-    font-size: 1vw;
+    font-size: 1rem;
     line-height: 3vh;
     margin: 4% 0 4% ;
 }
 
 .welcome{
-    font-size: 1.8vw ;
-    font-weight: bold;
+    font-size: 2rem ;
     text-transform: uppercase;
     margin: 5% 0;
 }
@@ -126,7 +138,7 @@ main a,
 }
 
 .login_user_info_text{
-    font-size: 1vw;
+    font-size: 1rem;
     width: 100%;
     line-height: 5vh;
     border: none;
@@ -143,33 +155,34 @@ main a,
 }
 
 .login_button{ 
-    font-size: 1.5vw;
-    color: white;
     background-color:black ;
+    color: white;
+    
+    font-size: 1rem;
+    
     width: 50%;
-    line-height: 3vw;
-    margin-top: 2%;
+    line-height: 2.5rem;
+    
+    margin-top: 3%;
+    
     cursor: pointer;
+
+    text-transform: uppercase;
 }
 
-.login_button>span{
-    font-weight: bold;
-}
 .show_psw_container{
     position: relative;
 }
 .show_psw{
-    font-size: .5vw;
+    font-size: 1rem;
     background: none;
     position: absolute;
-    top: 25%;
-    transform: translateY(-25%);
+    bottom: 50%;
+    transform: translateY(-50%);
     right: 2%;
     border: none;
-    font-weight: bold;
     cursor: pointer;
 }
-
 /*==================================================================================*/
 
 footer>nav {

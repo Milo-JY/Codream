@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    z-index: 6;
+    position: relative;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+/* 
+===================================================== header^
+*/
+main{
+    width: 70%;
+    max-height: 250vh;
+
+    margin: auto;
+    display: grid;
+
+    grid-template: .25fr .5fr .5fr repeat(3, 4fr) .25fr / repeat(2, 1fr);
+
+}
+
+
+main>h1{
+    margin: 5% 0;
+    grid-area: 3/1/3/-1;
+    
+}
+
+main a{
+    color: black;
+}
+
+.main_header{
+    grid-area: 2/1/2/-1;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.main_header ul{
+    display: grid;
+    
+    grid-template-columns: repeat(5, auto);
+}
+
+.main_header hr{
+    margin:  2% 0;
+}
+
+.main_header li{
+    display: inline-block;
+    
+    list-style: none;
+    text-decoration: none;
+}
+
+.header_name::before{   
+    content: "/ ";
+}
+
+.notice_name{
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.terms_notice a{
+    border-bottom: 2px solid gray;
+    padding-bottom: 5%;
+}
+
+.notice_name a:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 5%;
+}
+
+/*========================================================================================*/
+.main_notice{
+    display: grid;
+
+    grid-area: 4/1/-2/-1;
+    grid-template: repeat(2, 1fr)  /repeat(2, 1fr);
+    gap: 5%;
+}
+.main_notice .left_notice{
+    grid-area: 1/1/-1/2;
+}
+.main_notice .right_notice{
+    grid-area: 1/2/-1/2;
+}
+
+
+.main_notice>div>div{
+    margin-top: 5%;
+    height: 18%;
+}
+.main_notice>div p {
+    margin-top: 5%;
+    
+    height: 75%;
+    
+    text-align: justify ;
+    word-break: break-all;
+    overflow: auto;
+}
+
+
+
+/* 
+=====================================================^
+*/
+
+footer {
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    z-index: 3;
+}
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}
+
+/* 
+===================================================== footer^
+*/

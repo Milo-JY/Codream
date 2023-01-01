@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 10vh;
+    z-index: 6;
+    position: relative;
+}
+
+header>nav {
+    display: inline-block;
+    background-color: white;
+    height: 10vh;
+    width: 35vw;
+    line-height: 10vh;
+}
+
+#headerLeft_nav {
+    float: left;
+}
+
+header>div {
+    display: inline-block;
+    height: 7vh;
+}
+
+header>div a {
+    display: inline-block;
+    background: url(../../image_folder/logo_basic.png) center/cover;
+    width: 18vw;
+    height: 7vh;
+    margin: calc((10vh - 7vh)/2) auto;
+}
+
+#headerRight_nav {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100px;
+    line-height: 5vh;
+    color: black;
+    font-size: 18px;
+}
+
+header li>a:hover {
+    font-weight: bold;
+    background-color: rgb(193, 193, 193);
+}
+
+/*===================================================== header =================================================*/
+main{
+    height: 80vh;
+    width: 70%;
+    
+    margin: auto;
+}
+
+main p{
+    margin-top: 5%;
+}
+
+.findpw_main>hr{
+    border: 2px solid red;
+    margin: auto;
+    width: 5%;
+    margin-top: 5%;
+}
+.findpw_main{
+    max-width: 700px;
+    width: 80%;
+    min-height: 70%;
+
+    text-align: center;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% ,-50%);
+}
+
+.findpw_h1>h1{
+    font-size: 2rem;
+}
+
+.findpw_main>form{
+    margin-top: 10%;
+}
+
+.user_emailaddress>label>p{
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+#user_address{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    width: 90%;
+    height: 30%;
+
+    border: none;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+
+    padding-top: 3%;
+    
+}
+
+#user_address:focus{
+    outline: none;
+}
+
+.find_pswbutton{
+
+    background-color: black;
+    color: white;
+
+    width: 50%;
+    line-height: 2.5rem;
+    
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.findpw_button{
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    box-sizing: border-box;
+}
+.send_button{
+    margin-top: 10%;
+}
+
+.login_button{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    
+    border: 1px solid ;
+
+    width: 50%;
+    line-height: 2.5rem;
+    
+    margin-top: 5%;
+}
+
+
+/*====================================== footer ============================================*/
+
+footer>nav {
+    height: 35vh;
+    background-color: #333;
+}
+
+footer>div {
+    height: 20vh;
+    background-color: #444;
+}

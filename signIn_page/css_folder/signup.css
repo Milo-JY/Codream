@@ -62,19 +62,34 @@ header li>a:hover {
 }
 
 .topicon{
+    width: 4vh;
+    line-height: 2vh;
+    background-color: black;
+    border-radius: 50%;
     position: fixed;
     right: 5vh;
     bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topicon>a{ 
+    color: white;
 }
 
 /*===================================================== header =================================================*/
 main{
-    height: 170vh;
+    min-height: 200vh;
     width: 70%;
     margin: auto;
 }
-h2{
+main h2{
     font-size: 1.4rem;
+}
+main p{
+    font-size: .8rem;
+    margin-top: 1%;
+    padding-left: 4%;
 }
 main a{
     color: black;
@@ -82,10 +97,10 @@ main a{
     font-weight: bold;
 }
 #singup_main_div{
-    /* background-color: #333; */
-    width: 80%;
-    height: 150vh;
-    margin: calc((170vh - 150vh)/2) auto;
+    max-width: 700px;
+    min-height: 100%;
+
+    margin: calc((200vh - 190vh)/2) auto;
 }
 form{
     text-align: center;
@@ -95,12 +110,10 @@ form>div:not(.create_account){
     text-align: left;
 }
 
-.creat_logo,
-h1{
-    font-size: 2rem ;
-    font-weight: lighter;
+.creat_logo{
+    font-size: 1.4rem ;
     text-transform: uppercase;
-    margin-bottom: 3vw;
+    margin-top: 10%;
 }
 
 .go_signin{
@@ -109,15 +122,17 @@ h1{
     line-height: 5vh;
     padding: 0 3vw;
     box-sizing: border-box;
-    margin-bottom: 3vh;
+    margin: 5% 0;
 }
 
 .singup_userinfo_label{
     text-transform: capitalize;
 }
 
-.singup_userinfo_label::after {
-    content: "*";
+.singup_userinfo_label::after,
+.userinfo_checkbox>span>a::after,
+.check_main>div>p>span>a::after{
+    content: " *";
     color: red;
 }
 
@@ -126,6 +141,7 @@ h1{
     height: 100vh;
     margin-top:5%;
     position: relative;
+    font-size: 1.4rem;
 }
 
 .signup_info,
@@ -134,10 +150,12 @@ h1{
     position: absolute;
     height: 15%;
 }
+
 .signup_info{
     width: 50%;
     display: inline-block;
 }
+
 .signup_info_full,
 .signup_h2{
     width: 100%;
@@ -145,13 +163,14 @@ h1{
 
 .signup_input,
 .signup_select{
-    display: block;
-    font-size: 1.5rem;
+    
+    font-size: 1.2rem;
     width: 98%;
     height: 30%;
     border: none;
     border-bottom: 1px solid;
-    margin-top: 2%;
+    
+    padding-top: 3%;
     box-sizing: border-box;
 }
 
@@ -161,64 +180,89 @@ h1{
 }
 
 .signup_h2{
-    height: 5%;
-    /* line-height: 10vh; */
-    /* background-color: antiquewhite; */
-}
-.create_account{
-    text-transform: uppercase;
-    height: 7vh;
-    border: none;
-    cursor: pointer;
-    background-color: black;
-    padding: 0 1vh;
-    box-sizing: border-box;
-}
-.create_account>span{
-    color: white;
-    font-weight: bold;
+    height: 8%; 
 }
 
 .first_nmae{
     left: 0;
     top: 15%;
 }
+
 .last_name{
     right: 0;
     top: 15%;
 }
+
 .country{
     bottom: 0;
     top: calc(15% * 2);
 }
+
 .mobile_phone_number{
     right: 0;
     top: calc(15% * 2);
 }
+
 .signup_h2{
     bottom: calc(15%*3);
 }
+
 .email{
     bottom: calc(15% * 2);
 }
+
 .password{
     bottom: 15%;
 }
+
 .confirm_password{
     bottom: 0;
 }
+
 .show_psw{
-    font-size: .5rem;
+    font-size: 1.2rem;
     background: none;
     position: absolute;
-    top: 40%;
-    /* transform: translateY(-40%); */
+    bottom: 50%;
+    transform: translateY(-50%);
     right: 3%;
     border: none;
-    font-weight: bold;
     cursor: pointer;
 }
 
+.check_main{
+    font-size: 1rem;
+    height: 30vh;
+    width: 100%;
+
+    text-align: justify;
+    word-break: break-all;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+
+}
+
+.create_account{
+    text-transform: uppercase;
+    height: 7vh;
+    
+    cursor: pointer;
+    background-color: black;
+    padding: 0 1vh;
+    box-sizing: border-box;
+
+    position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+    
+}
+.create_account>span{
+    color: white;
+    font-weight: bold;
+}
 
 /*====================================== footer ============================================*/
 
