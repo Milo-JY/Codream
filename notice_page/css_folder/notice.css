@@ -32,7 +32,7 @@ header>div {
 
 header>div a {
     display: inline-block;
-    background: url(../image_folder/logo_basic.png) center/cover;
+    background: url(../../image_folder/logo_basic.png) center/cover;
     width: 18vw;
     height: 7vh;
     margin: calc((10vh - 7vh)/2) auto;
@@ -60,178 +60,99 @@ header li>a:hover {
     background-color: rgb(193, 193, 193);
 }
 
-/* 
-===================================================== header^
-*/
+/* ===================================================== header^*/
+/* main */
 
-main {
+/* 메인 헤드 ================================*/
+
+.container1 {
     width: 70%;
-    margin: 0 auto;
-}
+    height: 60vh;
+    margin: auto;
 
-.masterpiece_topBanner {
-    height: 30vw;
-
-    background-color: blue;
-}
-
-.Banner_img {
-    height: 60%;
-
-    background: url(../image_folder/main_banner.jpeg) 0 / 100%;
-}
-
-h2 {
-    height: 25%;
-
-    background-color: violet;
-}
-
-.sorting_nav {
-    height: 15%;
-
-    background-color: tomato;
-}
-
-/* 
-==========
-*/
-
-.materpeice_titlePlusItemList {
-    height: 150vh;
-    /* margin-top: 10%; */
-}
-
-.itemsAllWrap {
-    box-sizing: border-box;
-    height: 95%;
-}
-
-.item_rowOne{
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-    height: 50%;
-
-    border: 2px solid;
-}
-
-.itemOne {
-    /* display: inline-block; */
-    position: absolute;
-    width: 40%;
-    height: 80%;
-
-    top: 10%;
+    font-size: 1.5rem;
     
-    background-color: aquamarine;
+    display: grid;
+    grid-template: 1fr / .1fr repeat(4, 2fr) .1fr;
 }
 
-/* .itemOne::after {
-    content: "";
-    display: block;
+.container1>div {
+    width: 100%;
+    height: 80%;
+    background-color: whitesmoke;
+    /* box-sizing: border-box;
+    border: 1px solid; */
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr repeat(2, .5fr);
+}
+
+.container1 a {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* 메인헤드 이미지=============================================== */
+
+.serviceImages {
     width: 100%;
     height: 100%;
-    background-color:#0008;
-    box-sizing: border-box;
-    border: 1px solid;
-} */
-
-.itemOne.first {
-    left: 5%;
+    background: url(../image_folder/service_repair.webp) no-repeat center/100% 100%;
 }
 
-.itemOne.second {
-    right: 5%;
-}
+/* ================================메인 헤드^ */
+/* 메인 바디================================= */
 
-.itemOne_detail {
-    position: absolute;
-    background-color: red;
-    width: 100%;
-    height: 30%;
-
-    bottom: 0;
-}
-
-.itemOne_detail>a {
-    display: inline-block;
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-}
-
-/* 
-
-========*/
-
-.pageNumUl {
+.container2 {
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
     text-align: center;
-    height: 5%;
 
-    background-color: darkgoldenrod;
+    display: grid;
+    grid-template: 1fr 1fr 3fr 1fr / .5fr 1fr .5fr;
 }
 
-.pageNumUl>li {
-    display: inline-block;
-    line-height: calc(150vh * 0.05);
-    font-size: 25px;
-    margin: 0 10px;
+.container2>div,
+.container2>h3 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 
-===================================================== main_item^
-*/
-
-aside>div {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 2vw;
-    height: 100vh;
-    border: 2px solid black;
-
-    z-index: 2;
+.question_title {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
-aside>div:hover {
-    display: none;
-    z-index: 0;
+.question_box {
+    grid-area: 3 / 2 / 4 / 3;
 }
 
-aside>div:hover+nav {
-    display: inline-block;
+.question_box {
+    width: 100%;
+
 }
 
-aside>nav:hover {
-    z-index: 5;
+.question {
+    background-color: burlywood;
 }
 
-aside>nav {
-    display: none;
-    border: 2px solid black;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: antiquewhite;
-
-    width: 30vw;
-    height: 100vh;
-
-    z-index: 1;
-}
-
-aside>nav:hover {
-    display: inline-block;
-}
-
-aside>nav>ul {
-    margin-top: 10vh;
+.answer {
+    background-color: #444;
 }
 
 /* 
-===================================================== main_aside^
+=====================================================
 */
 
 footer {
