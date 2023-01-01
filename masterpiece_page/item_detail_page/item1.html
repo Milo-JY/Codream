@@ -11,30 +11,60 @@
 </head>
 <body>
     <header>
-        <nav id="headerLeft_nav">
-            <ul>
-                <li class="header_menu_Left_li"><a href="../../brand_page/brand.html">Brand</a></li>
-                <li class="header_menu_Left_li"><a href="../../masterpiece_page/masterpiece.html">Masterpiece</a></li>
-                <li class="header_menu_Left_li"><a href="../../brandNew_page/brandNew.html">Brand new</a></li>
-                <li class="header_menu_Left_li"><a href="../../notice_page/notice.html">Notice</a></li>
-            </ul>
-        </nav>
-        <div id="header_logo">
-            <h1>
-                <a href="../../index.html"></a>
-            </h1>
-        </div>
-        <nav id="headerRight_nav">
-            <ul>
-                <li class="header_menu_Right_li"><a href="../../signIn_page/signIn.html">Sign in</a></li>
-                <li class="header_menu_Right_li"><a href="../../myList_page/myList.html">My list</a></li>
-                <li class="header_menu_Right_li"><a href="../../language_page/language.html">Language</a></li>
-                <li class="header_menu_Right_li"><a href="../../search_page/search.html">Search</a></li>
-            </ul>
+        <nav class="headerBigNav">
+            <div class="menuWrap left">
+                <ul class="headerMainUl leftMainUl">
+                    <li class="mainBtnLi leftMainLi iconLi"><a href="#" class="iconBtn"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../../brand_page/brand.html" class="non_iconBtn"> Our brand</a></li>
+                    <li class="mainBtnLi leftMainLi non_iconLi"><a class="non_iconBtn">Masterpiece</a>
+                        <ul>
+                            <li class="hoverLi num1">
+                                <a href="../masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
+                            </li>
+                            <li class="hoverLi num2">
+                                <a href="" class="hover_a hoverMenu metalBtn">Metal</a>
+                            </li>
+                            <li class="hoverLi num3">
+                                <a href="" class="hover_a hoverMenu leatherBtn">Leather</a>
+                            </li>
+                            <li class="hoverLi num4">
+                                <a href="" class="hover_a hoverMenu woodBtn">Wood</a>
+                            </li>
+                            <li class="hoverLi num5">
+                                <a href="" class="hover_a hoverMenu accBtn">ACC</a>
+                            </li>
+                            <li class="hoverLi num6">
+                                <div class="hover_div rightPicAndScript">dis
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../../brandNew_page/brandNew.html" class="non_iconBtn">Brand new</a></li>
+                </ul>
+            </div>
+            <div class="menuWrap logo">
+                <a href="../../index.html">
+                    <h1></h1>
+                </a>
+            </div>
+            <div class="menuWrap right">
+                <ul class="headerMainUl rightMainUl">
+                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../../notice_page/notice.html" class="non_iconBtn">Notice</a></li>
+                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../../myList_page/myList.html" class="non_iconBtn">My list</a></li>
+                    <li class="mainBtnLi rightMainLi iconLi"><a href="../../signIn_page/signIn.html" class="iconBtn"><i class="fa-sharp fa-solid fa-right-to-bracket fa-2x"></i></a></li>
+                    <li class="mainBtnLi rightMainLi iconLi"><a href="../../search_page/search.html" class="iconBtn"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section>
+
+            <div class="main_banner main_first_div">
+
+            </div>
             <div class="div_underSection underSectiontTop">
 
             </div>
@@ -42,10 +72,59 @@
 
             </div>
             <div class="div_underSection item_discription">
-
+                <div class="inner_dis_all inner_dis_first">
+                    <div>
+                        <p>Item name : </p>
+                        <p>Price : </p>
+                        <p>order : </p>
+                        <p>Material : </p>
+                    </div>
+                    <div>
+                        <p>Giant mans's step</p>
+                        <p>130,000,000 Won</p>
+                        <p>Available</p>
+                        <p>Metal</p>
+                    </div>
+                </div>
+                <div class="inner_dis_all inner_dis_second">
+                    <div>
+                        <p>Item option</p>
+                        <p>Delivery method</p>
+                    </div>
+                    <div>
+                        <form id="item_option" action="#">
+                            <select name="item_option">
+                                <option value="basic">Basic</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="premium">Premium</option>
+                                <option value="royal">Royal</option>
+                            </select>
+                        </form>
+                        <form id="item_option" action="#">
+                            <select name="delivery_method">
+                                <option value="airDelivery">Air delivery</option>
+                                <option value="directPickUp">Direct pick-up</option>
+                                <option value="premium">Premium service</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="inner_dis_all inner_dis_third">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia veniam adipisci id quo cupiditate, voluptatibus ipsa nobis eos sunt sed molestiae libero quaerat, recusandae cumque pariatur ut totam excepturi?
+                        Explicabo voluptatum maiores atque, quibusdam earum
+                    </p>
+                </div>
+                <div class="inner_dis_all inner_dis_btn">
+                    <a href="../../myList_page/pay.html" type="submit" form="item_option">Buy now</a>
+                    <a href="../../myList_page/myList.html" type="submit" form="item_option">My list</a>
+                </div>
             </div>
             <div class="div_underSection item_main">
-
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+                <div class="fourth"></div>
             </div>
             <div class="div_underSection underSectiontBottom">
 
@@ -53,11 +132,17 @@
         </section>
     </main>
     <footer>
-        <nav>
-            푸터 내비게이션
+        <nav class="under_footer topLeft">
+            
         </nav>
-        <div>
-            푸터 약관 등 세부사항
+        <div class="under_footer topRight">
+            
+        </div>
+        <div class="under_footer bottomLeft">
+
+        </div>
+        <div class="under_footer bottomRight">
+
         </div>
     </footer>
 </body>
