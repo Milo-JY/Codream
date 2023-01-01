@@ -242,6 +242,8 @@ form>div:not(.create_account){
     flex-flow: row wrap;
     align-content: space-around;
 
+    position: relative;
+
 }
 
 .create_account{
@@ -253,10 +255,10 @@ form>div:not(.create_account){
     padding: 0 1vh;
     box-sizing: border-box;
 
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: 25%;
-    transform: translate(-50%, -25%);
+    bottom: -25%;
+    transform: translate(-50%, 25%);
     
 }
 .create_account>span{
