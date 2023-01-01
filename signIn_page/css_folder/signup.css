@@ -79,7 +79,7 @@ header li>a:hover {
 
 /*===================================================== header =================================================*/
 main{
-    height: 200vh;
+    min-height: 200vh;
     width: 70%;
     margin: auto;
 }
@@ -97,10 +97,9 @@ main a{
     font-weight: bold;
 }
 #singup_main_div{
-    /* background-color: #333; */
-    /* width: 80%; */
     max-width: 700px;
-    height: 190vh;
+    min-height: 100%;
+
     margin: calc((200vh - 190vh)/2) auto;
 }
 form{
@@ -142,6 +141,7 @@ form>div:not(.create_account){
     height: 100vh;
     margin-top:5%;
     position: relative;
+    font-size: 1.4rem;
 }
 
 .signup_info,
@@ -150,10 +150,12 @@ form>div:not(.create_account){
     position: absolute;
     height: 15%;
 }
+
 .signup_info{
     width: 50%;
     display: inline-block;
 }
+
 .signup_info_full,
 .signup_h2{
     width: 100%;
@@ -161,8 +163,8 @@ form>div:not(.create_account){
 
 .signup_input,
 .signup_select{
-    display: block;
-    font-size: 1.5rem;
+    
+    font-size: 1.2rem;
     width: 98%;
     height: 30%;
     border: none;
@@ -178,52 +180,45 @@ form>div:not(.create_account){
 }
 
 .signup_h2{
-    height: 5%;
-    /* line-height: 10vh; */
-    /* background-color: antiquewhite; */
-}
-.create_account{
-    text-transform: uppercase;
-    height: 7vh;
-    border: none;
-    cursor: pointer;
-    background-color: black;
-    padding: 0 1vh;
-    box-sizing: border-box;
-}
-.create_account>span{
-    color: white;
-    font-weight: bold;
+    height: 8%; 
 }
 
 .first_nmae{
     left: 0;
     top: 15%;
 }
+
 .last_name{
     right: 0;
     top: 15%;
 }
+
 .country{
     bottom: 0;
     top: calc(15% * 2);
 }
+
 .mobile_phone_number{
     right: 0;
     top: calc(15% * 2);
 }
+
 .signup_h2{
     bottom: calc(15%*3);
 }
+
 .email{
     bottom: calc(15% * 2);
 }
+
 .password{
     bottom: 15%;
 }
+
 .confirm_password{
     bottom: 0;
 }
+
 .show_psw{
     font-size: 1.2rem;
     background: none;
@@ -237,13 +232,37 @@ form>div:not(.create_account){
 
 .check_main{
     font-size: 1rem;
-    height: 20vh;
-    margin-bottom: 10%;
+    height: 30vh;
+    width: 100%;
+
+    text-align: justify;
+    word-break: break-all;
+
     display: flex;
     flex-flow: row wrap;
-    align-content: space-between;
+    align-content: space-around;
+
 }
 
+.create_account{
+    text-transform: uppercase;
+    height: 7vh;
+    
+    cursor: pointer;
+    background-color: black;
+    padding: 0 1vh;
+    box-sizing: border-box;
+
+    position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+    
+}
+.create_account>span{
+    color: white;
+    font-weight: bold;
+}
 
 /*====================================== footer ============================================*/
 

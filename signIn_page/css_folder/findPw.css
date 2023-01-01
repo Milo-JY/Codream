@@ -65,6 +65,7 @@ header li>a:hover {
 main{
     height: 80vh;
     width: 70%;
+    
     margin: auto;
 }
 
@@ -81,7 +82,7 @@ main p{
 .findpw_main{
     max-width: 700px;
     width: 80%;
-    height: 70%;
+    min-height: 70%;
 
     text-align: center;
 
@@ -117,6 +118,7 @@ main p{
     box-sizing: border-box;
 
     padding-top: 3%;
+    
 }
 
 #user_address:focus{
@@ -124,12 +126,12 @@ main p{
 }
 
 .find_pswbutton{
-    flex: 1;
+
     background-color: black;
     color: white;
 
     width: 50%;
-    height: 2.5rem;
+    line-height: 2.5rem;
     
     cursor: pointer;
     text-transform: uppercase;

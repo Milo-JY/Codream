@@ -67,6 +67,7 @@ header li>a:hover {
 main{
     height: 80vh;
     width: 70%;
+
     margin: auto;
 }
 
@@ -88,9 +89,10 @@ main form{
 .change_psw_main{
     max-width: 700px;
     width: 80%;
-    height: 70%;
+    min-height: 70%;
         
     text-align: center;
+
     position: relative;
     top: 50%;
     left: 50%;
@@ -112,9 +114,9 @@ main form{
 
     border: none;
     border-bottom: 1px solid;
+    box-sizing: border-box;
     
     padding-top: 3%;
-    box-sizing: border-box;
     position: relative;
     left: 5%;
 }
@@ -140,6 +142,7 @@ main form{
     text-transform: uppercase;
     text-align: center;
 
+    font-size: .8rem;
     width: 50%;
     line-height: 2.5rem;
 

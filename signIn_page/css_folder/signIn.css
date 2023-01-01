@@ -81,13 +81,12 @@ header li>a:hover {
 
 /*===================================================== header =================================================*/
 main{
-    height: 100vh;
+    min-height: 80vh;
     width: 70%;
-    /* width: 70%; */
-    color: black;
+
     margin: auto;
     text-align: center;
-    position: relative;
+
 }
 
 main a{
@@ -96,7 +95,8 @@ main a{
 
 .login_logo{
     background-color: antiquewhite;
-    line-height: 3rem;
+    width: 100%;
+    line-height: 2rem;
     margin: 5% 0;
 }
 
@@ -114,12 +114,12 @@ main a,
 
 .sign_in{
     color:black;
-    min-width: 630px;
-    position: absolute;
-    top: 50%;
+    max-width: 630px;
+    margin-top: 10%;
+
+    position: relative;
     left: 50%;
-    transform: translate(-50% , -50%);
-    /* background-color: #333 */
+    transform: translateX(-50%);
 }
 .sign_up{
     font-size: 1rem;

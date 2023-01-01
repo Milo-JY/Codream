@@ -65,18 +65,18 @@ header li>a:hover {
 */
 main{
     width: 70%;
-    height: 300vh;
-    
+    max-height: 250vh;
+
     margin: auto;
     display: grid;
 
-    grid-template: .25fr .5fr .25fr repeat(3, 2fr) .25fr / repeat(2, 1fr);
+    grid-template: .25fr .5fr .5fr repeat(3, 4fr) .25fr / repeat(2, 1fr);
 
 }
 
 
 main>h1{
-    margin: 2% 0;
+    margin: 5% 0;
     grid-area: 3/1/3/-1;
     
 }
@@ -150,7 +150,7 @@ main a{
 .main_notice>div p {
     margin-top: 5%;
     
-    height: 80%;
+    height: 75%;
     
     text-align: justify ;
     word-break: break-all;
