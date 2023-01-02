@@ -18,11 +18,11 @@
 }
 
 .headerBigNav:hover {
-    background-color: white;
+    background-color: #333;
 }
 
 .headerBigNav:hover .mainBtnLi>a {
-    color: black;
+    color: white;
 }
 
 .menuWrap.left {
@@ -62,7 +62,7 @@ header h1 {
     align-items: center;
 
     font-size: 1.2rem;
-    color: white;
+    color: black;
 }
 
 .mainBtnLi>a:hover {
@@ -241,11 +241,29 @@ header h1 {
     width: 80%;
 }
 
+.topicon{
+    width: 4vh;
+    line-height: 2vh;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topicon>a{ 
+    color: white;
+}
+
 /*===================================================== header =================================================*/
 main{
     min-height: 200vh;
     width: 70%;
     margin: auto;
+
+    margin-top: 150px;
 }
 main h2{
     font-size: 1.4rem;
@@ -277,7 +295,7 @@ form>div:not(.create_account){
 .creat_logo{
     font-size: 1.4rem ;
     text-transform: uppercase;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .go_signin{
@@ -396,7 +414,7 @@ form>div:not(.create_account){
 
 .check_main{
     font-size: 1rem;
-    height: 30vh;
+    height: 15rem;
     width: 100%;
 
     text-align: justify;
