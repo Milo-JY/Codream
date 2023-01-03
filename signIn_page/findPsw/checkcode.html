@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>Chouette Départ</title>
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css_folder/findPwd.css">
+    <link rel="stylesheet" href="../css_folder/checkcode.css">
 </head>
 <body> 
     <header>
@@ -62,29 +62,28 @@
 
     <main>
 
-        <div class="findpw_main">
-            <div class="findpw_h1">
-                <h1>FORGOT YOUR PASSWORD?</h1>
+        <div class="checkcode_main">
+            <div class="checkcode_h1">
+                <h1>Code Received by EMAIL</h1>
 
-                <p>Please enter your email address to reset your password.</p>
-                <p>If your email exists, you will receive an email shortly to set a new password.</p>
+                <p>Please enter the code you received by email.</p>
             </div>
             <hr>
-            
-            <form action="./checkcode.html" name="findPsw_checkeamil">
+            <form action="./changepwd.html" name="email_checkcode">
 
-                <div class="user_emailaddress">
-                    <label for="user_address"><span>YOUR EMAIL ADDRESS</span></label>
-                </div>
-                <input  type="email" id="user_address" placeholder="Email address" 
-                name="usefindpwd_address" required >
-                
-                <div class="findpw_button">
-                    <button class="find_pswbutton send_button" >send</button>
+                <div class="user_checkcode">
+                    <label for="user_code">your the code</label> 
                 </div>
 
-                <div class="findpw_button">
-                    <a href=".././signIn.html" class="login_button">login</a>
+                <input  type="text" id="user_code" placeholder="Please enter the code" 
+                name="user_EmailCheck_code" required >
+
+                <p>Didn’t get an email ?</p>
+                <div class="checkemail_button">
+                    <button class="check_codebutton check_button" >check</button>
+                </div>
+                <div class="checkemail_button ">
+                    <button type="button" class="check_codebutton resend_button" >resend password email</button>
                 </div>
                 
             </form>
