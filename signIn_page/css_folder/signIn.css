@@ -18,11 +18,15 @@
 }
 
 .headerBigNav:hover {
-    background-color: white;
+    background-color: #444;
 }
 
 .headerBigNav:hover .mainBtnLi>a {
-    color: black;
+    color: white;
+}
+
+.headerBigNav:hover  h1{
+    background: url(../../image_folder/logo_new.png) center / 100% no-repeat;
 }
 
 .menuWrap.left {
@@ -62,7 +66,7 @@ header h1 {
     align-items: center;
 
     font-size: 1.2rem;
-    color: white;
+    color: black;
 }
 
 .mainBtnLi>a:hover {
