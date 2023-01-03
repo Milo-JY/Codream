@@ -6,11 +6,9 @@
 }
 
 .headerBigNav {
-    background-color: #444;
     box-sizing: border-box;
-    /* position: absolute; */
+    position: absolute;
     display: flex;
-
     width: 100%;
     height: 150px;
     padding: 0 5%;
@@ -62,7 +60,7 @@ header h1 {
     align-items: center;
     
     font-size: 1.2rem;
-    color: white;
+    color: black;
 }
 
 .mainBtnLi>a:hover {
@@ -247,15 +245,39 @@ header h1 {
 
 /* 메인 헤드 ================================*/
 
+.banner {
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+.text_notice {
+    text-align: center;
+    line-height: 50px;
+    font-size: 3em;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
 .container1 {
     width: 70%;
     height: 60vh;
     margin: auto;
     font-size: 1.5rem;
-    background-color: whitesmoke;
     
     display: grid;
-    grid-template: .1fr 1fr / .1fr repeat(4, 2fr) .1fr;
+    grid-template: .5fr 1fr / .1fr repeat(4, 2fr) .1fr;
+}
+
+.container1 h2 {
+    font-weight: 300;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    grid-area: 1 / 2 / 2 / 6;
 }
 
 .service_repair {
@@ -285,6 +307,7 @@ header h1 {
     grid-template-rows: .5fr 1.5fr .5fr repeat(2, .5fr);
 }
 
+
 .container1 a {
     display: flex;
     justify-content:center;
@@ -293,17 +316,31 @@ header h1 {
 
 /* 메인헤드 이미지=============================================== */
 
-.serviceImages {
+.images {
     width: 100%;
     height: 100%;
-    background: url(../image_folder/service_repair.webp) no-repeat center/100% 100%;
 }
+
+.repairImg {
+    background: url(../image_folder/notice_repair_img.webp) no-repeat center/100% 100%;
+}
+
+.manualImg {
+    background: url(../image_folder/notice_manual_img.png) no-repeat center/100% 100%;
+}
+
+.locationImg {
+    background: url(../image_folder/notice_location_img.jpeg) no-repeat center/100% 100%;
+}
+
+
+
 
 /* ================================메인 헤드^ */
 
 .container2 {
     width: 70%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
     background-color: whitesmoke;
     font-size: 1.5rem;
@@ -313,20 +350,20 @@ header h1 {
     grid-template: .5fr 1fr 3fr 1fr / .5fr 1fr .5fr;
 }
 
-.container2>div:first-of-type {
-    margin: 30px 0 0;
+.container2 .question_title {
     grid-area: 2 / 2 / 3 / 3;
-}
 
-.container2>div:first-of-type h2 {
+    margin-top: 40px;
+    margin-bottom: -20px;
     font-weight: 300;
 }
+
 
 .container2>div:nth-of-type(2) {
     width: 100%;
     /* line-height: 200%; */
     text-align: left;
-    padding: 50px;
+    padding: 100px;
     box-sizing: border-box;
     
     display: flex;
@@ -351,19 +388,54 @@ header h1 {
     box-sizing: border-box;
 }
 
+/* ===== */
 
+.container3 {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+
+    display: grid;
+    grid-template: 1fr 1fr 3fr 1fr / .5fr 1fr .5fr;
+}
+
+.container3>div:first-child,
+.container3 .question_subTitle {
+    margin-top: 20px;
+    margin-bottom: -20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    grid-area: 1 / 1 / 2 / -1;
+    font-weight: 300;
+}
+
+.container3>div:nth-of-type(2) {
+    width: 100%;
+    /* line-height: 200%; */
+    text-align: left;
+    padding: 100px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    
+    grid-area: 3 / 1 / 4 / -1 ;
+}
 
 
 /* 
 =====================================================
 */
 
-footer {
-    width: 100vw;
-    position: relative;
-    bottom: 0;
-    z-index: 3;
-}
 
 footer>nav {
     height: 35vh;
@@ -372,9 +444,153 @@ footer>nav {
 
 footer>div {
     height: 20vh;
-    background-color: #444;
 }
 
 /* 
 ===================================================== footer^
 */
+/* =================================== */
+
+/* footer 조종윤작 */
+footer {
+    background-color: #444;
+}
+
+footer #footer_container {
+    width: 70%;
+    height: 50vh;
+    color: white;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: .5fr 1.5fr .25fr .5fr .5fr .5fr ;
+    grid-template-columns: .2fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .5fr 2fr .2fr;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leftTop_about,
+.leftTop_time {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+}
+
+.leftTop_logo {
+    background-color: red;
+
+    grid-area: 2 / 2 / span 1 / span 3;
+    
+}
+
+.leftTop_about {
+    background-color: blue;
+
+    grid-area: 2 / 6 / span 1 / span 3;
+
+}
+
+.leftTop_time {
+    background-color: silver;
+
+    grid-area: 2 / 10 / span 1 / span 3;
+}
+
+.rightTop_nav {
+    background-color: lightcoral;
+
+    grid-area: 2 / -7 / span 1 / span 5;
+
+    display: flex;
+}
+
+.leftBottom_businessInfo { 
+    background-color: cadetblue;
+    font-size: .7rem;
+
+    grid-area: 4 / 2 / span 1 / span 11;
+
+    display: grid;
+    grid-template-rows: repeat(3, .25fr);
+    grid-template-columns: .5fr 2fr .5fr 4fr;
+}
+
+/* ============== */
+/* left bottom */
+
+.leftBottomText.businessName {
+    background-color: darkolivegreen;
+    font-weight: bolder;
+
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.adress_icon {
+    background-color: yellow;
+
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.adress {
+    background-color: darkolivegreen;
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.email_icon {
+    background-color: yellow;
+
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.email {
+    background-color: darkolivegreen;
+
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.call_icon {
+    background-color: yellow;
+
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.call {
+    background-color: darkolivegreen;
+
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+
+.businessNum {
+    background-color: darkolivegreen;
+
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.ceo {
+    background-color: darkolivegreen;
+
+    grid-area: 3 / 3 / span 1 / span 2;
+}
+
+/* ======leftBottom^ */
+
+/* ================== */
+/* rightBottom */
+
+.rightBottom_Icons {
+    background-color: cornflowerblue;
+
+    grid-area: 4 / -7 / span 1 / span 5 ;
+}
+
+.yearAndBusinessName {
+    font-size: .3em;
+    border-top: 1px solid silver;
+    text-align: center;
+
+    grid-area: 6 / 6 / -1 / 15;
+}
