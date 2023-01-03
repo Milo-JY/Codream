@@ -42,7 +42,7 @@
 
 header h1 {
     height: 100%;
-    background: url(../../image_folder/logo_basic.png) center / 100%;
+    background: url(../../image_folder/logo_new2.png) center / 100% no-repeat;
 
     min-width: 250px;
 }
@@ -140,7 +140,7 @@ header h1 {
     visibility: initial;
     left: 0;
 
-    transition: left .5s;
+    transition: .5s;
     /* -webkit-transition: left .5s;
     -moz-transition: left .5s;     
     -ms-transition: left .5s;
@@ -170,11 +170,13 @@ header h1 {
 }
 
 .hoverLi.num1~li:last-of-type>div {
-    background: url(../image_folder/background_watch_brown.jpeg) center / 100%;
+    background: url(https://cdn.pixabay.com/photo/2014/12/08/14/23/pocket-watch-560937_1280.jpg) center / cover no-repeat;
+
+    /* default */
 }
 
 .hoverLi.num1:hover~li:last-of-type>div {
-    background: url(../image_folder/background_watch_brown.jpeg) center / 100%;
+    background: url(https://cdn.pixabay.com/photo/2014/12/08/14/23/pocket-watch-560937_1280.jpg) center / cover no-repeat;
 }
 
 /* ===== */
@@ -184,7 +186,7 @@ header h1 {
 }
 
 .hoverLi.num2:hover~li:last-of-type>div {
-    background:url(../../image_folder/material_steel.webp) center/ 100%;
+    background:url(https://cdn.pixabay.com/photo/2016/06/12/20/27/macro-1452987_1280.jpg) center/ cover no-repeat;
 }
 
 /* ===== */
@@ -194,7 +196,7 @@ header h1 {
 }
 
 .hoverLi.num3:hover~li:last-of-type>div {
-    background-color: violet;
+    background: url(https://cdn.pixabay.com/photo/2018/05/09/16/13/texture-3385535_1280.jpg) center / cover no-repeat;
 }
 
 /* ===== */
@@ -205,7 +207,7 @@ header h1 {
 
 
 .hoverLi.num4:hover~li:last-of-type>div {
-    background-color: tomato;
+    background: url(https://cdn.pixabay.com/photo/2018/06/10/12/51/olive-wood-3466396_1280.jpg) center / cover no-repeat;
 }
 
 /* ===== */
@@ -215,7 +217,9 @@ header h1 {
 }
 
 .hoverLi.num5:hover~li:last-of-type>div {
-    background-color:springgreen;
+    background: url(https://cdn.pixabay.com/photo/2016/06/24/09/14/glass-1476909_1280.jpg) center / cover no-repeat;
+
+    background-position: -300px;
 }
 
 /* ===== */
@@ -240,6 +244,7 @@ header h1 {
 .hover_a.hoverMenu {
     width: 80%;
 }
+
 
 /* ========================================= */
 /* main시작 first배너쪽 */
@@ -732,4 +737,16 @@ footer>.container {
     grid-area: -1 / 1 / -2 / span 5;
     
     font-size: .8em;
+}
+
+/* ============================== */
+
+@media screen and (max-width:1350px) {
+    main>section {
+        grid-template: 200px 200px 100px 1fr 100px/ 1.5fr 7fr 1.5fr;
+    }
+
+    .headerMainUl .mainBtnLi.non_iconLi {
+        display: none;
+    }
 }
