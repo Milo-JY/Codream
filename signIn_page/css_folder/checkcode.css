@@ -26,7 +26,7 @@
 }
 
 .headerBigNav:hover  h1{
-    background: url(../../image_folder/logo_new.png) center / 100% no-repeat;
+    background: url(../../image_folder/logo_new3.png) center / 100% no-repeat;
 }
 
 .menuWrap.left {
@@ -248,51 +248,6 @@ header h1 {
 .hover_a.hoverMenu {
     width: 80%;
 }
-
-/* 
-===================================================== header */
-main{
-    width: 70%;
-    margin: auto;
-
-    display: grid;
-    grid-template-rows: 160px repeat(2, 120px) 7fr 150px;
-}
-
-.heade{
-    grid-row: 1;
-    height: 150px;
-}
-
-.main_header{
-    grid-row: 2/3;
-    
-}
-
-.main_header_bottom ul{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-
-}
-
-.main_h1{
-    grid-row: 3/4;
-
-    line-height: 120px;
-}
-
-.main_notice{
-    grid-row: 4/5;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-}
-.main_notice>div{
-    margin-bottom: 5%;
-}
-
 /*===================================================== header =================================================*/
 main{
     min-height: 90vh;
