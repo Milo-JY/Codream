@@ -242,200 +242,208 @@ header h1 {
 }
 
 /* ==============main=============== */
-/* 구성 : section1(신상품 홍보) / section2(제품리스트) / section3(이전시즌품추천) */
+/* flexBox */
 
 main {
+    width: 100%;
+    margin: auto;
+}
+
+#main_banner {
+    background-color: #444;
+    width: 100%;
+    height: 150px;
+}
+
+/* ========= */
+/* grid */
+
+#gridContainer {
+    background-color: beige;    
+    width: 70%;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-rows: 3fr .2fr 3fr .5fr 3fr;
+}
+
+.gridContainer_top {
+    width: 100%;
+    height: 70vh;
+    color: white;
+
+    display: grid;
+    grid-template: repeat(6, 1fr) / .5fr 2fr 2fr .5fr;
+}
+
+.gridContainer_middle {
+    background-color: coral;
+    width: 100%;
+    height: 75vh;
+
+    grid-row: 3 / span 1;
+
+    display: grid;
+    grid-template: .5fr 4fr repeat(2, .5fr) 4fr .5fr / .5fr 4fr repeat(2, .5fr) 4fr .5fr  ;
+}
+
+.gridContainer_bottom {
+    width: 100%;
+    height: 75vh;
+
+    grid-row: -2 / span 1;
+}
+
+/* ===== */
+/* grid top */
+
+.bannerImg {
+    grid-area: 1 / 1 / -1 / -1;
+    background: url(../image_folder/brandnew_intro1.png) no-repeat center/100%;
+}
+
+.bannerTitle {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 1;
+
+    font-size: 2.5em;
+}
+
+.bannerContent {
+    grid-area: 3 / 2 / span 2 / span 1;
+    z-index: 1;
+
+    font-size: 1.5em;
+}
+
+.bannerBtn {
+    grid-area: 5 / 2 / span 1 / span 1;
+
+    width: 150px;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+/* ===== */
+/* grid middle */
+
+.newItem .text {
+    background-color: orange;
+
+    /* grid-template: .5fr 4fr repeat(2, .5fr) 4fr .5fr / .5fr 4fr repeat(2, .5fr) 4fr .5fr  ; */
+
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.newItem .slideBox {
+    background-color: bisque;
+
+    grid-area: 2 / -3 / span 2 / span 1;
+}
+
+.slideBox {
+    position: relative;
+    width: 400px;
+}
+
+.slideBox input {
+    display: none;
+}
+
+.slidWrap {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slideUi>li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+.slideUi>li>a {
+    display: block;
+    position: relative;
+}
+
+.slideUi>li>a img {
+    width: 100%;
+}
+
+.slideUi label {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slideUi .left {
+    left: 0;
+    background-color: white;
+    /* ===버튼 아이콘=== */
+}
+
+.slideUi .right {
+    right: 0;
+    background-color: white;
+    /* ===버튼 아이콘=== */
+}
+
+#slide01:checked .slideUi>li {
+    transform: translateX(0%);
+}
+
+#slide02:checked .slideUi>li {
+    transform: translateX(-100%);
+}
+
+#slide03:checked .slideUi>li {
+    transform: translateX(-200%);
+}
+
+
+
+
+
+
+
+/* ============ */
+/* 수정 전  main container*/
+
+
+main .banner {
     background-color: #444;
 }
 
-main #subMain {
-    width: 70%;
-    height: 260vh;
-    background-color: rgb(60, 54, 58);
-    text-align: center;
-    margin-left: calc((100% - 70vw)/2);
-    color: white;
+.main_intro {
+    grid-row: 2 / 3;
 }
 
-/* ------------main>section1>intro(신제품배너)------------- */
-
-main .sec1_intro  {
-    width: 100%;
-    height: 80vh;
-    background: url(../image_folder/brandnew_intro1.png) center/100%;
-    background-color: burlywood;
-    text-align: center;
+.main_newItems {
+    grid-row: 4 / 5;
 }
 
-.intro_title,
-.intro_title p {
-    display: inline-block;
+.main_oldItems {
+    grid-row: -3 / -2;
 }
 
-.intro {
-    width: 65%;
-    height: 10vh;
-    text-align: left;
-    margin-left: calc((100% - 95%)/2);
-    position: absolute;
-    top: 13%;
-}
-
-
-.intro_title {
-    font-size: 3em;
-    
-}
-
-.intro_title p {
-    font-size: .7em;
-    font-weight: 400;
-}
-
-.intro h2 {
-    position: absolute;
-    text-align: right;
-    font-size: 3em;
-    top: 400%;
-}
-
-/* --------main>section2>newItems(신제품리스트)-------- */
-
-main .section2_newItems  {
-    width: 100%;
-    height: 80vh;
-    background-color: black;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.new_title {
-    width: 90%;
-    height: 5vh;
-    background-color: seagreen;
-    text-align: left;
-    margin-left: calc((100% - 95%)/2);
-    position: relative;
-    top: 5%;
-    z-index: 1;
-}
-
-.new_container {
-    width: 90%;
-    height: 600px;
-    display: inline-block;
-    background-color: salmon;
-    margin-top: calc((80vh - 600px)/2);
-    z-index: auto;
-}
-
-.new_bg {
-    width: 320px;
-    height: 500px;
-    background-color: red;
-    box-sizing: border-box;
-    border: 1px solid;
-    display: inline-block;
-    margin-top: 5%;
-}
-
-.new_container {
-    margin: 0;
-    position: relative;
-}
-
-.new_container a {
-    padding: 0 10px;
-    line-height: 30px;
-    background-color: yellowgreen;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.new_leftBtn {
-    left: 0;
-}
-
-.new_rightBtn {
-    right: 0;
-}
-
-
-/* ----------main>section3>oldItems(이전시즌제품들추천)------------ */
-
-main .section3_oldItems  {
-    width: 100%;
-    height: 80vh;
-    background: url(../image_folder/intro_image.jpg) center/100%;
-    background-color: burlywood;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.old_title {
-    width: 90%;
-    height: 5vh;
-    background-color: seagreen;
-    text-align: left;
-    margin-left: calc((100% - 95%)/2);
-    position: relative;
-    top: 5%;
-    z-index: 1;
-}
-
-.old_container {
-    width: 90%;
-    height: 600px;
-    display: inline-block;
-    background-color: salmon;
-    margin-top: calc((80vh - 600px)/2);
-    z-index: auto;
-}
-
-.old_bg {
-    width: 300px;
-    height: 400px;
-    background-color: red;
-    box-sizing: border-box;
-    border: 1px solid;
-    display: inline-block;
-    margin-top: 10%;
-}
-
-.old_container {
-    margin: 0;
-    position: relative;
-}
-
-.old_container a {
-    padding: 0 10px;
-    line-height: 30px;
-    background-color: yellowgreen;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.old_leftBtn {
-    left: 0;
-}
-
-.old_rightBtn {
-    right: 0;
-}
 
 
 /* ==============footer=============== */
 footer>nav {
-    height: 20vh;
+    height: 25vh;
     background-color: #333;
 }
 
 footer>div {
-    height: 10vh;
+    height: 5vh;
     background-color: #444;
 }
-/* =================================== */
-

@@ -15,8 +15,10 @@
         <nav class="headerBigNav">
             <div class="menuWrap left">
                 <ul class="headerMainUl leftMainUl">
-                    <li class="mainBtnLi leftMainLi iconLi"><a href="#" class="iconBtn"><i class="fa-solid fa-bars fa-2x"></i></a></li>
-                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../brand_page/brand.html" class="non_iconBtn"> Our brand</a></li>
+                    <li class="mainBtnLi leftMainLi iconLi"><a href="#" class="iconBtn"><i
+                                class="fa-solid fa-bars fa-2x"></i></a></li>
+                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../brand_page/brand.html" class="non_iconBtn">
+                            Our brand</a></li>
                     <li class="mainBtnLi leftMainLi non_iconLi"><a class="non_iconBtn">Masterpiece</a>
                         <ul>
                             <li class="hoverLi num1">
@@ -42,7 +44,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../brandNew_page/brandNew.html" class="non_iconBtn">Brand new</a></li>
+                    <li class="mainBtnLi leftMainLi non_iconLi"><a href="../brandNew_page/brandNew.html"
+                            class="non_iconBtn">Brand new</a></li>
                 </ul>
             </div>
             <div class="menuWrap logo">
@@ -52,59 +55,73 @@
             </div>
             <div class="menuWrap right">
                 <ul class="headerMainUl rightMainUl">
-                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../notice_page/notice.html" class="non_iconBtn">Notice</a></li>
-                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../myList_page/myList.html" class="non_iconBtn">My list</a></li>
-                    <li class="mainBtnLi rightMainLi iconLi"><a href="../signIn_page/signIn.html" class="iconBtn"><i class="fa-sharp fa-solid fa-right-to-bracket fa-2x"></i></a></li>
-                    <li class="mainBtnLi rightMainLi iconLi"><a href="../search_page/search.html" class="iconBtn"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../notice_page/notice.html"
+                            class="non_iconBtn">Notice</a></li>
+                    <li class="mainBtnLi rightMainLi non_iconLi"><a href="../myList_page/myList.html"
+                            class="non_iconBtn">My list</a></li>
+                    <li class="mainBtnLi rightMainLi iconLi"><a href="../signIn_page/signIn.html" class="iconBtn"><i
+                                class="fa-sharp fa-solid fa-right-to-bracket fa-2x"></i></a></li>
+                    <li class="mainBtnLi rightMainLi iconLi"><a href="../search_page/search.html" class="iconBtn"><i
+                                class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <div id="subMain">
-            <section class="sec1_intro">
-                <div class="intro">
-                    <h1 class="intro_title" title="intro_title">신제품
-                        <br>
-                        <p>| Our</p>
-                        <p><em>latest</em></p>
-                    </h1>
-                    <h2>
-                        신제품 마케팅 문구가 들어갈거임<br>
-                        두줄로 들어갈거임
-                    </h2>
+        <div id="main_banner"></div>
+        <div id="gridContainer">
+            <div class="gridContainer_top">
+                <div class="bannerImg"></div>
+                <div class="bannerTitle">신제품 | Our lastest</div>
+                <div class="bannerContent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </div>
-                <div class="intro_banner">
-                    <span class="banner">1</span>
+                <div class="bannerBtn">
+                    <button>___more view</button>
                 </div>
-            </section>
+            </div>
 
-            <section class="section2_newItems">
-                <div class="new_title">
-                    <h2><em>2022 신상품</em></h2>
+            <div class="gridContainer_middle">
+                <div class="newItem text">
+
                 </div>
-                <div class="new_container">
-                    <a class="new_leftBtn">Left</a>
-                    <div class="new_bg bg1">2</div>
-                    <div class="new_bg bg2">3</div>
-                    <div class="new_bg bg3">3</div>
-                    <a class="new_rightBtn">Right</a>
+
+                <div class="newItem slideBox">
+                    <input type="radio" name="slide" id="slide01" checked>
+                    <input type="radio" name="slide" id="slide02">
+                    <input type="radio" name="slide" id="slide03">
+                    
+                    <div class="slideWrap">
+                        <ul class="slideUi">
+                            <li>
+                                <a href="#">
+                                    <label for="slide03" class="left"></label>
+                                    <img src="./image_folder/RoyalOak1000_cedo.jpeg" alt="watch">
+                                    <label for="slide02" class="right"></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <label for="slide01" class="left"></label>
+                                    <img src="./image_folder/RoyalOak1001.jpeg" alt="watch">
+                                    <label for="slide03" class="right"></label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <label for="slide02" class="left"></label>
+                                    <img src="./image_folder/RoyalOak1002.jpg" alt="watch">
+                                    <label for="slide01" class="right"></label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-            
-            <section class="section3_oldItems">
-                <div class="old_title">
-                    <h2><em>스테디셀러</em></h2>
-                </div>
-                <div class="old_container">
-                    <a class="old_leftBtn">Left</a>
-                    <div class="old_bg bg1">2</div>
-                    <div class="old_bg bg2">3</div>
-                    <div class="old_bg bg3">3</div>
-                    <a class="old_rightBtn">Right</a>
-                </div>
-            </section>
+            </div>
+
+
+            <div class="gridContainer_bottom"></div>
         </div>
     </main>
     <footer>
