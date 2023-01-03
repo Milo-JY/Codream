@@ -246,12 +246,14 @@ header h1 {
 /* main */
 
 main{
-    /* height: 80%; */
-
     text-align: center;
     
     margin: auto;
-    margin-top: 30px;
+}
+
+.zero_div {
+    height: 150px;
+    background: url(../../image_folder/main_banner.jpeg) 0/100% no-repeat;
 }
 
 .main_title {
@@ -262,6 +264,8 @@ main{
     
     color: white;
     background-image: url(../../image_folder/main_back.jpeg);
+
+    margin-top: 5vh;
 }
 
 section {
@@ -275,7 +279,6 @@ section {
 }
 
 #section_top{
-    display: inline-block;
     width: 70%;
     height: 80%;
     line-height: calc(75vh * .3);
@@ -337,8 +340,15 @@ section {
 }
 
 #img_item_buy1 {
-    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;   
+    background: url(https://cdn.pixabay.com/photo/2015/12/30/12/09/clock-1114074_960_720.jpg) 0/40% no-repeat;
+    background-position: center;   
 }
+
+#img_item_buy2 {
+    background: url(https://cdn.pixabay.com/photo/2014/10/03/14/14/watch-471758_960_720.jpg) 0/40% no-repeat;
+    background-position: center;   
+}
+
 
 /* ===================================== */
 /* section_middle 2.주문고객*/
@@ -437,11 +447,13 @@ section {
 
 #section_bottom nav {
     margin-bottom: 20px;
+    
 }
 
 #section_bottom nav>ul {
     display: inline-block;
     width: 100%;
+    margin: 10px;
 }
 
 #section_bottom nav>ul>li{
@@ -537,7 +549,7 @@ section {
     font-size: 1.5em;
     vertical-align: top;
     
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.705);
     color: white;
 }
 

@@ -242,28 +242,31 @@ header h1 {
 }
 
 /* ===================================== */
+/* main */
 
 main {
-    /* background-color: aqua; */
     width: 100%;
     height: 80%;
     text-align: center;
-    margin-top: 30px;
 }
 
+.zero_div {
+    height: 150px;
+    background: url(../../image_folder/main_banner.jpeg) 0/100% no-repeat;
+}
 /* ===================== */
-/* main */
 
-main>div{
+main .first_div{
     display: inline-block;
     width: 70%;
     height: 10%;
-    line-height: 100px;
+    line-height: 10vh;
 
-    background: url(../../image_folder/main_back.jpeg) 0/100% no-repeat;
+    background-image: url(../../image_folder/main_back.jpeg);
 
     text-align: center;
     font-size: 1.5em;
+    margin-top: 5vh;
     
     color: white;
 }
@@ -300,7 +303,7 @@ th{
 
 td{
     height: 20vh;
-    border-bottom: 1px solid;   
+    border-bottom: 1px dashed;   
 }
 
 tr>td {
@@ -366,16 +369,20 @@ td button{
 }
 
 
+
 #img1 {
-    background: url(../../image_folder/logo_basic.png) 0/100% no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2020/04/03/12/30/classic-4998670_960_720.jpg) 0/80% no-repeat;
+    background-position: center;
 }
 
 #img2 {
-    background: url(../../image_folder/logo_circle.png) 0/100% no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2014/10/03/14/14/watch-471758_960_720.jpg) 0/80% no-repeat;
+    background-position: center;
 }
 
 #img3 {
-    background: url(../../image_folder/logo_crown.png) 0/100% no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2015/12/30/12/09/clock-1114074_960_720.jpg) 0/80% no-repeat;
+    background-position: center;
 }
 
 /* ======================= */
@@ -461,7 +468,7 @@ td button{
 }
 
 #buy_button a:nth-child(2){
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.705);
     color: white;
 }
 
@@ -477,42 +484,42 @@ td button{
 article {
     display: inline-block;
     width: 70%;
-    height: 80%;
-}
-
-#aside_img{
-    display: flex;
-    width: 100%;
     height: 20vh;
 
-    justify-content: space-around;
-    margin: 5vh 0;
+    margin: 5vh;
 }
 
-#aside_img div:nth-child(1) {
+
+.wrap {
     display: flex;
-    width: 30%;
+    width: 100%;
     height: 100%;
 
-    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    
+    background: url(../../image_folder/main_banner.jpeg);
+    
+    margin: auto;
 }
 
-#aside_img div:nth-child(2) {
+.wrap span {
     display: flex;
-    width: 30%;
-    height: 100%;
 
-    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+    justify-content: center;
+
+    color: white;
 }
 
-#aside_img div:nth-child(3) {
-    display: flex;
-    width: 30%;
-    height: 100%;
-
-    background: url(../../image_folder/watch01.png) center/contain no-repeat;
+.wrap>span:nth-child(1) {
+    font-size: 2em;
+    font-weight: bold;
 }
 
+.wrap>span>:nth-child(2) {
+    font-weight: lighter;
+}
 /* ============================================== */
 /* footer */
 footer>nav {
