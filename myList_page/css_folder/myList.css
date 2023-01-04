@@ -803,7 +803,7 @@ td button{
 }
 @media screen and (max-width:1350px) {
     main>section {
-        grid-template: 200px 200px 100px 1fr 100px/ 1.5fr 7fr 1.5fr;
+        grid-template: 150px 200px 100px 1fr 100px/ 1.5fr 7fr 1.5fr;
     }
 
     .headerMainUl .mainBtnLi.non_iconLi {
