@@ -26,7 +26,7 @@
 }
 
 .headerBigNav:hover  h1{
-    background: url(../../image_folder/logo_new.png) center / 100% no-repeat;
+    background: url(../../image_folder/logo_new3.png) center / 100% no-repeat;
 }
 
 .menuWrap.left {
@@ -249,6 +249,7 @@ header h1 {
     width: 80%;
 }
 /*===================================================== header =================================================*/
+
 main{
     min-height: 80vh;
     width: 70%;
@@ -257,6 +258,7 @@ main{
     margin-top: 150px;
 
     text-align: center;
+
 }
 
 main a{
