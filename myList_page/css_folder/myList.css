@@ -494,12 +494,12 @@ td button{
 }
 
 #buy_button a:nth-child(2){
-    background-color: rgba(255, 0, 0, 0.705);
+    background-color: rgba(185, 35, 35, 0.705);
     color: white;
 }
 
 #buy_button a:nth-of-type(1):hover {
-    background-color: rgb(55, 74, 74);
+    background-color: rgb(58, 86, 132);
 }
 #buy_button a:nth-of-type(2):hover {
     background-color: rgb(157, 64, 64);
@@ -655,7 +655,7 @@ td button{
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:1000px) {
     footer {
         width: 100%;
         height: 40vh;
