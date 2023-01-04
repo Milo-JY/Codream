@@ -381,6 +381,10 @@ header h1 {
     white-space: normal;
 }
 
+.div_slide02 .textArea {
+    margin-left: 50%;
+}
+
 .textArea h2 {
     display: flex;
     justify-content: center;
