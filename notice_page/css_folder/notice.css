@@ -337,7 +337,11 @@ header h1 {
 }
 
 .locationImg {
-    background: url(../image_folder/notice_location_img.jpeg) no-repeat center/100% 100%;
+    background: url(../image_folder/notice_location_img.png) no-repeat center/100% 100%;
+}
+
+.requestImg {
+    background: url(../image_folder/notice_contactUs_img.png) no-repeat center/100% 100%;
 }
 
 
