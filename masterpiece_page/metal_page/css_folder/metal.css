@@ -40,9 +40,9 @@
     flex: 2;
 }
 
-h1 {
+header h1 {
     height: 100%;
-    background: url(../../../image_folder/logo_basic.png) center / 100%;
+    background: url(../../../image_folder/logo_new2.png) center / 100% no-repeat;
 
     min-width: 250px;
 }
@@ -62,7 +62,7 @@ h1 {
     align-items: center;
 
     font-size: 1.2rem;
-    color: black;
+    color: white;
 }
 
 .mainBtnLi>a:hover {
@@ -140,7 +140,7 @@ h1 {
     visibility: initial;
     left: 0;
 
-    transition: left .5s;
+    transition: .5s;
     /* -webkit-transition: left .5s;
     -moz-transition: left .5s;     
     -ms-transition: left .5s;
@@ -251,112 +251,134 @@ header
 ===================================================== 
 */
 
-main {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.main_margin150 {
-    height: 150px;
-}
-
-section {
+main>section {
     position: relative;
+    display: grid;
+    grid-template: 300px 300px 100px 1fr 100px / 1.5fr 7fr 1.5fr;
+
+}
+
+.main_first_div:not(:first-of-type) {
+    grid-column: 2 / -2;
+}
+
+#mainBanner {
+    grid-column: 1 / -1;
     width: 100%;
-    height: 40vw;
-    margin: 100px 0;
-    overflow: hidden;
-    border: 1px solid;
-}
 
-/* ============= */
+    justify-self: center;
 
-.deg_box_all {
-    position: absolute;
-    width: 25%;
-    height: 150%;
-    top: -20%;
+    transition: .7s ease;
+    background: url(https://cdn.pixabay.com/photo/2016/09/01/19/53/pocket-watch-1637394_1280.jpg) center / cover no-repeat;
     
-    transform: rotate(20deg);
-    overflow: hidden;
+    z-index: 0;
 }
 
-.deg_box_all>a {
+.main_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: 2 / 1 / span 1 / -1;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h2::before {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../image_folder/landscape_4000x2614_01.jpg.transform.apcarouselh.jpg) center / cover;
+    opacity: .3;
+    z-index: -1;
+}
+
+.main_items {
+    grid-row: 4 / span 1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    grid-auto-rows: 400px;
+}
+
+/* 
+main rayOut
+===================================================== 
+*/
+
+.main_items {
+    display: grid;
+    position: relative; 
+    
+}
+
+.all_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_item:hover {
+    background-size: 120%;
+    transition: .7s ease-out;
+}
+
+.all_item a {
+    display: flex;
     width: 100%;
     height: 100%;
 }
 
-.deg_box_all>a:hover {
-    background-color: #0007;
+.itemDiv01 {
+    background: url(../../image_folder/itemOne_01.jpeg) no-repeat center / 100%;
 }
 
-.deg_box1 {
-    left: -10%;
+.itemDiv02 {
+    background: url(../../image_folder/itemOne_02.jpeg) no-repeat center / 100%;
 }
 
-.deg_box2 {
-    left: 20%;
+.itemDiv03 {
+    background: url(../../image_folder/itemOne_03.jpeg) no-repeat center / 100%;
 }
 
-.deg_box3 {
-    left: 50%;
+.itemDiv04 {
+    background: url(../../image_folder/itemOne_02.jpeg) no-repeat center / 100%;
 }
 
-.deg_box4 {
-    left: 80%;
+.itemDiv05 {
+    background: url(../../image_folder/itemOne_01.jpeg) no-repeat center / 100%;
 }
 
-/* == */
-
-.deg_box1:before {
-    position: absolute;
-    top: -160%;
-    left: -50%;
-    width: 400%;
-    height: 400%;
-    content: "";
-    background: url(https://cdn.pixabay.com/photo/2016/06/12/20/27/macro-1452987_1280.jpg) center / 100% no-repeat;
-    transform: rotate(-20deg); 
+.itemDiv06 {
+    background: url(../../image_folder/itemOne_02.jpeg) no-repeat center / 100%;
 }
 
-.deg_box2:before {
-    position: absolute;
-    top: -160%;
-    left: -100%;
-    width: 400%;
-    height: 400%;
-    content: "";
-    background: url(https://cdn.pixabay.com/photo/2018/05/09/16/13/texture-3385535_1280.jpg) center / 100% no-repeat;
-    transform: rotate(-20deg); 
+.itemDiv07 {
+    background: url(../../image_folder/itemOne_01.jpeg) no-repeat center / 100%;
 }
 
-.deg_box3:before {
-    position: absolute;
-    top: -150%;
-    left: -150%;
-    width: 400%;
-    height: 400%;
-    content: "";
-    background: url(https://cdn.pixabay.com/photo/2018/06/10/12/51/olive-wood-3466396_1280.jpg) center / 100% no-repeat;
-    transform: rotate(-20deg); 
+.itemDiv08 {
+    background: url(../../image_folder/itemOne_03.jpeg) no-repeat center / 100%;
 }
 
-.deg_box4:before {
-    position: absolute;
-    top: -150%;
-    left: -180%;
-    width: 400%;
-    height: 400%;
-    content: "";
-    background: url(https://cdn.pixabay.com/photo/2016/06/24/09/14/glass-1476909_1280.jpg) center / 100% no-repeat;
-    transform: rotate(-20deg); 
-}
 
+
+/*
+   ============ */
 
 /* 
-===================================================== main^
+main item
+=====================================================
 */
+
 
 footer {
     width: 100%;
@@ -496,5 +518,9 @@ footer
         width: 100%;
 
         transition: .7s ease;
+    }
+
+    h2::before {
+        background: url(../../image_folder/landscape_4000x2614_01.jpg.transform.apcarouselh.jpg) center / 90% 90% no-repeat;
     }
 }
