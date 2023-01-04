@@ -325,10 +325,23 @@ header h1 {
 
 /* ===================================================== slide*/
 
+
+
 .slideAll {
     position: absolute;
     width: 100%;
     height: 500px;
+}
+
+.slideWrap,
+.slideUl,
+.slideUl>li,
+.slideUl>li>div,
+.div_slide01, 
+.div_slide02, 
+.div_slide03 {
+    width: 100%;
+    height: 100%;
 }
 
 .slideAll input {
@@ -336,38 +349,17 @@ header h1 {
 }
 
 .slideWrap {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
     overflow: hidden;
 }
 
 .slideUl {
-    width: 100%;
-    height: 100%;
     font-size: 0;
     white-space: nowrap;
 }
 
 .slideUl>li {
     display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
     transition: all .5s;
-    /* background-color: red; */
-}
-
-.slideUl>li>div {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.div_slide01, .div_slide02, .div_slide03{
-    width: 100%;
-    height: 100%;
 }
 
 .textArea {
