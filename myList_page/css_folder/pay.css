@@ -349,10 +349,9 @@ section {
 }
 
 #img_item_buy2 {
-    background: url(https://cdn.pixabay.com/photo/2014/10/03/14/14/watch-471758_960_720.jpg) 0/40% no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2013/07/11/15/30/male-watch-144648_960_720.jpg) 0/40% no-repeat;
     background-position: center;   
 }
-
 
 /* ===================================== */
 /* section_middle 2.주문고객*/
@@ -620,26 +619,22 @@ section {
     }
 
     .footer_icon>span:nth-child(1):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s;
     }
 
     .footer_icon>span:nth-child(2):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s ;
     }
     .footer_icon>span:nth-child(3):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s ;
     }
     .footer_icon>span:nth-child(4):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s ;
@@ -766,8 +761,6 @@ section {
         background-color: white;
     
         border: 1px solid;
-        /* border-radius: 30%; */
-        
     }
 
     .footer_icon>span i {
@@ -775,20 +768,17 @@ section {
     } 
     
     .footer_icon>span:nth-child(1):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s;
     }
 
     .footer_icon>span:nth-child(2):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s ;
     }
     .footer_icon>span:nth-child(3):hover {
-        /* position: absolute; */
         width: 100%;
         border-radius: 30px;
         transition: width 2s ;
