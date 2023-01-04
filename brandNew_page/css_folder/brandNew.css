@@ -364,13 +364,15 @@ main{
 }
 
 .newItem{
-    grid-area: 2/5/-2/-2;
+    position: relative;
+
+    grid-area: 2 / 5 / span 2 / -2;
 }
 
 .section {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -381,7 +383,7 @@ main{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .section .slidelist {
@@ -444,13 +446,13 @@ main{
 #slide03:checked ~ .slidewrap li { 
     transform: translateX(-200%);
 }
-.mid_slide1{
+.slide_img1{
     background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009185.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
 }
-.mid_slide2{
+.slide_img2{
     background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009689AB/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
 }
-.mid_slide3{
+.slide_img3{
     background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010406AA/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
 }
 
@@ -479,6 +481,7 @@ main{
     justify-self: center;
     align-self: center;
 
+    text-transform: capitalize;
     font-size: 2em;
 }
 
