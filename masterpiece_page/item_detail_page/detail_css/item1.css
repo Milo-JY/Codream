@@ -322,17 +322,40 @@ main>section {
     opacity: .3;
     width: 100%;
     height: 100%;
-    background: url(../../image_folder/background_watch_brown.jpeg) center / cover no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg) center / cover no-repeat;
+}
+.first, .fourth, .second, .third{
+    z-index: 1;
 }
 
 .item_main .first {
     background: url(../../../image_folder/watch01.png) center /60% no-repeat;
+    opacity: .9;
+
 }
 
 .item_main .fourth {
-    background: url(https://cdn.pixabay.com/photo/2019/11/25/07/31/clockwork-4651185_1280.jpg) center / 80% 80% no-repeat;
-}
+    background: url(https://www.audemarspiguet.com/content/dam/ap/com/fragments/code-11-59-first-fragment/26399nr-oo-d002kb-01/car3_26399NR.OO.D002KB.01.jpg.transform.apcarouselv.jpg) center / 80% 80% no-repeat;
+    opacity: .9;
 
+}
+.item_main .second,
+.item_main .third{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    word-break: break-all;
+}
+.item_main .second{
+padding-right: 5%;
+box-sizing: border-box;
+}
+.item_main .third{
+padding-left: 5%;
+box-sizing: border-box;
+}
 .underSectionBottom {
     grid-area: 6 / 2 / span 1 / span 2;
 }
