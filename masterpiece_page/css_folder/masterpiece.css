@@ -14,6 +14,8 @@
     height: 150px;
     padding: 0 5%;
 
+    border-bottom: 1px solid gray;
+
     z-index: 2;
 }
 
@@ -271,8 +273,6 @@ section {
     overflow: hidden;
     border: 1px solid;
 }
-
-/* ============= */
 
 .deg_box_all {
     position: absolute;
