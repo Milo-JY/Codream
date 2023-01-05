@@ -1,9 +1,14 @@
+
+:root{
+    accent-color: black;
+}
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
+
 
 .headerBigNav {
     box-sizing: border-box;
