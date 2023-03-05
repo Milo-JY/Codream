@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
+    <script defer src="./index.js/index.js"></script>
     <link rel="stylesheet" href="./css_folder/metal.css">
     <link rel="icon" href="../../image_folder/favi.png">
     <title>Chouette Départ</title>
@@ -63,39 +64,39 @@
     <main>
         <section>
 
-            <div id="mainBanner" class="main_banner main_first_div">
-            
-            </div>
-
-            <div class="main_title main_first_div">
+            <div class="main_title">
                 <h2>Masterpiece</h2>
             </div>
 
-            <div class="main_items main_first_div">
-                <div class="itemDiv01 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv02 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv03 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv04 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv05 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv06 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv07 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
-                <div class="itemDiv08 all_item">
-                    <a href="../item_detail_page/item1.html"></a>
-                </div>
+            <div class="btnDiv">
+                <button>관리자 모드</button>
+            </div>
+            <dialog>
+                <form method="dialog">
+                    <h3>상품 등록</h3>
+                    <label>itemName :
+                        <input type="text">
+                    </label>
+                    <label>price :
+                        <input type="text">
+                    </label>
+                    <label>order :
+                        <input type="text">
+                    </label>
+                    <label>bgImage :
+                        <input 
+                            type="text"
+                            value="../image_folder/itemOne_03.jpeg"
+                            disabled
+                            >
+                    </label>
+                    <button value="resister">Resister</button>
+                    <button value="close">Close</button>
+                </form>
+            </dialog>
+
+            <div class="main_items">
+
             </div>
 
         </section>
