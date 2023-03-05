@@ -16,6 +16,7 @@
 
     border-bottom: 1px solid gray;
     color: white;
+    transition: 1s ease-out;
 
     z-index: 2;
 }
