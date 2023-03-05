@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css_folder/signIn.css" />
+    <link rel="stylesheet" href="./css_folder/css_SingFolder/signIn.css" />
+    <script  defer type= "module" src="./js_folder/js_signFloder/signIn.js"></script>
     <title>Chouette Départ</title>
 
 <body>
@@ -62,7 +63,7 @@
 
     <hr>
 <main>
-      
+  <div class="main_header_height"></div>
     <div class="sign_in">
 
         <div class="welcome">
@@ -74,7 +75,7 @@
           <span>Login using your credentials below.</span>
         </div>
 
-        <form name="login_form" action="../index.html" method="get">
+        <form name="login_form" action="../index.html" method="post">
           <div class="login_user_info">
 
             <div class="login_user_info_label">
@@ -91,9 +92,14 @@
             </div>
 
             <div class="show_psw_container">
-              <input class="login_user_info_text psw_text" type="password" name="user_psw"
-              placeholder="Eneter your password" id="user_psw" minlength="6" required >
-              <button type="button" class="show_psw"><span><i class="fa-solid fa-eye"></i></span></button>
+              <div class="inputDiv">
+                <input class="login_user_info_text psw_text" type="password" name="user_psw"
+                placeholder="Eneter your password" id="user_psw" minlength="6" required >
+                <span class="show_psw">
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-eye-slash"></i>
+                </span>
+              </div>
             </div>
 
             <div class="find_psw">
@@ -112,6 +118,7 @@
           </div>
         </div>
     </div>
+    <div class="main_header_height"></div>
 </main>
     <!-- <div class="topicon">
           <a href="#header_logo"><i class="fa-solid fa-angle-up fa-2x"></i>TOP</a>

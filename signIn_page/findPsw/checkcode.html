@@ -7,7 +7,8 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>Chouette Départ</title>
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css_folder/checkcode.css">
+    <link rel="stylesheet" href="../css_folder/css_FindPswFolder/checkcode.css">
+    <script defer src="../js_folder/js_findPswFloder/checkCode.js"></script>
 </head>
 <body> 
     <header>
@@ -61,7 +62,7 @@
     </header>
 
     <main>
-
+        <div class="main_header_height"></div>
         <div class="checkcode_main">
             <div class="checkcode_h1">
                 <h1>Code Received by EMAIL</h1>
@@ -69,26 +70,27 @@
                 <p>Please enter the code you received by email.</p>
             </div>
             <hr>
+
             <form action="./changepwd.html" name="email_checkcode">
 
                 <div class="user_checkcode">
                     <label for="user_code">your the code</label> 
                 </div>
-
-                <input  type="text" id="user_code" placeholder="Please enter the code" 
-                name="user_EmailCheck_code" required >
-
+                <div class="input_code">
+                    <input  type="text" id="user_code" placeholder="Please enter the code" 
+                    name="user_EmailCheck_code" required >
+                </div>
                 <p>Didn’t get an email ?</p>
                 <div class="checkemail_button">
                     <button class="check_codebutton check_button" >check</button>
                 </div>
-                <div class="checkemail_button ">
-                    <button type="button" class="check_codebutton resend_button" >resend password email</button>
-                </div>
                 
             </form>
-
+            <div class="checkemail_button ">
+                <button type="button" class="check_codebutton resend_button" >resend password email</button>
+            </div>
         </div>
+        <div class="main_header_height"></div>
     </main>
     
     <footer>
