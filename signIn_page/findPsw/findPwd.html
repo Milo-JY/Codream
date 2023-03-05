@@ -7,7 +7,8 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>Chouette Départ</title>
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css_folder/findPwd.css">
+    <link rel="stylesheet" href="../css_folder/css_FindPswFolder/findPwd.css">
+    <script defer src="../js_folder/js_findPswFloder/findPsw.js"></script>
 </head>
 <body> 
     <header>
@@ -19,7 +20,7 @@
                     <li class="mainBtnLi leftMainLi non_iconLi"><a class="non_iconBtn">Masterpiece</a>
                         <ul>
                             <li class="hoverLi num1">
-                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
+                                <a href="../../masterpiece_page/masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
                             </li>
                             <li class="hoverLi num2">
                                 <a href="" class="hover_a hoverMenu metalBtn">Metal</a>
@@ -59,9 +60,9 @@
             </div>
         </nav>
     </header>
-    <hr>
+   
     <main>
-        
+        <div class="main_header_height"></div>
         <div class="findpw_main">
             <div class="findpw_h1">
                 <h1>FORGOT YOUR PASSWORD?</h1>
@@ -77,19 +78,23 @@
                     <label for="user_address"><span>YOUR EMAIL ADDRESS</span></label>
                 </div>
                 <input  type="email" id="user_address" placeholder="Email address" 
-                name="usefindpwd_address" required >
-                
+                name="usefindpwd_address"  required>
+                <div class="textDiv">
+                    <p></p> 
+                    <p>Don't you remember the email?</p>
+                    <!-- <a href="./findEmail.html">Don't you remember the email?</a> -->
+                </div>
                 <div class="findpw_button">
                     <button class="find_pswbutton send_button" >send</button>
                 </div>
 
                 <div class="findpw_button">
-                    <a href=".././signIn.html" class=".send_button:hover login_button">login</a>
+                    <a href=".././signIn.html" class=".send_button login_button">login</a>
                 </div>
-                
             </form>
 
         </div>
+        <div class="main_header_height"></div>
     </main>
     
     <footer>

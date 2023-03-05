@@ -26,7 +26,7 @@
 }
 
 .headerBigNav:hover  h1{
-    background: url(../../image_folder/logo_new3.png) center / 100% no-repeat;
+    background: url(../../../image_folder/logo_new3.png) center / 100% no-repeat;
 }
 
 .menuWrap.left {
@@ -46,7 +46,7 @@
 
 header h1 {
     height: 100%;
-    background: url(../../image_folder/logo_new2.png) center / 100% no-repeat;
+    background: url(../../../image_folder/logo_new2.png) center / 100% no-repeat;
 
     min-width: 250px;
 }
@@ -248,112 +248,150 @@ header h1 {
 .hover_a.hoverMenu {
     width: 80%;
 }
-/*===================================================== header =================================================*/
-main{
-    min-height: 90vh;
-    width: 70%;
-    
-    margin: auto;
 
-}
-
-main p{
-    margin-top: 5%;
-}
-
-.checkcode_main>hr{
-    border: 2px solid red;
-    margin: auto;
-    width: 5%;
-    margin-top: 5%;
-}
-.checkcode_main{
-    max-width: 700px;
-    width: 80%;
-    min-height: 70%;
-
-    padding-top: 5%;
-    text-align: center;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50% ,-50%);
-}
-
-.checkcode_h1>h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.checkcode_main>form{
-    margin-top: 10%;
-}
-
-.user_checkcode{
-    font-size: 1rem;
-    text-align: left;
-    padding-left: 5%;
-
-    text-transform: uppercase;
-}
-
-
-#user_code{
-    font-size: 1.5rem;
-    font-weight: lighter;
-    width: 90%;
-    height: 30%;
-
-    border: none;
-    border-bottom: 1px solid;
-    box-sizing: border-box;
-
-    padding-top: 3%;
-    
-}
-
-#user_code:focus{
-    outline: none;
-}
-
-.check_codebutton{
-    width: 50%;
-    line-height: 2.5rem;
-    
-    cursor: pointer;
-    text-transform: uppercase;
-
-    border: 1px solid ;
-
-    
-
-}
-
-.check_codebutton{
-    font-size: .8rem;
-
-    box-sizing: border-box;
-    cursor: pointer; 
-}
-
-.check_button{
-    margin-top: 5%;
-
+.topicon{
+    width: 2.5rem;
+    line-height: 1.5rem;
     background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topicon>a{ 
     color: white;
 }
 
-.resend_button{
-    display: inline-block;
-    background-color: white;
-    color: black;
+
+/*=============================================main grid================================================*/
+main{
+    width: 70%;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 160px repeat(2, 120px) 7fr 150px;
+}
+
+.heade{
+    grid-row: 1;
+    height: 150px;
+}
+
+.main_header{
+    grid-row: 2/3;
     
-    margin-top: 5%;
+}
+
+.main_header_bottom ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+
+}
+
+.main_h1{
+    grid-row: 3/4;
+
+    line-height: 120px;
+}
+
+.main_notice{
+    grid-row: 4/5;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+.main_notice>div{
+    margin-bottom: 5%;
+}
+
+main a{
+    color: black;
+}
+
+.main_header li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.main_header_top{
+    font-size: .8rem;
+}
+.main_header hr{
+    margin:  2% 0;
+}
+
+.header_name::before{   
+    content: "/ ";
+}
+
+.privacy_notice a{
+    border-bottom: 2px solid gray;
+    padding-bottom: 5%;
+    transition: .5s;
+}
+
+.notice_name a:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 5%;
+    transition: .5s;
+}
+
+.main_notice>div p{
+    max-height: 300px;
+
+    text-align: justify ;
+    word-break: break-all;
+
+    margin-top: 2%;
+
+    overflow: auto;
+}
+
+.notice_name{
+    font-weight: bolder;
+    font-size: 1rem;
 }
 
 
-/*====================================== footer ============================================*/
+/*=================================== main media ============================================*/
+
+@media screen and (min-width: 550px) and (max-width: 999px) {
+    :root {
+        font-size: 14.5px;
+    }
+   
+
+}
+
+@media screen and (max-width: 549px){
+    :root{
+        font-size: 12px;
+    }
+    main{
+        grid-template-rows: 160px repeat(2, 80px) 2fr 80px;
+    }
+    .main_h1 h1{
+        line-height: 80px;
+    }
+    .main_notice>div p{
+        max-height: 150px;
+    }
+    .notice_name{
+        font-size: .8em;
+    }
+}
+
+
+
+
+/* 
+=====================================================^
+*/
+/* footer */
 
 @media screen and (min-width:400px) {
     footer {
