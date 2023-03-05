@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
     <script src="https://kit.fontawesome.com/f9924cf496.js" crossorigin="anonymous"></script>
+    <script defer src="./javascript/brandNew.js"></script>
     <link rel="stylesheet" href="./css_folder/brandNew.css">
     <title>Chouette Départ</title>
 </head>
@@ -24,16 +25,16 @@
                                 <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu allBtn">All</a>
                             </li>
                             <li class="hoverLi num2">
-                                <a href="" class="hover_a hoverMenu metalBtn">Metal</a>
+                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu metalBtn">Metal</a>
                             </li>
                             <li class="hoverLi num3">
-                                <a href="" class="hover_a hoverMenu leatherBtn">Leather</a>
+                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu leatherBtn">Leather</a>
                             </li>
                             <li class="hoverLi num4">
-                                <a href="" class="hover_a hoverMenu woodBtn">Wood</a>
+                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu woodBtn">Wood</a>
                             </li>
                             <li class="hoverLi num5">
-                                <a href="" class="hover_a hoverMenu accBtn">ACC</a>
+                                <a href="../masterpiece_page/masterpiece.html" class="hover_a hoverMenu accBtn">ACC</a>
                             </li>
                             <li class="hoverLi num6">
                                 <div class="hover_div rightPicAndScript">
@@ -65,131 +66,43 @@
 
     <!-- main ================= -->
     <main>
-        <div id="main_banner"></div>
-        <div id="gridContainer">
-            <div class="gridContainer_top">
-                <div class="bannerImg"></div>
-                <div class="bannerTitle">NEW | Our lastest</div>
-                <div class="bannerContent"><em> Royal Oak cedo</em> : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor,
-                    sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur elit.
-                </div>
-                <div class="bannerBtn">
-                    <a href="../masterpiece_page/item_detail_page/item1.html"> more view</a>
-                </div>
+        <section class="section_top">
+            <article class="presentiveItem">
+                <p>THE ROUND AND THE OCTAGONAL</p>
+                <h4>MERGE INTO A BOLD ARCHITECTURE</h4>
+            </article>
+        </section>
+
+        <section class="section_middle">
+            <div class="slide_container">
+                <ul class="slide_list">
+                    <li><img src="./image_folder/brandnew_intro1.png" alt="bg1"></li>
+                    <li><img src="./image_folder/brandnew_intro2.png" alt="bg2"></li>
+                    <li><img src="./image_folder/brandnew_intro3.png" alt="bg3"></li>
+                </ul>
+        
+                <a class="btn_back nonVisible" data-direction="-1" href="#">
+                    <img src="./image_folder/btn_back.png" alt="back_img">
+                </a>
+                <a class="btn_foward" data-direction="1" href="#">
+                    <img src="./image_folder/btn_foward.png" alt="foward_img">
+                </a>
+                
+                <div class="pager"></div>
+            </div>
+        </section>
+
+        <section class="section_bottom">
+            <div class="modal">
+                <div class="modal_body"></div>
             </div>
 
-            <div class="gridContainer_middle">
-
-                <div class="text">
-                        <h1>2.Chouette Départ</h1>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, placeat, odio repellat maiores accusamus eaque quos totam numquam praesentium ipsam dolorem veritatis quibusdam. Praesentium, dolores? Tempore itaque cum magnam repudiandae.
-                            
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto labore odit atque, error aliquid repellendus quidem illo modi facilis impedit laboriosam libero perferendis corrupti, 
-                            mollitia reiciendis, minima et vero fugit!
-                            .Minima, qui ea?
-                        </p>
-                </div>
-
-                <div class="newItem">
-                    <div class="section">
-                        <input type="radio" name="slide" id="slide01" checked>
-                        <input type="radio" name="slide" id="slide02">
-                        <input type="radio" name="slide" id="slide03">
-                    
-                        <div class="slidewrap">
-                            <ul class="slidelist">
-                                <li>
-                                    <a>
-                                        <label for="slide03" class="left"></label>
-                                        <div class="slide_img1"></div>
-                                        <label for="slide02" class="right"></label>
-                                    </a>
-                                </li>
-                
-                                <li>
-                                    <a>
-                                        <label for="slide01" class="left"></label>
-                                        <div class="slide_img2"></div>
-                                        <label for="slide03" class="right"></label>
-                                    </a>
-                                </li>
-                
-                                <li>
-                                    <a>
-                                        <label for="slide02" class="left"></label>
-                                        <div class="slide_img3"></div>
-                                        <label for="slide01" class="right"></label>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-
-            <!-- ======================================= -->
-            <!-- 밑에 슬라이드 -->
-
-            <div class="gridContainer_bottom">
-                <div class="grid_bot_top">
-                    The last model
-                </div>
-                <div class="grid_bot_bot">
-                    <div class="bot_section">
-                        <input type="radio" name="bot_slide" id="bot_slide01" checked>
-                        <input type="radio" name="bot_slide" id="bot_slide02">
-                        <input type="radio" name="bot_slide" id="bot_slide03">
-                    
-                        <div class="bot_slidewrap">
-                            <ul class="bot_slidelist">
-                                <li>
-                                    <a>
-                                        <label for="bot_slide03" class="bot_left"></label>
-                                        <div class="bot_main_slide01">
-                                            <div class="bot_slide_img11"></div>
-                                            <div class="bot_slide_img12"></div>
-                                            <div class="bot_slide_img13"></div>
-                                        </div>
-                                        <label for="bot_slide02" class="bot_right"></label>
-                                    </a>
-                                </li>
-                
-                                <li>
-                                    <a>
-                                        <label for="bot_slide01" class="bot_left"></label>
-                                        <div class="bot_main_slide02">    
-                                            <div class="bot_slide_img21"></div>
-                                            <div class="bot_slide_img22"></div>
-                                            <div class="bot_slide_img23"></div>
-                                        </div> 
-                                        <label for="bot_slide03" class="bot_right"></label>
-                                    </a>
-                                </li>
-                
-                                <li>
-                                    <a>
-                                        <label for="bot_slide02" class="bot_left"></label>
-                                        <div class="bot_main_slide03">
-                                            <div class="bot_slide_img31"></div>
-                                            <div class="bot_slide_img32"></div>
-                                            <div class="bot_slide_img33"></div>
-                                        </div>
-                                        <label for="bot_slide01" class="bot_right"></label>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
+            <article class="book Page1"><a href="" class="click_open_popup"></a></article>
+            <article class="book Page2"><a href=""></a></article>
+            <article class="book Page3"><a href=""></a></article>
+        </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footer_icon">

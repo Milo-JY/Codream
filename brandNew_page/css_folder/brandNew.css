@@ -7,23 +7,35 @@
 
 .headerBigNav {
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     display: flex;
 
     width: 100%;
-    height: 150px;
+    height: 80px;
     padding: 0 5%;
+
+    border-bottom: 1px solid gray;
+    color: white;
+    transition: 1s ease-out;
 
     z-index: 2;
 }
 
-.headerBigNav:hover {
-    background-color: white;
+.headerBigNav::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
 }
 
-.headerBigNav:hover .mainBtnLi>a {
-    color: black;
-}
+/* .headerBigNav:hover {
+    background-color: white;
+} */
 
 .menuWrap.left {
     display: flex;
@@ -117,15 +129,14 @@ header h1 {
 
 .leftMainUl>li>ul {
     display: grid;
-    visibility: hidden;
     position: absolute;
 
     grid-template: .3fr 1fr .3fr 1fr .3fr 1fr .3fr 1fr .3fr 1fr .3fr/ 1fr .3fr 3fr .3fr;
 
     left: -100%;
-    top: 150px;
+    top: 80px;
     width: 800px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 80px);
 
     border: 1px solid;
     background-color: white;
@@ -244,416 +255,272 @@ header h1 {
 .hover_a.hoverMenu {
     width: 80%;
 }
+/* header */
+/* ================================================ */
 
-/* ==============main=============== */
-/* flexBox */
 
-main{
-    background: url(https://cdn.pixabay.com/photo/2016/11/22/23/19/constellations-1851128_960_720.jpg) center/ 100% 100% ;
-}
-#main_banner {
-    width: 100%;
-    height: 150px;
-}
+/* ========================================================== */
+/* <main> 시작 */
 
-/* ========= */
-/* grid */
-
-#gridContainer {
-    /* background-color: beige;     */
+main {
+    margin: 0 auto;
     width: 70%;
-    margin: auto;
-
-    display: grid;
-
-    grid-template-rows: 3fr .2fr 3fr .5fr 3fr;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: solid 2px white;
 }
 
-.gridContainer_top {
+/* __main>section_top */
+
+.section_top {
     width: 100%;
-    height: 100%;
+    height: 60vh;
+    background: url(../image_folder/brandnew_intro3.png) 100% / 100% 100%;
+
+    display: grid;
+    grid-template: 80px 1fr 1fr / repeat(2, 1fr);
+}
+
+.presentiveItem {
+    grid-area: 2 / 1 / span 2 / span 1;
+    font-size: 2.6rem;
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-top: 120px;
     color: white;
-
-    display: grid;
-    grid-template: repeat(6, 1fr) / .5fr 2fr 2fr .5fr;
 }
 
-.gridContainer_middle {
-    background: url(../image_folder/brandnew_main2.gif) center / 100%;
-    width: 100%;
-    height: 75vh;
-
-    grid-row: 3 / span 1;
-
-    display: grid;
-    grid-template: .5fr 4fr 4fr .5fr / .5fr 4fr repeat(2, .5fr) 4fr .5fr;
+.presentiveItem>p {
+    font-weight: 300;
 }
 
 
-.gridContainer_bottom {
-    width: 100%;
-    height: 75vh;
+/* __main>section_middle */
 
-    grid-row: -2 / span 1;
-}
-
-/* ===== */
-/* grid top */
-
-.bannerImg {
-    grid-area: 1 / 1 / -1 / -1;
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009710.00/importer/standup.png.transform.approductmain.png) no-repeat right/50% 100%;
-}
-
-.bannerTitle {
-    grid-area: 2 / 2 / span 1 / span 1;
-    z-index: 1;
-
-    font-size: 2.5em;
-}
-
-.bannerContent {
-    grid-area: 3 / 2 / span 2 / span 1;
-    z-index: 1;
-
-    font-size: 1.5em;
-}
-
-.bannerBtn {
-    margin-top: 5%;
-    grid-area: 5 / 2 / span 1 / span 1;
-}
-.bannerBtn a{
-    text-transform: uppercase;
-    color: black;
-    background-color: antiquewhite;
-
-    text-align: center;
-    display: inline-block;
-
-    width: 100px;
-    line-height: 50px;
-}
-
-/* @media screen and {
+.section_middle {
+    height: 50vh;
     
-} */
-
-/* ===== */
-/* grid middle */
-
-/* .newItemImg {
-    width: 100%;
-    height: 100%;
-
-    background: url(../image_folder/brandnew_main2.gif) no-repeat center / 100%;
-
-    grid-area: 1 / 1 / -1 / -1;
-} */
-
-.text{
-    grid-area: 2/2/-2/3;
-    color: white;
-
-    text-align: justify;
-    word-break: break-all;
-
-    text-align: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.newItem{
+.slide_container {
     position: relative;
-
-    grid-area: 2 / 5 / span 2 / -2;
-}
-
-.section {
-    position: absolute;
     width: 100%;
-    height: 100%;
+
+    margin-top: 10px;
 }
 
+/* =========================================================================== */
 
-.section input {
-    display: none;
-}
-.section .slidewrap {
+.slide_container .slide_list {
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 50vh;
     overflow: hidden;
+
+    position: relative;
 }
 
-.section .slidelist {
-    white-space: nowrap;
-    font-size: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.section .slidelist > li {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    transition: all .5s;
-}
-
-.section .slidelist > li > a {
-    display: block;
+.slide_container .slide_list li {
     position: absolute;
+    left: 100%;
+
+}
+
+.slide_list img {
+    width:100%;
+    height:100%;
+}
+
+.slide_container .slide_list li:first-child {
+    left: 0;
+}
+
+.slide_container .slide_list li.animated {
+    transition: all .8s;
+}
+
+.slide_container .slide_list li {
     width: 100%;
     height: 100%;
 }
 
-.section .slidelist>li>a div {
-    width: 100%;
-    height: 100%;
+.btn_back img,
+.btn_foward img {
+    width:50px;
+    height:50px;
 }
 
-.section .slidelist label {
+/* =========================================================================== */
+
+.slide_container>a {
+    width: 10%;
+    height: 100%;
+    background-color: whitesmoke;
+
     position: absolute;
-    z-index: 10;
-    top:50%;
-    transform: translateY(-50%);
     
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .3;
+    transition: opacity .3s ease-in-out;
 }
 
-.section .slidelist .left {
+.slide_container>a:hover {
+    opacity: 1;
+}
+
+.btn_back {
     left: 0;
-    background: url(../../image_folder/left.png) center / cover;
 }
 
-.section .slidelist .right {
+.btn_foward {
     right: 0;
-    background: url(../../image_folder/right.png) center / cover;
 }
 
-
-
-#slide01:checked ~ .slidewrap li { 
-    transform: translateX(0%);
-}
-
-#slide02:checked ~ .slidewrap li { 
-    transform: translateX(-100%);
-}
-#slide03:checked ~ .slidewrap li { 
-    transform: translateX(-200%);
-}
-.slide_img1{
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009185.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
-}
-.slide_img2{
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009689AB/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
-}
-.slide_img3{
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010406AA/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
-}
-
-/* ================================================== */
-/* grid_container_bottom */
-
-
-.gridContainer_bottom {
-    color: white;
-    width: 100%;
-    height: 75vh;
-
-    display: grid;
-
-    grid-row: -2 / span 1;
-
-    grid-template-rows: .5fr 2.5fr;
-
-}
-
-/* ========위에 지울거. */
-
-
-.gridContainer_bottom>.grid_bot_top {
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-
-    text-transform: capitalize;
-    font-size: 2em;
-}
-
-.gridContainer_bottom>.grid_bot_bot {
-    grid-row: 2 / 3;    
-}
-/* ================================ */
-
-
-.bot_section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-
-.bot_section input {
+.nonVisible {
     display: none;
 }
-.bot_section .bot_slidewrap {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
-.bot_section .bot_slidelist {
-    white-space: nowrap;
-    font-size: 0;
-    width: 100%;
-    height: 100%;
-}
+/* =========================================================================== */
 
-.bot_section .bot_slidelist > li {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    transition: all .5s;
-}
+.pager {
+    margin-top: 20px;
 
-.bot_section .bot_slidelist > li > a {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.bot_section .bot_slidelist>li>a div {
-    width: 100%;
-    height: 100%;
-}
-
-.bot_section .bot_slidelist label {
-    position: absolute;
-    z-index: 10;
-    top:50%;
-    transform: translateY(-50%);
-    /* padding: 50px; */
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-}
-
-.bot_left {
-    left: 0;
-    position: absolute;
-    background: url(../../image_folder/left.png) center / cover;
-}
-
-.bot_right {
-    right: 0;
-    position: absolute;
-    background: url(../../image_folder/right.png) center / cover;
-}
-
-
-
-.bot_main_slide01,
-.bot_main_slide02,
-.bot_main_slide03 {
     display: flex;
+    justify-content: center;
+
+    position: absolute;
+}
+
+.pager a {
+    display: block;
+    background: beige;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 3px;
+
+    transition: all .2s ease-in;
+}
+
+.pager a:first-child {
+    background: rgb(49, 47, 47);
+}
+
+
+/* __main>section_bottom */
+
+.section_bottom {
     position: relative;
+
+    width: 100%;
+    height: 50vh;
+}
+
+.book{
+    width: 45vh;
+    height: 100%;
+    position: absolute;
+
+    border: solid 1px #888787;
+    box-sizing: border-box;
+}
+
+.book a {
+    border: solid 7px whitesmoke;
+    box-sizing: border-box;
+
+    display: inline-block;
+}
+
+.Page1 {
+    z-index: 2;
+}
+
+.Page2 {
+    left: 30%;
+    z-index: 1;
+
+    transition: all 1.5s ease-out;
+}
+
+.Page3 {
+    right: 0;
+    z-index: 0;
+}
+
+.Page2:hover {
+    z-index: 2;
+    transition: all 1.5s ease-out;
+}
+
+.Page3:hover {
+    z-index: 2;
 }
 
 
-
-.bot_slide_img11 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009784.00/importer/standup.png.transform.approductmain.png) center / 80% 80% no-repeat;
+.Page1>a {
+    width: 100%;
+    height: 100%;
+    background: url(../image_folder/bookImg1.jpeg) 100% / 100% 100% ;
 }
 
-.bot_slide_img12 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009861.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat ;
+.Page2>a {
+    width: 100%;
+    height: 100%;
+    background: url(../image_folder/bookImg2.avif) 100% / 100% 100%; 
 }
 
-.bot_slide_img13 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009863.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
+.Page3>a {
+    width: 100%;
+    height: 100%;
+    background: url(../image_folder/bookImg3.png) 100% / 100%;
 }
 
-.bot_slide_img21 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009557.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
-}
+/* === 모달 === */
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    display: none;
+  
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+  .modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 450px;
+    height: 600px;
+  
+    padding: 40px;
+  
+    text-align: center;
+  
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  
+    transform: translateX(-50%) translateY(-66%);
+    z-index: 4;
 
-.bot_slide_img22 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009467.00/importer/standup.png.transform.approductmain.png) center / 80% 80% no-repeat;
-}
-
-.bot_slide_img23 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009952.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat ;
-}
-
-
-
-.bot_slide_img31 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009695.00/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat ;
-}
-
-.bot_slide_img32 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR010229AA/importer/standup.png.transform.approductmain.png) center/ 80% 80% no-repeat;
-}
-
-.bot_slide_img33 {
-    background: url(https://www.audemarspiguet.com/content/dam/ap/com/products/watches/MTR009504.00/importer/standup.png.transform.approductmain.png) center / 80% 80% no-repeat;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#bot_slide01:checked ~ .bot_slidewrap li { 
-    transform: translateX(0%);
-}
-
-#bot_slide02:checked ~ .bot_slidewrap li { 
-    transform: translateX(-100%);
-}
-#bot_slide03:checked ~ .bot_slidewrap li { 
-    transform: translateX(-200%);
-}
+    background: url(../image_folder/bookImg1.jpeg) 100% / 100% 100% ;
+  }
 
 
-
-
-
-/* ============ */
-/* 수정 전  main container*/
-
-
-main .banner {
-    background-color: #444;
-}
-
-.main_intro {
-    grid-row: 2 / 3;
-}
-
-.main_newItems {
-    grid-row: 4 / 5;
-}
-
-.main_oldItems {
-    grid-row: -3 / -2;
-}
-
-
+/* <footer> 시작======================================================== */
 
 @media screen and (min-width:400px) {
     footer {

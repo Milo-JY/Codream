@@ -7,23 +7,35 @@
 
 .headerBigNav {
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     display: flex;
 
     width: 100%;
-    height: 150px;
+    height: 80px;
     padding: 0 5%;
+
+    border-bottom: 1px solid gray;
+    color: white;
+    transition: 1s ease-out;
 
     z-index: 2;
 }
 
-.headerBigNav:hover {
-    background-color: white;
+.headerBigNav::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
 }
 
-.headerBigNav:hover .mainBtnLi>a {
-    color: black;
-}
+/* .headerBigNav:hover {
+    background-color: white;
+} */
 
 .menuWrap.left {
     display: flex;
@@ -42,7 +54,7 @@
 
 header h1 {
     height: 100%;
-    background: url(../../image_folder/logo_new2.png) center / 100% no-repeat;
+    background: url(../../image_folder/logo_new3.png) center / 100% no-repeat;
 
     min-width: 250px;
 }
@@ -62,7 +74,7 @@ header h1 {
     align-items: center;
 
     font-size: 1.2rem;
-    color: black;
+    color: white;
 }
 
 .mainBtnLi>a:hover {
@@ -117,15 +129,14 @@ header h1 {
 
 .leftMainUl>li>ul {
     display: grid;
-    visibility: hidden;
     position: absolute;
 
     grid-template: .3fr 1fr .3fr 1fr .3fr 1fr .3fr 1fr .3fr 1fr .3fr/ 1fr .3fr 3fr .3fr;
 
     left: -100%;
-    top: 150px;
+    top: 80px;
     width: 800px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 80px);
 
     border: 1px solid;
     background-color: white;
@@ -244,208 +255,326 @@ header h1 {
 .hover_a.hoverMenu {
     width: 80%;
 }
+/* header 끝 */
+/* ================================================ */
 
+/* ===================================================== */
+/* main 시작 */
 
+/* 공통 */
 
-/* ===================================================== header^*/
-/* main */
-
-/* 메인 헤드 ================================*/
-
-.banner {
-    height: 150px;
-    width: 100%;
-    border-bottom: 1px solid silver;
-}
-
-.text_notice {
-    text-align: center;
-    line-height: 50px;
-    font-size: 3em;
-    box-sizing: border-box;
-    padding-top: 80px;
-}
-
-.container1 {
-    width: 70%;
-    height: 60vh;
-    margin: auto;
-    font-size: 1.5rem;
-    
-    display: grid;
-    grid-template: .5fr 1fr / .1fr repeat(4, 2fr) .1fr;
-}
-
-.container1 h2 {
-    font-weight: 300;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-    grid-area: 1 / 2 / 2 / 6;
-}
-
-.service_repair {
-    grid-area: 2 / 2;
-}
-.service_menual {
-    grid-area: 2 / 3;
-}
-.service_location {
-    grid-area: 2 / 4;
-}
-.service_request {
-    grid-area: 2 / 5;
-}
-
-.container1>div {
-    width: 100%;
-    height: 80%;
-    /* box-sizing: border-box;
-    border: 1px solid; */
-    
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
-    display: grid;
-    grid-template-rows: .5fr 1.5fr .5fr repeat(2, .5fr);
-}
-
-
-.container1 a {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-/* 메인헤드 이미지=============================================== */
-
-.images {
-    width: 100%;
+main {
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
 }
 
-.repairImg {
-    background: url(../image_folder/notice_repair_img.webp) no-repeat center/100% 100%;
+.imgRepair {
+    background: url(../image_folder/notice_repair_img.webp) no-repeat 100% /100% 100%;
 }
 
-.manualImg {
+.imgMenual {
     background: url(../image_folder/notice_manual_img.png) no-repeat center/100% 100%;
 }
 
-.locationImg {
+.imgLocation {
     background: url(../image_folder/notice_location_img.png) no-repeat center/100% 100%;
 }
 
-.requestImg {
-    background: url(../image_folder/notice_contactUs_img.png) no-repeat center/100% 100%;
+.imgRequest {
+    background: url(../image_folder/contactUs_img.png) no-repeat center/100% 100%;
 }
 
+/* === */
+/* 아코디언 1 */
 
-
-
-/* ================================메인 헤드^ */
-
-.container2 {
-    width: 70%;
-    height: 90vh;
-    margin: auto;
-    background-color: whitesmoke;
-    font-size: 1.5rem;
-    text-align: center;
-
-    display: grid;
-    grid-template: .5fr 1fr 3fr 1fr / .5fr 1fr .5fr;
-}
-
-.container2 .question_title {
-    grid-area: 2 / 2 / 3 / 3;
-
-    margin-top: 40px;
-    margin-bottom: -20px;
-    font-weight: 300;
-}
-
-
-.container2>div:nth-of-type(2) {
-    width: 100%;
-    /* line-height: 200%; */
-    text-align: left;
-    padding: 100px;
-    box-sizing: border-box;
-    
+/* .commonQuestion_container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    
-    grid-area: 3 / 1 / 4 / -1 ;
+} */
+
+
+.commonQuestion_container,
+.serviceQuestion_container {
+    width: 90%;
+    font-size: 1.7rem;
+    margin: 100px auto;
 }
 
-.question_box>div {
-    margin: 2% 0;
-    font-size: 1.2rem;
+.question_title {
+    text-align: center;
+    margin: 100px 0;
 }
 
-.question {
-    font-weight: bold;
-}
+.commonQ_header,
+.serviceQ_header {
+    background-color: rgb(86, 1, 1);
+    color: white;
 
-.answer {
+    line-height: 50px;
     padding-left: 30px;
-    box-sizing: border-box;
+
+    cursor: pointer;
 }
 
+.commonQ_body,
+.serviceQ_body {
+    background-color: rgb(222, 208, 208);
+    height: 150px;
+    box-sizing: border-box;
+    
+    transition: 1s;
+    overflow: hidden;
+}
+
+.commonQ_body>p,
+.serviceQ_body>p {
+    padding: 30px 50px;
+}
+
+.commonQ_list,
+.serviceQ_list {
+    margin: 10px 0;
+}
+
+.commonQ1_hidden .commonQ_body,
+.serviceQ_hidden .serviceQ_body {
+    height: 0px;
+}
+
+/* --- 반응형 min550 */
+
+@media screen and (max-width:549px) {
+
+    
+    .container1 {
+        background-color: bisque;
+    }
+
+    .container1 h1 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 3.5em;
+        box-sizing: border-box;
+        padding-top: 250px;
+    }
+    
+    .container1 h2 {
+        font-weight: 300;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    /* container2------------------- */
+
+    .requestBox {
+        width: 100%;
+        height: 30%;
+    
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 1.3rem;
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .repair_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .requestBox>div {
+        width: 100%;
+        height: 80%;
+        /* box-sizing: border-box;
+        border: 1px solid; */
+        
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        display: grid;
+        grid-template-rows: .5fr 1.5fr .5fr repeat(2, .5fr);
+    }
+    
+    .requestBox a {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    /* 메인헤드 이미지=============================================== */
+    .images {
+        width: 200px;
+        height: 200px;
+    }
+    
+     .requestBox img{
+        width: 100%;
+        height: 100%;
+    }
+}
+        
+    
+/* ================================메인 헤드^ */
+    
+/* 아코디언  */
 /* ===== */
 
-.container3 {
-    width: 70%;
-    height: 100vh;
-    margin: auto;
-    background-color: whitesmoke;
-    font-size: 1.5rem;
-    text-align: center;
 
-    display: grid;
-    grid-template: 1fr 1fr 3fr 1fr / .5fr 1fr .5fr;
+/*
+=========================================================================================================================== */
+/* [반응형 min550px max999px] */
+
+@media screen and (min-width:550px) and (max-width : 999px) {
+
+    main {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .container1 h1 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 3.5em;
+        box-sizing: border-box;
+        padding-top: 250px;
+    }
+    
+    .container1 h2 {
+        font-weight: 300;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    /* container2_images------------------- */
+    
+    .requestBox {
+        width: 100%;
+        height: 30%;
+    
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 1.5rem;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .requestBox a {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    /* 이미지 사이즈 =========================================== */
+    .images {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .requestBox img{
+        width: 100%;
+        height: 100%;
+    }
+}
+    
+/* 메인 헤드^====================== */
+
+
+/*
+=========================================================================================================================== */
+/* 반응형 min550px max999px */
+
+@media screen and (min-width:1000px) {
+
+    main {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .container1 h1 {
+        text-align: center;
+        line-height: 50px;
+        font-size: 3.5em;
+        box-sizing: border-box;
+        padding-top: 250px;
+    }
+    
+    .container1 h2 {
+        font-weight: 300;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    /* container2_images------------------- */
+    
+    .requestBox {
+        width: 100%;
+        height: 30%;
+    
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 1.5rem;
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .requestBox>div {
+        width: 100%;
+        height: 80%;
+        /* box-sizing: border-box;
+        border: 1px solid; */
+        
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        
+        display: grid;
+        grid-template-rows: .5fr 1.5fr .5fr repeat(2, .5fr);
+    }
+    
+    .requestBox a {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    /* 메인헤드 이미지=============================================== */
+    .images {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .requestBox img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.container3>div:first-child,
-.container3 .question_subTitle {
-    margin-top: 20px;
-    margin-bottom: -20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
-    grid-area: 1 / 1 / 2 / -1;
-    font-weight: 300;
-}
-
-.container3>div:nth-of-type(2) {
-    width: 100%;
-    /* line-height: 200%; */
-    text-align: left;
-    padding: 100px;
-    box-sizing: border-box;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    
-    grid-area: 3 / 1 / 4 / -1 ;
-}
-
-
+/* 메인 끝^ */
 /* 
-=====================================================
+===========================================
 */
+/* footer 시작 */
 
 
 @media screen and (min-width:400px) {
