@@ -257,24 +257,26 @@ header h1 {
 }
 /* header */
 /* ================================================ */
-
 .topicon{
     width: 2.5rem;
     line-height: 1.5rem;
+
+    color: white;
     background-color: black;
+    
     border-radius: 50%;
+    text-align: center;
+    
     position: fixed;
     right: 5%;
     bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.topicon>a{ 
-    color: white;
+
+    cursor: pointer;
 }
 
-
+main .topicon .fa-angle-up{
+    display: none;
+}
 /* 
 ===================================================== header */
 main{
@@ -311,12 +313,14 @@ main{
     grid-row: 4/5;
 
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: column;
 
+    justify-content: space-around;
 }
+
 .main_notice>div{
     margin-bottom: 3rem;
+
 }
 
 /*=============================================main grid================================================*/
@@ -352,20 +356,37 @@ main a{
     transition: .5s;
 }
 
+.main_notice div div span{
+    font-weight: bolder;
+
+}
+.flex_div{
+    border: 1px groove;
+    border-left: none;
+    border-right: none;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .main_notice>div p{
     max-height: 300px;
-
     text-align: justify ;
     word-break: break-all;
-
     margin-top: 2%;
-
     overflow: auto;
+    transition: .5s;
 }
 
 .notice_name{
     font-weight: bolder;
     font-size: 1rem;
+}
+
+.main_notice div .accordion_hidden{
+   height: 0;
 }
 
 /*=================================== main media ============================================*/
@@ -392,7 +413,7 @@ main a{
         max-height: 150px;
     }
     .notice_name{
-        font-size: .8em;
+        font-size: .7em;
     }
 }
 

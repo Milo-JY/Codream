@@ -51,10 +51,6 @@ const emailValidation = /^[a-zA-Z0-9]*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)\.([a-zA-Z
     firstNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
     lastNameValidation = /^[a-zA-Z]{4,}$/;
 
-// 탑아이콘 
-const topdiv = document.querySelector('.topicon'),
-    topBtn = topdiv.getElementsByTagName('a');
-
 // 비밀번호 플래그 배열 
 let PswFlagAr = [ 0, 0];
 
@@ -118,6 +114,21 @@ function ButtonValidation(alertText , InputTag){
 /* ========================================================================================*/
 
 /* ========================================탑아이콘 scroll===================================*/
+import topScroll , {scrollDisplay} from "../../module_JsFolder/topScroll.js";
+
+// 탑아이콘 
+const scrollTop = document.querySelector('.fa-angle-up');
+
+document.addEventListener('scroll', () => {
+    scrollDisplay(scrollTop);
+});
+
+
+// 스크롤탑 버튼을 클릭했을 때
+
+scrollTop.addEventListener('click', () => {
+   topScroll();
+});
 
 /* ========================================================================================*/
 // 실인수 설명 ( p태그 , PTextAr베열[인덱스 number] , input태그.value , FlagObj베열[인덱스 number]);

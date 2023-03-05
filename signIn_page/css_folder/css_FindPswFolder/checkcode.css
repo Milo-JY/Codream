@@ -256,7 +256,6 @@ header h1 {
     width: 80%;
 }
 /* header */
-
 /* ================================================ */
 
 main{
@@ -280,7 +279,7 @@ main{
 }
 .checkcode_main{
     width: 800px;
-    margin-top: 80px;
+    margin-top: 160px;
 
     align-self: start;
     text-align: center;

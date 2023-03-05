@@ -260,17 +260,22 @@ header h1 {
 .topicon{
     width: 2.5rem;
     line-height: 1.5rem;
+
+    color: white;
     background-color: black;
+
     border-radius: 50%;
+    text-align: center;
+    
     position: fixed;
     right: 5%;
     bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+    cursor: pointer;
 }
-.topicon>a{ 
-    color: white;
+
+main .topicon .fa-angle-up{
+    display: none;
 }
 
 
@@ -526,7 +531,7 @@ form>div:not(.create_account){
     main{
         max-width: 999px;
         width: 60%;
-        margin: 80px auto;
+        margin: 160px auto 80px;
     }
 
     .go_signin{
@@ -560,7 +565,7 @@ form>div:not(.create_account){
     main{
         max-width: 540px;
         width: 70%;
-        margin: 80px auto;
+        margin: 160px auto 80px;
     }
     
     .go_signin{

@@ -29,17 +29,31 @@ function changeColor(PTag , Color, FlagValue ){
     Flag = FlagValue;
 }
 
-// let NumAr = new Array(6).fill(0);
-// for(let i =0 ; )
-// Math.floor(Math.random() * 10);
-
+let NumAr = new Array(6).fill(0);
+    for(let i =0 ; i< NumAr.length ; i++ ){
+        
+        NumAr[i] = Math.floor(Math.random() * 10);
+    }
+console.log(NumAr);
+let TextValuAr;
 function Validation(textValue){
-    // console.log(Num);
+
     codeP[1].style.display = `block`;
     codeP[1].textContent = '* Please enter the 6-digit code.';
     
     if(CodeValidation.test(textValue)){
-        changeColor(codeP[1], 'green', 0);
+        TextValuAr = textValue.split('');
+        if(TextValuAr.length){
+            for(let i =0 ; i < NumAr.length ; i++){
+                if(NumAr[i] === +TextValuAr[i]){
+                    changeColor(codeP[1], 'green', 0);
+                }else{
+                    changeColor(codeP[1], 'green', 1);
+                    break;
+                }   
+                
+            }
+        }
     }else{
         changeColor( codeP[1], 'red', 1);
     }

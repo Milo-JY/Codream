@@ -256,20 +256,26 @@ header h1 {
     width: 80%;
 }
 /* header */
+
 .topicon{
     width: 2.5rem;
     line-height: 1.5rem;
+
+    color: white;
     background-color: black;
+    
     border-radius: 50%;
+    text-align: center;
+    
     position: fixed;
     right: 5%;
     bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+    cursor: pointer;
 }
-.topicon>a{ 
-    color: white;
+
+main .topicon .fa-angle-up{
+    display: none;
 }
 
 /* 
@@ -360,10 +366,32 @@ main a{
     overflow: auto;
 }
 
+.main_notice div div span{
+    font-weight: bolder;
+
+}
+
+.flex_div{
+    border: 1px groove;
+    border-left: none;
+    border-right: none;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .notice_name{
     font-weight: bolder;
     font-size: 1rem;
 }
+
+.main_notice div .accordion_hidden{
+    height: 0;
+ }
+
+
 
 /*=================================== main media ============================================*/
 
