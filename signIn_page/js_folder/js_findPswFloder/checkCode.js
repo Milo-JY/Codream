@@ -20,7 +20,7 @@ function changeColor(PTag , Color, FlagValue ){
 // Math.floor(Math.random() * 10);
 
 function Validation(textValue){
-    console.log(Num);
+    // console.log(Num);
     codeP[1].style.display = `block`;
     codeP[1].textContent = '* Please enter the 6-digit code.';
     

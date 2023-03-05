@@ -299,6 +299,7 @@ main a,
 }
 
 .sign_in{
+    margin-top: 80px;
     color:black;
     max-width: 800px;
     height: 100%;
