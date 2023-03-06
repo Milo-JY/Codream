@@ -52,10 +52,10 @@ const emailValidation = /^[a-zA-Z0-9]*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)\.([a-zA-Z
     firstNameValidation = /^[a-zA-Z]{4,}$/;
 
 // 비밀번호 플래그 배열 
-let PswFlagAr = [ 0, 0];
+let PswFlagAr = [ 1, 1];
 
 // first ~ email 플래그 배열 
-let FlagAr = [ 0, 0, 0, 0];
+let FlagAr = [ 1, 1, 1, 1];
 
 // 텍스트 배열
 
@@ -80,18 +80,9 @@ function changeColor(PTag , Color ,FlagArjIndx , Flag ){
     FlagAr[FlagArjIndx] = Flag;  
 }
 
-function displayChange(ptag , value){
-    ptag.style.display = `${value}`;
-}
-
-function textPtagChange(ptag , value){
-    ptag.textContent = PTextAr[value];
-}
-
-
 function Validation(ptag , text, checkVaildation, textValue, Flags){
-    displayChange( ptag , "block" );
-    textPtagChange(ptag, text );
+    ptag.style.display = `block`;
+    ptag.textContent = PTextAr[text];
     
     if(checkVaildation.test(textValue)){
         changeColor(ptag, 'green', Flags, 0);
@@ -100,7 +91,7 @@ function Validation(ptag , text, checkVaildation, textValue, Flags){
     }
     
     if (!textValue ){
-        displayChange( ptag ,"none" );
+        ptag.style.display = `none`;
         changeColor( ptag, 'red', Flags, 1);
     }
 }
