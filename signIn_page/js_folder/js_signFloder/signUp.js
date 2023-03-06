@@ -51,11 +51,11 @@ const emailValidation = /^[a-zA-Z0-9]*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)\.([a-zA-Z
     lastNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
     firstNameValidation = /^[a-zA-Z]{4,}$/;
 
-// 비밀번호 플래그 배열 
-let PswFlagAr = [ 1, 1];
+// 모듈 비밀번호 플래그 배열 
+let PswFlagAr = [2].fill(1);
 
 // first ~ email 플래그 배열 
-let FlagAr = [ 1, 1, 1, 1];
+let FlagAr = [4].fill(1);
 
 // 텍스트 배열
 
@@ -69,7 +69,7 @@ let PTextAr = [
 /* ======================== ========================================================*/
 
 /*===================================인풋태그 유효성 검사 ====================================*/
-
+// 모듈 콜백 호출 
 function ModulechangeColor(PTag , Color ,FlagArjIndx , Flag ){
     PTag.style.color = `${Color}`;
     PswFlagAr[FlagArjIndx] = Flag;  
@@ -138,6 +138,7 @@ singupMainDiv.addEventListener('click' , (e) =>{
     }
 });
 
+//input 태그 이벤트리스너 
 singupMainDiv.addEventListener('keyup', (e) => {
     const eventObj = e.target;
     if(eventObj === userPassword || eventObj === userConfirmPasswords){
@@ -153,6 +154,7 @@ singupMainDiv.addEventListener('keyup', (e) => {
     }
 });
 
+//버튼 이벤트리스너
 creatButton.addEventListener('click' , (e) =>{
     if(FlagAr[0]){
         ButtonValidation('FirstName' ,userFirstName);
