@@ -48,8 +48,8 @@ const EmailP = email.getElementsByTagName('p'),
 // 인풋 태그 정규 표현식 
 const emailValidation = /^[a-zA-Z0-9]*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)\.([a-zA-Z]){1,3}$/,
     PhoneNumValidation = /^[0-9]{5,}$/,
-    firstNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
-    lastNameValidation = /^[a-zA-Z]{4,}$/;
+    lastNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
+    firstNameValidation = /^[a-zA-Z]{4,}$/;
 
 // 비밀번호 플래그 배열 
 let PswFlagAr = [ 0, 0];
@@ -60,8 +60,8 @@ let FlagAr = [ 0, 0, 0, 0];
 // 텍스트 배열
 
 let PTextAr = [
-    '* Enter the first letter in upper case.',
     '* Please enter at least 3 characters.',
+    '* Enter the first letter in upper case.',
     '* Only numbers.',
     '* The email format is ex) avc12@gmail.com',
 ];
