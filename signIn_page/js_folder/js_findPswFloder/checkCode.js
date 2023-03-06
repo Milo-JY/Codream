@@ -31,11 +31,13 @@ function changeColor(PTag , Color, FlagValue ){
 
 let NumAr = new Array(6).fill(0);
     for(let i =0 ; i< NumAr.length ; i++ ){
-        
-        NumAr[i] = Math.floor(Math.random() * 10);
+        NumAr[i] = Math.trunc(Math.random() * 10);
+        //trunc() 메소드 : 소수점 부분을 날려 정수로 치환 ,random()메소드 : (Math.ramdom ()* 최대값)  0 ~ 최대값 까지의 산수 생성 
     }
+
 console.log(NumAr);
 let TextValuAr;
+
 function Validation(textValue){
 
     codeP[1].style.display = `block`;
