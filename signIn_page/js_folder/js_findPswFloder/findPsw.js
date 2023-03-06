@@ -22,6 +22,7 @@ const findpwMain = document.querySelector('.findpw_main'),
    
 let popup;
 const addressAr = [
+    '1111@1111.aa',
     'qazwsx@gmail.com',
     'qazwsx123@gmail.com',
     'zxczxc@gmail.com',
@@ -42,6 +43,7 @@ function popupOpen(){
     popup.resizeTo(500, 500);
 }
 
+console.log('1111@1111.aa',);
 
 let Flag = 0
 userAddress.addEventListener('keyup' , (e) => {
