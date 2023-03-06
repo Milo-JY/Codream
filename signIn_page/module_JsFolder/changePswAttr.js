@@ -33,13 +33,12 @@ function ModuleTextPtagChange(ptag , value){
 
 // 모둘 매개변수 설명 (input태그 , input태그 , p태그 , p태그 , 모듈에서 콜백 호출 함수 참조주소 )
 export function ValidationPsw( userPassword, userConfirmPasswords, pswpP, conP ,changeColor){
-
-    ModuleTextPtagChange(pswpP, 0 );
-    ModuleTextPtagChange(conP, 1 );
-
     let checkPassword = userPassword.value;
     let checkconfirmPassword = userConfirmPasswords.value;
-
+    
+    ModuleTextPtagChange(pswpP, 0 );
+    ModuleTextPtagChange(conP, 1 );
+    
     ModulDisplayChange( pswpP, 'block' );
     if(userPassword.value || userConfirmPasswords.value){
         ModuleTextPtagChange(conP, 1 );
