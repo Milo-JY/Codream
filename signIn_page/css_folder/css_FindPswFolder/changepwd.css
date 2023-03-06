@@ -260,7 +260,7 @@ header h1 {
 ===================================================== header */
 
 main{
-    min-height: 95vh;
+    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -385,7 +385,11 @@ span .fa-eye-slash{
     :root {
         font-size: 14.5px;
     }
+    header{
+        height: 80px;
+    }
     main{
+        height: 75vh;
         grid-template-rows: 80px 1fr 80px;
     }
 
@@ -393,19 +397,30 @@ span .fa-eye-slash{
         width: 600px;
     }
 
+    .change_psw_main{
+        margin-top: 80px;
+    }
 }
 
 @media screen and (max-width: 549px){
     :root{
         font-size: 12px;
     }
+
+    header{
+        height: 80px;
+    }
+
     main{
-        height: 60vh;
+        height: 75vh;
         grid-template-rows: 80px 1fr 80px;
     }
 
     main .change_psw_main{
         width: 400px;
+    }
+    .change_psw_main{
+        margin-top: 80px;
     }
 }
 

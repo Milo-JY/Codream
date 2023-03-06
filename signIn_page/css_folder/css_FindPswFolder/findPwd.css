@@ -259,7 +259,7 @@ header h1 {
 /* ================================================ */
 
 main{
-    min-height: 95vh;
+    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -423,10 +423,16 @@ main p{
     :root {
         font-size: 14.5px;
     }
+    header{
+        height: 80px
+    }
     main{
+        height: 75vh;
         grid-template-rows: 80px 1fr 80px;
     }
-
+    .findpw_main{
+        margin-top: 80px;
+    }
     main .findpw_main{
         width: 600px;
     }
@@ -437,9 +443,15 @@ main p{
     :root{
         font-size: 12px;
     }
+    header{
+        height: 80px;
+    }
     main{
-        height: 60vh;
+        height: 75vh;
         grid-template-rows: 80px 1fr 80px;
+    }
+    .findpw_main{
+        margin-top: 80px;
     }
 
     main .findpw_main{

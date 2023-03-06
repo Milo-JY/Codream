@@ -259,7 +259,7 @@ header h1 {
 /* ================================================ */
 
 main{
-    min-height: 95vh;
+    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -358,8 +358,15 @@ main{
     :root {
         font-size: 14.5px;
     }
+    header{
+        height: 80px;
+    }
     main{
+        height: 75vh;
         grid-template-rows: 80px 1fr 80px;
+    }
+    .checkcode_main{
+        margin-top: 80px;
     }
 
     main .checkcode_main{
@@ -372,8 +379,15 @@ main{
     :root{
         font-size: 12px;
     }
+    .checkcode_main{
+        margin-top: 80px;
+    }
+    header{
+        height: 80px;
+    }
     main{
-        height: 60vh;
+        height: 75vh;
+       
         grid-template-rows: 80px 1fr 80px;
     }
 

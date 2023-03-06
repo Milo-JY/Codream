@@ -260,7 +260,7 @@ header h1 {
 
 
 main{
-    min-height:  95vh;
+    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -434,18 +434,21 @@ main a,
     :root {
         font-size: 14.5px;
     }
-
+    header{
+        height: 80px;
+    }
     .create_account{
         height: 60px;
         width: 120px;
         font-size: .8rem;
     }
     main{
-        min-height: 60vh;
+        height: 80vh;
         grid-template-rows: 80px 600px 80px;
     }
     .sign_in{
         width: 500px;
+        height: 80vh;
     }
 
     .welcome {
@@ -459,9 +462,12 @@ main a,
     :root{
         font-size: 12px;
     }
-  
+    header{
+        height: 80px;
+    }
+
     main{
-        height: 60vh;
+        height: 80vh;
         grid-template-rows: 80px 1fr 80px;
     }
 
