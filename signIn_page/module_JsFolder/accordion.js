@@ -6,10 +6,12 @@ export default function accordion(targetEvent){
             
         targetEvent.parentNode.children[1].classList.remove(`accordion_hidden`);
         targetEvent.children[1].textContent =  '-';
+        targetEvent.children[1].style.fontWeight= 'bolder';
     } else {
         
         targetEvent.parentNode.children[1].classList.add(`accordion_hidden`);
         targetEvent.children[1].textContent = '+';
+        targetEvent.children[1].style.fontWeight= 'bolder';
     }
 }
 
