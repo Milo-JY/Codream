@@ -259,7 +259,6 @@ header h1 {
 /* ================================================ */
 
 main{
-    height: 95vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -278,7 +277,7 @@ main p{
 }
 .findpw_main{
     width: 800px;
-    margin-top: 160px;
+    margin: 160px 0 100px;
 
     align-self: start;
     text-align: center;
@@ -427,7 +426,7 @@ main p{
         height: 80px
     }
     main{
-        height: 75vh;
+
         grid-template-rows: 80px 1fr 80px;
     }
     .findpw_main{
@@ -447,7 +446,7 @@ main p{
         height: 80px;
     }
     main{
-        height: 75vh;
+
         grid-template-rows: 80px 1fr 80px;
     }
     .findpw_main{

@@ -259,7 +259,7 @@ header h1 {
 /* ================================================ */
 
 main{
-    height: 95vh;
+
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     justify-content: center;
@@ -279,7 +279,7 @@ main{
 }
 .checkcode_main{
     width: 800px;
-    margin-top: 160px;
+    margin: 160px 0 100px;
 
     align-self: start;
     text-align: center;
@@ -362,7 +362,7 @@ main{
         height: 80px;
     }
     main{
-        height: 75vh;
+  
         grid-template-rows: 80px 1fr 80px;
     }
     .checkcode_main{
@@ -386,8 +386,7 @@ main{
         height: 80px;
     }
     main{
-        height: 75vh;
-       
+    
         grid-template-rows: 80px 1fr 80px;
     }
 
