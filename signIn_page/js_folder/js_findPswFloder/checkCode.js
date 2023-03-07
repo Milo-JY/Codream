@@ -3,16 +3,9 @@
 const header = document.querySelector(`header`),
     headerBigNav = header.querySelector(`.headerBigNav`);
 
-<<<<<<< HEAD
     let delY = 0;
 
     window.addEventListener(`wheel`, (e) => {
-=======
-let delY = 0;
-
-    window.addEventListener(`wheel`, (e) => {
-        console.log(headerBigNav.offsetHeight);
->>>>>>> minsu_branch
         delY += e.deltaY;
     
         if(delY > 300) {

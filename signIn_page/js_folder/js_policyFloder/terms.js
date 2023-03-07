@@ -7,10 +7,6 @@ const main_notice = document.querySelector('.main_notice');
 let delY = 0;
 
 window.addEventListener(`wheel`, (e) => {
-<<<<<<< HEAD
-=======
-    console.log(headerBigNav.offsetHeight);
->>>>>>> minsu_branch
     delY += e.deltaY;
 
     if(delY > 300) {
