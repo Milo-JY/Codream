@@ -125,7 +125,7 @@ document.addEventListener('scroll', () => {
 // 스크롤탑 버튼을 클릭했을 때
 
 scrollTop.addEventListener('click', () => {
-   topScroll();
+   topScroll(headerBigNav);
 });
 
 /* ========================================================================================*/
