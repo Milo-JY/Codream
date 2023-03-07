@@ -8,15 +8,23 @@ const section = document.querySelector('section'),
 const header = document.querySelector(`header`),
     headerBigNav = header.querySelector(`.headerBigNav`);
 
-window.addEventListener(`wheel`, (e) => {
+    let delY = 0;
 
-    if(e.deltaY > 0) {
-        headerBigNav.style.top = `-81px`;
-    };
-    if(e.deltaY < 0) {
-        headerBigNav.style.top = `0`;
-    };
-});
+    window.addEventListener(`wheel`, (e) => {
+        console.log(headerBigNav.offsetHeight);
+        delY += e.deltaY;
+    
+        if(delY > 300) {
+            headerBigNav.style.top = `-${headerBigNav.offsetHeight}px`;
+            delY = 0;
+        };
+    
+        if(delY < -300) {
+            headerBigNav.style.top = `0px`;
+            delY = 0;
+        };
+    
+    });
 
 //==============================================장바구니 계산기.
 
@@ -151,14 +159,14 @@ table_a.addEventListener('click', (e) => {
                 p_item1.textContent = choiceCnt(+p_item1.textContent,-1);
 
                 item1_price_insertValue.dataset.value = choicePrice(+item1_price_insertValue.dataset.value,-6000000);
-                item1_price_insertValue.textContent = '\\' + item1_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,","); 
+                item1_price_insertValue.textContent = '￦ ' + item1_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,","); 
             }
         } else if(eventOj === button_plus1) {
             if( p_item1.textContent <10) {
                 p_item1.textContent = choiceCnt(+p_item1.textContent,+1);
 
                 item1_price_insertValue.dataset.value = choicePrice(+item1_price_insertValue.dataset.value,+6000000);
-                item1_price_insertValue.textContent = '\\' + item1_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
+                item1_price_insertValue.textContent = '￦ ' + item1_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
             }
         }
     }
@@ -168,14 +176,14 @@ table_a.addEventListener('click', (e) => {
                 p_item2.textContent = choiceCnt(+p_item2.textContent,-1);
                 
                 item2_price_insertValue.dataset.value = choicePrice(+item2_price_insertValue.dataset.value,-43000000);
-                item2_price_insertValue.textContent = '\\' + item2_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
+                item2_price_insertValue.textContent = '￦ ' + item2_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
             }
         } else if(eventOj === button_plus2){
             if(p_item2.textContent <10) {
                 p_item2.textContent = choiceCnt(+p_item2.textContent,+1);
                 
                 item2_price_insertValue.dataset.value = choicePrice(+item2_price_insertValue.dataset.value,+43000000);
-                item2_price_insertValue.textContent = '\\' + item2_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
+                item2_price_insertValue.textContent = '￦ ' + item2_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
             }
         }
     }
@@ -186,14 +194,14 @@ table_a.addEventListener('click', (e) => {
                 p_item3.textContent = choiceCnt(+p_item3.textContent,-1);
                 
                 item3_price_insertValue.dataset.value = choicePrice(+item3_price_insertValue.dataset.value,-13000000);
-                item3_price_insertValue.textContent = '\\' + item3_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
+                item3_price_insertValue.textContent = '￦ ' + item3_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
             }
         } else if(eventOj === button_plus3) {
             if(p_item3.textContent <10) {
                 p_item3.textContent = choiceCnt(+p_item3.textContent,+1);
                 
                 item3_price_insertValue.dataset.value = choicePrice(+item3_price_insertValue.dataset.value,+13000000);
-                item3_price_insertValue.textContent = '\\' + item3_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
+                item3_price_insertValue.textContent = '￦ ' + item3_price_insertValue.dataset.value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,",");
                     // 정규식 해석 - replace 앞 문자열을 replace뒤 문자열로 변환.
                     // replace안 (/정규표현식  / "대체문자열(,)") 
                     // \B - 63개 문자 일치하는 경계

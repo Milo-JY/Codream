@@ -457,15 +457,29 @@ td button{
 }
 #total_list p:nth-child(1){
     line-height: 5vh;
-
+    
     color: #333;
 }
 
 #total_list p:nth-child(2){
     line-height: 5vh;
-
+    
     color: #333;
     margin-top: 2vh;
+}
+
+.total_list_EA,
+#totalGoodsCnt {
+    font-size: 1.5em;
+}
+
+.total_list_price,
+#totalGoodsPrice {
+    font-size: 2em;
+}
+
+.total_list_second {
+    font-size: 2em;
 }
 
 #buy_button{
@@ -1028,5 +1042,18 @@ footer>.container {
     .footer_last_contents {
         grid-area: -1 / 1 / -2 / span 5;
         font-size: 1.5em;
+    }
+}
+
+
+/* ============================== */
+
+@media screen and (max-width:1350px) {
+    main>section {
+        grid-template: 150px 200px 100px 1fr 100px/ 1.5fr 7fr 1.5fr;
+    }
+
+    .headerMainUl .mainBtnLi.non_iconLi {
+        display: none;
     }
 }
