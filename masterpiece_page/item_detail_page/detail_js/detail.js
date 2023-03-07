@@ -5,15 +5,23 @@ const header = document.querySelector(`header`),
     main = document.querySelector(`main`),
     aside = main.querySelector(`aside`);
 
-window.addEventListener(`wheel`, (e) => {
+    let delY = 0;
 
-    if(e.deltaY > 0) {
-        headerBigNav.style.top = `-81px`;
-    };
-    if(e.deltaY < 0) {
-        headerBigNav.style.top = `0`;
-    };
-});
+    window.addEventListener(`wheel`, (e) => {
+        console.log(headerBigNav.offsetHeight);
+        delY += e.deltaY;
+    
+        if(delY > 300) {
+            headerBigNav.style.top = `-${headerBigNav.offsetHeight}px`;
+            delY = 0;
+        };
+    
+        if(delY < -300) {
+            headerBigNav.style.top = `0px`;
+            delY = 0;
+        };
+    
+    });
 
 // ======================================================
 
@@ -23,3 +31,4 @@ window.addEventListener(`scroll`, ()=>{
         aside.style.top = `calc(50% - 175px + ${scrollY}px)`;
     }, 200)
 });
+

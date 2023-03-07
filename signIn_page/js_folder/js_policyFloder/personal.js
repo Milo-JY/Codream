@@ -4,14 +4,21 @@ import accordion from "../../module_JsFolder/accordion.js";
 const header = document.querySelector(`header`),
     headerBigNav = header.querySelector(`.headerBigNav`);
 const main_notice = document.querySelector('.main_notice');
-window.addEventListener(`wheel`, (e) => {
+let delY = 0;
 
-    if(e.deltaY > 0) {
-        headerBigNav.style.top = `-81px`;
+window.addEventListener(`wheel`, (e) => {
+    delY += e.deltaY;
+
+    if(delY > 300) {
+        headerBigNav.style.top = `-${headerBigNav.offsetHeight}px`;
+        delY = 0;
     };
-    if(e.deltaY < 0) {
-        headerBigNav.style.top = `0`;
+
+    if(delY < -300) {
+        headerBigNav.style.top = `0px`;
+        delY = 0;
     };
+
 });
 
 /* ================================= header ===================================== */

@@ -49,21 +49,29 @@ bottom_nav_ul_first.addEventListener('click', (e) => {
 // ===========================================
 const header = document.querySelector(`header`),
     headerBigNav = header.querySelector(`.headerBigNav`);
-window.addEventListener(`wheel`, (e) => {
+let delY = 0;
 
-    if(e.deltaY > 0) {
-        headerBigNav.style.top = `-81px`;
-    };
-    if(e.deltaY < 0) {
-        headerBigNav.style.top = `0`;
-    };
-});
+    window.addEventListener(`wheel`, (e) => {
+        console.log(headerBigNav.offsetHeight);
+        delY += e.deltaY;
+    
+        if(delY > 300) {
+            headerBigNav.style.top = `-${headerBigNav.offsetHeight}px`;
+            delY = 0;
+        };
+    
+        if(delY < -300) {
+            headerBigNav.style.top = `0px`;
+            delY = 0;
+        };
+    
+    });
 
 // ================================================
 
 let popup1,popup2,popup3;
 
-paying_popup.addEventListener('click', (e) => { // 백엔드 넘어가면 고유 API 사용예정.
+paying_popup.addEventListener('click', (e) => { 
     const target = e.target;
 
     if(li_first[0].childNodes[0].className == 'change_color') {

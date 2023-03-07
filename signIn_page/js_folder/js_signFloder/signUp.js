@@ -3,15 +3,22 @@
 const header = document.querySelector(`header`),
     headerBigNav = header.querySelector(`.headerBigNav`);
 
-window.addEventListener(`wheel`, (e) => {
+    let delY = 0;
 
-    if(e.deltaY > 0) {
-        headerBigNav.style.top = `-81px`;
-    };
-    if(e.deltaY < 0) {
-        headerBigNav.style.top = `0`;
-    };
-});
+    window.addEventListener(`wheel`, (e) => {
+        delY += e.deltaY;
+    
+        if(delY > 300) {
+            headerBigNav.style.top = `-${headerBigNav.offsetHeight}px`;
+            delY = 0;
+        };
+    
+        if(delY < -300) {
+            headerBigNav.style.top = `0px`;
+            delY = 0;
+        };
+    
+    });
 
 // ========================================================
 import changePswAttr , {ValidationPsw} from "../../module_JsFolder/changePswAttr.js";
