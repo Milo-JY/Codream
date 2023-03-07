@@ -1,1 +1,0 @@
-Drupal.locale = { 'strings': {"":{"Close":"\ub2eb\uae30"}} };
