@@ -48,24 +48,20 @@ const EmailP = email.getElementsByTagName('p'),
 // 인풋 태그 정규 표현식 
 const emailValidation = /^[a-zA-Z0-9]*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)\.([a-zA-Z]){1,3}$/,
     PhoneNumValidation = /^[0-9]{5,}$/,
-    firstNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
-    lastNameValidation = /^[a-zA-Z]{4,}$/;
+    lastNameValidation = /^[A-Z]([a-zA-Z]){1,}$/,
+    firstNameValidation = /^[a-zA-Z]{4,}$/;
 
-// 탑아이콘 
-const topdiv = document.querySelector('.topicon'),
-    topBtn = topdiv.getElementsByTagName('a');
-
-// 비밀번호 플래그 배열 
-let PswFlagAr = [ 0, 0];
+// 모듈 비밀번호 플래그 배열 
+let PswFlagAr = [2].fill(1);
 
 // first ~ email 플래그 배열 
-let FlagAr = [ 0, 0, 0, 0];
+let FlagAr = [4].fill(1);
 
 // 텍스트 배열
 
 let PTextAr = [
-    '* Enter the first letter in upper case.',
     '* Please enter at least 3 characters.',
+    '* Enter the first letter in upper case.',
     '* Only numbers.',
     '* The email format is ex) avc12@gmail.com',
 ];
@@ -73,7 +69,7 @@ let PTextAr = [
 /* ======================== ========================================================*/
 
 /*===================================인풋태그 유효성 검사 ====================================*/
-
+// 모듈 콜백 호출 
 function ModulechangeColor(PTag , Color ,FlagArjIndx , Flag ){
     PTag.style.color = `${Color}`;
     PswFlagAr[FlagArjIndx] = Flag;  
@@ -84,18 +80,9 @@ function changeColor(PTag , Color ,FlagArjIndx , Flag ){
     FlagAr[FlagArjIndx] = Flag;  
 }
 
-function displayChange(ptag , value){
-    ptag.style.display = `${value}`;
-}
-
-function textPtagChange(ptag , value){
-    ptag.textContent = PTextAr[value];
-}
-
-
 function Validation(ptag , text, checkVaildation, textValue, Flags){
-    displayChange( ptag , "block" );
-    textPtagChange(ptag, text );
+    ptag.style.display = `block`;
+    ptag.textContent = PTextAr[text];
     
     if(checkVaildation.test(textValue)){
         changeColor(ptag, 'green', Flags, 0);
@@ -104,7 +91,7 @@ function Validation(ptag , text, checkVaildation, textValue, Flags){
     }
     
     if (!textValue ){
-        displayChange( ptag ,"none" );
+        ptag.style.display = `none`;
         changeColor( ptag, 'red', Flags, 1);
     }
 }
@@ -118,6 +105,21 @@ function ButtonValidation(alertText , InputTag){
 /* ========================================================================================*/
 
 /* ========================================탑아이콘 scroll===================================*/
+import topScroll , {scrollDisplay} from "../../module_JsFolder/topScroll.js";
+
+// 탑아이콘 
+const scrollTop = document.querySelector('.fa-angle-up');
+
+document.addEventListener('scroll', () => {
+    scrollDisplay(scrollTop);
+});
+
+
+// 스크롤탑 버튼을 클릭했을 때
+
+scrollTop.addEventListener('click', () => {
+   topScroll();
+});
 
 /* ========================================================================================*/
 // 실인수 설명 ( p태그 , PTextAr베열[인덱스 number] , input태그.value , FlagObj베열[인덱스 number]);
@@ -136,6 +138,7 @@ singupMainDiv.addEventListener('click' , (e) =>{
     }
 });
 
+//input 태그 이벤트리스너 
 singupMainDiv.addEventListener('keyup', (e) => {
     const eventObj = e.target;
     if(eventObj === userPassword || eventObj === userConfirmPasswords){
@@ -151,6 +154,7 @@ singupMainDiv.addEventListener('keyup', (e) => {
     }
 });
 
+//버튼 이벤트리스너
 creatButton.addEventListener('click' , (e) =>{
     if(FlagAr[0]){
         ButtonValidation('FirstName' ,userFirstName);
@@ -168,4 +172,103 @@ creatButton.addEventListener('click' , (e) =>{
         return ;
     }
     e.preventDefault();
+});
+
+
+/*============================================================== */
+const container = document.querySelector('.container'),
+    footer_icon= container.querySelector('.footer_icon'),
+    div = container.getElementsByTagName('div'),
+    footer_btn = footer_icon.getElementsByTagName('a'),
+    footer_icon_span = footer_icon.getElementsByTagName('span');
+
+const first_icon = document.querySelector('.first_icon'),
+    second_icon = document.querySelector('.second_icon'),
+    third_icon = document.querySelector('.third_icon'),
+    fourth_icon = document.querySelector('.fourth_icon');
+
+// ======================================================
+//푸터 아이콘 클릭시 다른페이지 이동.
+footer_icon.addEventListener('click',(e)=>{
+    const target = e.target.closest('a');
+
+    if(target === footer_btn[0]){// a를 사용하면 한번 클릭한 사이트는 보라색으로 변하기때문. 
+        // location.href = 'https://www.facebook.com';
+        window.open('https://www.facebook.com');    // 새창에 띄우기 위헤 
+        
+    } else if(target === footer_btn[1]){
+        // location.href = 'https://www.twitter.com';
+        window.open('https://www.twitter.com');
+        
+    } else if(target === footer_btn[2]){
+        // location.href = 'https://www.google.com';
+        window.open('https://www.google.com');
+        
+    } else {
+        // location.href = 'https://www.instagram.com';
+        window.open('https://www.instagram.com');  
+    }
+});
+
+function footer_move(i) {
+    footer_icon_span[i].style.width = '100%';
+    footer_icon_span[i].style.borderRadius = '30px';
+    footer_icon_span[i].style.transition = 'width 2s';
+}
+
+function footer_initial(i) {
+    footer_icon_span[i].style.width = '40px';
+    footer_icon_span[i].style.borderRadius = '50%';
+    footer_icon_span[i].style.transition = 'width 2s';
+}
+
+first_icon.addEventListener('mouseenter', (e) => {
+    if(e.target === first_icon) footer_move(0);
+});
+first_icon.addEventListener('mouseleave', (e) => {
+    if(e.target === first_icon) footer_initial(0);
+});
+
+second_icon.addEventListener('mouseenter', (e) => {
+    if(e.target === second_icon) footer_move(1);
+});
+second_icon.addEventListener('mouseleave', (e) => {
+    if(e.target === second_icon) footer_initial(1);
+});
+
+third_icon.addEventListener('mouseenter', (e) => {
+    if(e.target === third_icon) footer_move(2);
+});
+third_icon.addEventListener('mouseleave', (e) => {
+    if(e.target === third_icon) footer_initial(2);
+});
+
+fourth_icon.addEventListener('mouseenter', (e) => {
+    if(e.target === fourth_icon) footer_move(3);
+});
+fourth_icon.addEventListener('mouseleave', (e) => {
+    if(e.target === fourth_icon) footer_initial(3);
+});
+
+
+// ===============================================================
+// 줄어들었을때 글자 클릭 시 화면에 띄우기.(css가 js보다 늦게 실행되므로 
+// 동작된다.)
+
+let before_div = div[2];
+div[2].classList.add('footer_hidden');
+div[4].classList.add('footer_hidden');
+div[6].classList.add('footer_hidden');
+
+container.addEventListener('click', (e) => {
+    const target = e.target.closest('div');
+    let nextSib = target.nextElementSibling;
+    if(target.classList.contains("footer_font_size")) {
+
+        before_div.classList.add('footer_hidden');
+        nextSib.classList.remove('footer_hidden');
+
+        before_div = nextSib;
+    }
+
 });
